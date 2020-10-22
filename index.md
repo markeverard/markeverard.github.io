@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/markeverard/markeverard.gi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown 
 
-##Posts
+## Posts
 
 {% for post in site.posts %}{{ post.date }}
 {% endfor %}
