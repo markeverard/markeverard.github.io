@@ -6,10 +6,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ##Posts
 
-	  {% for post in site.posts %}
-	  >{{ post.date }}
-	  {% endfor %}
-	<
+{% for post in site.posts %}{{ post.date }}
+{% endfor %}
+
 
 ### Markdown
 
