@@ -1,14 +1,10 @@
 ﻿---
-id: 5
 title: The Great EPiServer Informed Response
 date: 2010-04-20T14:30:26+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com:/blog/?p=5
 permalink: /2010/04/20/the-great-episerver-informed-response/
 dsq_thread_id:
-  - "1073095635"
-  - "1073095635"
   - "1073095635"
 categories:
   - Episerver
@@ -20,14 +16,12 @@ If you find yourself agreeing with Fredrik, then please read on, as the EPiServe
 
 I&#8217;ve listed some direct responses to the points Fredrik made in his post. I&#8217;d welcome your comments.
 
-## The Development Process
-
+## The development process
 Any EPiServer developer will recognise and remember the frustrations that came from having to manually add and update PageTypes in the database especially when working across several environments. It was a royal pain, but not any more. The EPiServer development process has moved on.
 
 I just cannot imagine starting any new EPiServer project without using [PageTypeBuilder](http://pagetypebuilder.codeplex.com/ "PageTypeBuilder") (by [Joel Abrahamsson](http://joelabrahamsson.com/ "Joel Abrahamsson")), which decouples your code from the EPiServer database, and in one fell swoop does away with any need for workarounds and central &#8216;development databases&#8217;. This tool has been actively developed and blogged about since June 2009. Its an invaluable tool for any new EPiServer project. Look into it and if you choose to ignore it&#8230; well, good luck.
 
 ## Everything isn’t a page
-
 I couldn&#8217;t agree more, accurately distilling requirements down into a sensible domain model is a non-trivial problem during any software design phase. It brings to mind the following quote:
 
 > _Remember that all models are wrong; the practical question is how wrong do they have to be to not be useful_
@@ -58,7 +52,7 @@ In the two years I&#8217;ve been an EPiServer developer, there has been a notic
 
 The continued interest in EPiServer WCM products from potential customers demonstrates that a great many developers are successfully delivering high-quality WCM solutions using the EPiServer platform. With the continued input from the community, I&#8217;m sure this will continue.
 
-Put simply:
+### Put simply:
 
 Happy developers = Successful implementations = Happy customers
 

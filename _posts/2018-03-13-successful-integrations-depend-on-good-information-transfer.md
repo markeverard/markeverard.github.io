@@ -34,7 +34,7 @@ Is the API &#8216;well-documented&#8217;, either online or in a document? Is it 
 * **Error messages** &#8211; does the documentation explain how the API will notify and provide details of any errors, be that in validation of input or internal more fatal errors?
 * **Examples** &#8211; are real code examples available or better yet is there an interactive sandbox, where you can try out example requests and receive mocked responses?
 
-### Point of Contact
+### Point of contact
 Is there a point of contact for the API? Do you know where or who to turn to if you need any support whilst developing against or operating against an API? For mature platforms this could be a online documentation and a live &#8216;status&#8217; page. For line of business API&#8217;s this might be &#8216;the single tech guy in IT&#8217;. Either way you&#8217;ll need to make sure you know how to get help when you need it.
 
 ### Almost standard
