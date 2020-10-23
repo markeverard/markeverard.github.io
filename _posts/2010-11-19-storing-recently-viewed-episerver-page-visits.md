@@ -8,7 +8,6 @@ guid: http://www.markeverard.com/blog/?p=368
 permalink: /2010/11/19/storing-recently-viewed-episerver-page-visits/
 dsq_thread_id:
   - "1079377345"
-  - "1079377345"
 categories:
   - Episerver
 ---
@@ -161,4 +160,4 @@ I&#8217;ve not shown the code for a few of the small helper methods I&#8217;ve u
 
 All the code needed to run this has been uploaded to the <a title="EPiServer World Code" href="http://world.episerver.com/Code/Mark-Everard/Storing-recently-viewed-EPiServer-page-visits/" target="_blank">EPiServer World Code section</a>, including the necessary User Interface elements to display the data on an EPiServer CMS6 Public Templates project home page, where (as long as you remember to add the RecordUserVisitPageBase to the set of page templates) you should end up with something like (in the bottom right)&#8230;&#8230;.
 
-[<img class="aligncenter size-full wp-image-375" title="recently-viewed" src="http://markeverard.azurewebsites.net/wp-content/uploads/2010/11/recently-viewed.jpg" alt="" width="450" height="368" srcset="https://www.markeverard.com/wp-content/uploads/2010/11/recently-viewed.jpg 450w, https://www.markeverard.com/wp-content/uploads/2010/11/recently-viewed-300x245.jpg 300w, https://www.markeverard.com/wp-content/uploads/2010/11/recently-viewed-320x262.jpg 320w" sizes="(max-width: 450px) 100vw, 450px" />](http://markeverard.azurewebsites.net/wp-content/uploads/2010/11/recently-viewed.jpg)
+[<img class="aligncenter size-full wp-image-375" title="recently-viewed" src=" /assets/uploads/2010/11/recently-viewed.jpg" alt="" width="450" height="368" srcset=" /assets/uploads/2010/11/recently-viewed.jpg 450w,  /assets/uploads/2010/11/recently-viewed-300x245.jpg 300w,  /assets/uploads/2010/11/recently-viewed-320x262.jpg 320w" sizes="(max-width: 450px) 100vw, 450px" />]( /assets/uploads/2010/11/recently-viewed.jpg)

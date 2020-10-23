@@ -27,7 +27,7 @@ Now we&#8217;ve defined the communication pathway between the application (EPiSe
 
 This is done using a Visual Studio design surface which auto-magically generates code files descibing your workflow based on what you drag-and-drop onto the surface. Personally I hate developing in this manner, the one redeeming feature is that it does make for some easily created diagrams demonstrating whats going on!
 
-[<img class="aligncenter size-full wp-image-356" title="workflow-design-surface" alt="workflow-design-surface" src="http://markeverard.azurewebsites.net/wp-content/uploads/2010/11/workflow-design-surface.gif" width="600" height="499" />](http://markeverard.azurewebsites.net/wp-content/uploads/2010/11/workflow-design-surface.gif)
+[<img class="aligncenter size-full wp-image-356" title="workflow-design-surface" alt="workflow-design-surface" src=" /assets/uploads/2010/11/workflow-design-surface.gif" width="600" height="499" />]( /assets/uploads/2010/11/workflow-design-surface.gif)
 
 Here you can see the Two-stage workflow laid out on the designer surface. Each box represents a unique State within this StateMachine workflow, with the arrows indicating the possible transitions between states. Initally the workflow process is created in the InitialState (which is set by right-clicking and selecting the relevant option from the dropdown).
 

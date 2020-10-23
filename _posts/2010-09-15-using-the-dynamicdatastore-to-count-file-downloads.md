@@ -157,4 +157,4 @@ DownLoadCount.Text = string.Format("Downloaded {0} times", store.GetDownloadCoun
 
 </pre>
 
-Full source code is available zipped up <a title="DownloadCount source code" href="http://markeverard.azurewebsites.net/wp-content/uploads/2010/09/FortuneCookie.DownloadCount.zip" target="_self">here</a>, or in the EPiServer World code section.
+Full source code is available zipped up <a title="DownloadCount source code" href=" /assets/uploads/2010/09/FortuneCookie.DownloadCount.zip" target="_self">here</a>, or in the EPiServer World code section.

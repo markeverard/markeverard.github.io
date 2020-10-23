@@ -110,4 +110,4 @@ namespace EPiServer.Plugins
 
   * The proof! This is a relatively simple technique that allows you to add a small amount of flexibility into the EPiServer edit/admin interface.
 
-[<img class="aligncenter size-full wp-image-135" title="Edit Categories in Edit Mode" src="http://markeverard.azurewebsites.net/wp-content/uploads/2010/08/categoryineditmode.gif" alt="" width="700" height="289" />](http://markeverard.azurewebsites.net/wp-content/uploads/2010/08/categoryineditmode.gif)
+[<img class="aligncenter size-full wp-image-135" title="Edit Categories in Edit Mode" src=" /assets/uploads/2010/08/categoryineditmode.gif" alt="" width="700" height="289" />]( /assets/uploads/2010/08/categoryineditmode.gif)
