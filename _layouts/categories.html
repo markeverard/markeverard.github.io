@@ -9,7 +9,7 @@ layout: page
 {% for post in site.posts %}
 {% if post.categories.size > 0 %}
 {% assign post_categories = post.categories | join:'|' | append:'|' %}
-{% assign rawcategories = rawcategories | append:post_post_categories %}
+{% assign rawcategories = rawcategories | append:post_categories %}
 {% endif %}
 {% endfor %}
 
