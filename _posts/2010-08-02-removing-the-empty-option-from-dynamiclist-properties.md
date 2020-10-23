@@ -17,7 +17,8 @@ This morning though, I did just that, and it turned out to be very straightforwa
 
 All that&#8217;s needed is a new Property and PropertyControl class that overrides the existing PropertyAppSettings. This class defines a property called AutoGenerateEmptyValue. Override this property to return false to remove the empty value.
 
-<pre class="brush: csharp; title: ; notranslate" title="">using System;
+~~~csharp
+using System;
 using EPiServer.Core;
 using EPiServer.PlugIn;
 using EPiServer.SpecializedProperties;
@@ -40,4 +41,4 @@ namespace MySite.CustomProperties
       protected override bool AutoGenerateEmptyValue { get { return false; } }
    }
 }
-</pre>
+~~~

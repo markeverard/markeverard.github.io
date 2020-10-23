@@ -32,17 +32,20 @@ Category administration is often a function that in my opinion falls more under 
 
   * Add Mapped links &#8211; create a virtual path mapping in episerver.config (or in web.config pre-CMS 6) which forwards the defined virtual url to the existing categories.aspx page. You will need to provide a mapping for every page that you want to allow access to. Category administration is handled by a single .aspx page.
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;add name="AdminMappings" type="EPiServer.Web.Hosting.VirtualPathMappedProvider,EPiServer" /&gt;
-</pre>
+~~~xml
+&lt;add name="AdminMappings" type="EPiServer.Web.Hosting.VirtualPathMappedProvider,EPiServer" /&gt;
+~~~
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;virtualPathMappings&gt;
+~~~xml
+&lt;virtualPathMappings&gt;
    &lt;add url="~/ui/CMS/CategoryAdmin/Categories.aspx" mappedUrl="~/ui/CMS/Admin/Categories.aspx" /&gt;
 &lt;/virtualPathMappings&gt;
-</pre>
+~~~
 
   * Add a new location element in web.config for our new virtual path. Here I&#8217;m allowing users in the CategoryAdmins and Administrators roles access whilst denying all other users.
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;location path="ui/CMS/categoryadmin"&gt;
+~~~xml
+&lt;location path="ui/CMS/categoryadmin"&gt;
    &lt;system.web&gt;
       &lt;authorization&gt;
          &lt;allow roles="CategoryAdmins, Administrators"&gt;
@@ -50,7 +53,7 @@ Category administration is often a function that in my opinion falls more under 
       &lt;/authorization&gt;
    &lt;/system.web&gt;
 &lt;/location&gt;
-</pre>
+~~~
 
   * Create Action Window plugin &#8211; now that we&#8217;ve opened up access to the category admin page, we need to define a position for a CategoryAdmin user to access this page from the EPiServer edit interface. I&#8217;ve chosen to create an Action window plugin, which is achieved by marking your page class with a GuiPlugin attribute. Don&#8217;t forget also to lock down access to this page with a location security configuration.
 
@@ -58,14 +61,16 @@ There is a small choice/compromise here to make about the user experience. You c
 
 If you can live with this you&#8217;ll get a more straight forward user experience. However I&#8217;ve decided that having the correct title is important, so I&#8217;ve just provided a simple anchor tag with the Plugin page&#8217;s markup which allows a click through to the Category page.
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CategoryAdminPlugin.ascx.cs" Inherits="EPiServer.CategoryAdminPlugin" %&gt;
+~~~xml
+&lt;%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CategoryAdminPlugin.ascx.cs" Inherits="EPiServer.CategoryAdminPlugin" %&gt;
 
 &lt;h2&gt;Category Admin&lt;/h2&gt;
 &lt;p&gt;Users in the CategoryAdmin role can access this page.&lt;/p&gt;
 &lt;asp:HyperLink runat="server" NavigateUrl="~/ui/CMS/CategoryAdmin/Categories.aspx" Text="Edit Categories" /&gt;
-</pre>
+~~~
 
-<pre class="brush: csharp; title: ; notranslate" title="">using System;
+~~~csharp
+using System;
 using EPiServer.PlugIn;
 
 namespace EPiServer.Plugins
@@ -82,7 +87,7 @@ namespace EPiServer.Plugins
       }
    }
 }
-</pre>
+~~~
 
   * Add new language elements &#8211; all quite straight forward so far, but there is one final hurdle to overcome. The categories.aspx page uses the EPiServer LanguageManager to provide the correct language translation for much of the copy on the page. The LanguageManager calculates the Xpath to the specified language element using the current page&#8217;s url (*only if the path is within the EPiServer Ui). As our path is virtual, these XPath&#8217;s don&#8217;t exist, so we must add them to the ~/lang xml files.
 

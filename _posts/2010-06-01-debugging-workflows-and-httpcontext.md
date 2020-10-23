@@ -21,17 +21,19 @@ The workflow module in EPiServer is built upon the .NET 3.0 workflow functionali
 
 Workflows are managed under their own runtime, which itself is hosted by a .NET application &#8211; in this case EPiServer. The runtime is configured in the web.config file, along with the persistence mechanism (SQL Server).
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;workflowRuntime EnablePerformanceCounters="false"&gt;
+~~~xml
+&lt;workflowRuntime EnablePerformanceCounters="false"&gt;
     &lt;Services&gt;
         &lt;add type="System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" maxSimultaneousWorkflows="5" /&gt;
         &lt;add type="System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService, System.Workflow.Runtime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" UnloadOnIdle="true" /&gt;
     &lt;/Services&gt;
 &lt;/workflowRuntime&gt;
-</pre>
+~~~
 
 Debugging can be enable by adding in and adjusting the following keys (which are commented out towards the bottom of the EPiServer web.config file).
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;!--OPTIONAL Workflow Diagnostics - used for logging useful information for debugging purposes--&gt;
+~~~xml
+&lt;!--OPTIONAL Workflow Diagnostics - used for logging useful information for debugging purposes--&gt;
   &lt;system.diagnostics&gt;
     &lt;switches&gt;
       &lt;add name="System.Workflow.Runtime" value="Off" /&gt;
@@ -43,7 +45,7 @@ Debugging can be enable by adding in and adjusting the following keys (which are
       &lt;add name="System.Workflow LogToFile" value="0" /&gt;
     &lt;/switches&gt;
   &lt;/system.diagnostics&gt;
-</pre>
+~~~
 
 There are two choices of where to log any workflows messages, to file or to a TraceListener (aka the output window in Visual Studio). Full details of the configuration settings can be on found on <a href="http://msdn.microsoft.com/en-us/library/ms732240.aspx" target="_blank">MSDN</a>.
 
