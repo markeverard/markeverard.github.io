@@ -13,7 +13,7 @@ categories:
 ---
 <a href="https://en.wikipedia.org/wiki/Webhook" target="_blank">WebHooks</a> are a way of connecting internet / cloud services together. They allow websites to communicate with each other via HTTP callbacks. Services can subscribe (via HTTP) to receive notifications from publishers about a specific event. Publishers, manage these subscriptions and then on each event push notifcations via an HTTP Post to each receiver, at an endpoint defined during subscription.
 
-<img class="aligncenter wp-image-5252 size-medium" src="http://www.markeverard.com/wp-content/uploads/2015/11/web-hooks-258x300.png" sizes="(max-width: 258px) 100vw, 258px" srcset="http://www.markeverard.com/wp-content/uploads/2015/11/web-hooks-258x300.png 258w, http://www.markeverard.com/wp-content/uploads/2015/11/web-hooks.png 349w" alt="web-hooks" width="258" height="300" /> 
+<img class="aligncenter wp-image-5252 size-medium" src="/assets/uploads/2015/11/web-hooks-258x300.png" sizes="(max-width: 258px) 100vw, 258px" srcset="/assets/uploads/2015/11/web-hooks-258x300.png 258w, /assets/uploads/2015/11/web-hooks.png 349w" alt="web-hooks" width="258" height="300" /> 
 
 ### ASP.NET WebHooks
 
@@ -40,7 +40,7 @@ What would an EPiServer implementation / usage of WebHooks look like?
 
 I was invited to talk (along with fellow EMVP <a href="http://world.episerver.com/Blogs/K-Khan-/" target="_blank">Khurram Khan</a>) at the <a href="http://www.episerver.com/about-us/event-listing/london-ascend-2015/ascend-2015/ascend-london-technical-track-agenda-2015/" target="_blank">technical track</a> at <a href="http://www.episerver.com/about-us/event-listing/london-ascend-2015/ascend-2015/" target="_blank">EPiServer Ascend London 2015</a>. You can download the slides from <a href="http://www.slideshare.net/ev2000/publisher-subscriber-integrations-using-episerver" target="_blank">Slideshare</a>.
 
-<img class="aligncenter" title="Look Mum, its me :" src="http://www.markeverard.com/wp-content/uploads/2015/11/IMG_4942.jpg" alt="" width="400" height="300" />  
+<img class="aligncenter" title="Look Mum, its me :" src="/assets/uploads/2015/11/IMG_4942.jpg" alt="" width="400" height="300" />  
 As part of a presentation I put together a simple solution demonstrating an EPiServer site with an <a href="http://blogs.msdn.com/b/webdev/archive/2015/09/21/integrating-with-instagram-using-asp-net-webhooks-preview.aspx" target="_blank">Instagram receiver</a> that provided a solution to the below user story.
 
 > “As a content editor, I want images that are uploaded on a social channel (Instagram) and tagged with ‘ascend15’ to be available in my content management system so I can use them on my awesome website”

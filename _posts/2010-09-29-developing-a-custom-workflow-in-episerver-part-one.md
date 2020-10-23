@@ -36,7 +36,7 @@ First up we must start with requirements gathering. This is often a difficult pr
 Workflow requirements are always best distilled by a Visio flow diagram. Fact! So here&#8217;s ours _(click to enlarge)_.
 
 <p style="text-align: center;">
-  <a href=" /assets/uploads/2010/09/2StageWorkflowDiagram.jpg"><img class="size-medium wp-image-217 aligncenter" title="2StageWorkflowDiagram" alt="2 Stage Workflow Diagram" src=" /assets/uploads/2010/09/2StageWorkflowDiagram-300x218.jpg" width="300" height="218" /></a>
+  <a href="/assets/uploads/2010/09/2StageWorkflowDiagram.jpg"><img class="size-medium wp-image-217 aligncenter" title="2StageWorkflowDiagram" alt="2 Stage Workflow Diagram" src="/assets/uploads/2010/09/2StageWorkflowDiagram-300x218.jpg" width="300" height="218" /></a>
 </p>
 
 Looking at the required process, you can see that it&#8217;s a 2-stage approval process, where a page is created, sent for approval, and then finally sent through a further approval step, where upon the page is approved one final time before being published.
