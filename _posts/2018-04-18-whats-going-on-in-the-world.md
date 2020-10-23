@@ -10,9 +10,7 @@ dsq_thread_id:
   - "6620655210"
 image: /wp-content/uploads/2018/04/earth-space-1.jpg
 categories:
-  - Uncategorised
-tags:
-  - homepage
+  - Episerver
 ---
 As Episerver has grown, so has the developer community. It now stands at just over 40,000 members.
 
