@@ -5,14 +5,13 @@ url: "https://markeverard.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: Mark Everard                                    # site's title
 description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+avatar: assets/img/me.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Change <code>header_text</code> in <code>_config.yml</code>  # Change Blog header text
-header_feature_image: assets/img/pexels/triangular.jpeg
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+header_text: # Change Blog header text
+header_feature_image: assets/img/idea.jpeg
+footer_text: 
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
@@ -30,7 +29,7 @@ disqus_shortname: markeverard
 
 # PAGINATION
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/page:num"
 
 # PORTFOLIO
 collections:
