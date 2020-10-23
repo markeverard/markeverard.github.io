@@ -1,18 +1,15 @@
 ---
-id: 623
 title: 'GiveCamp UK &#8211; a philanthropic software development microcosm'
 date: 2011-10-26T02:00:39+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=623
 permalink: /2011/10/26/givecamp-uk-a-philanthropic-software-development-microcosm/
 dsq_thread_id:
-  - "1078475615"
   - "1078475615"
 categories:
   - Opinion
 ---
-I was lucky enough to participate in the first <a title="GiveCamp UK" href="http://www.givecamp.org.uk/" target="_blank">UK GiveCamp</a> over the course of the last weekend.
+I was lucky enough to participate in the latest [UK GiveCamp](http://www.givecamp.org.uk/) over the course of the last weekend.
 
 **Wow, what an incredible experience!**
 
@@ -22,11 +19,9 @@ The concept, execution and community was superb (see @stack72&#8217;s <a title="
 
 > _&#8220;For the first time in living memory, someone cried because the software we did was so good.&#8221;_
 
-**What better testimonial than this? How many times have you had this reaction whilst working in your day job 😉**<figure id="attachment_641" style="width: 640px" class="wp-caption aligncenter">
+**What better testimonial than this? How many times have you had this reaction whilst working in your day job 😉
 
-<img class="size-full wp-image-641  " title="GiveCamp UK 2011" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/10/6268685214_64dde3976a_z.jpg" alt="GiveCamp UK 2011" width="640" height="426" srcset="https://www.markeverard.com/wp-content/uploads/2011/10/6268685214_64dde3976a_z.jpg 640w, https://www.markeverard.com/wp-content/uploads/2011/10/6268685214_64dde3976a_z-300x200.jpg 300w, https://www.markeverard.com/wp-content/uploads/2011/10/6268685214_64dde3976a_z-580x386.jpg 580w, https://www.markeverard.com/wp-content/uploads/2011/10/6268685214_64dde3976a_z-320x213.jpg 320w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption class="wp-caption-text">GiveCamp UK 2011 - photo by Bert Craven</figcaption></figure> 
-
-## 
+![GiveCamp UK 2011 - photo by Bert Craven](/assets/uploads/2011/10/6268685214_64dde3976a_z.jpg)
 
 ## A software development microcosm
 
@@ -36,7 +31,7 @@ The thing that really struck me whilst working, is that is that it&#8217;s very 
 
 If you&#8217;re ever involved in a future GiveCamp (and by all means you should), here are some of my top tips&#8230;&#8230;
 
-### **Deliver deliver deliver**
+### Deliver deliver deliver
 
 Don&#8217;t overreach and try to build the <a title="Tower of Babel" href="http://en.wikipedia.org/wiki/Tower_of_Babel" target="_blank">Tower of Babel</a>. Solving one problem well, is better than half solving many problems.
 
@@ -44,19 +39,19 @@ This means you constantly have to question the solution to make sure that every 
 
 Remember building &#8216;cool&#8217; stuff is not the output you&#8217;re looking for. Delivering a working solution that solves a real world problem is the ONLY goal&#8230;.
 
-### **Engagement**
+### Engagement
 
 As ever, it is important that you have a engaged stakeholder / product owner &#8211; who is actively available to field questions and define their needs (we all know this from our day jobs right?)
 
 Remember though, the charities will be like a kid in a sweetshop &#8211; whilst you are their &#8216;knight in shining armour&#8217;. It&#8217;s ok to question their requirement wish-list. 41 hours is not a long time to deliver a solution. So always make sure you stay focussed on solving a real and well defined problem.
 
-### **Keep it simple stupid**
+### Keep it simple stupid
 
 After the weekend, the solutions are handed over lock and key to the charities. You need to make sure they know what you&#8217;ve built for them and that they have enough information to support it going forwards. This could mean documentation! One team produced a 40 page document on how to install a SQL Server instance. The time spent on that document was way more important than any one additional software feature. Without it, the solution wouldn&#8217;t have even been deployed.
 
 Remember &#8211; not everybody knows the things you as a developer takes for granted. Imagine that you&#8217;re delivering a solution for your dear <a title="My Nan's website!" href="http://www.cybernanna.co.uk" target="_blank">Nan</a>. That&#8217;s the level you should aim for.
 
-### **Focus on what you know**
+### Focus on what you know
 
 When you&#8217;re under pressure to deliver, don&#8217;t go off-piste and make some &#8216;left-field&#8217; technology choices, so you can learn the latest new and shiny thing. Stick with what you know and what your team has capabilities with. Don&#8217;t worry, they&#8217;ll still be plenty of opportunity to learn.
 

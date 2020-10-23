@@ -11,7 +11,7 @@ categories:
 ---
 This is the fourth post, in a series of five about developing a custom workflow in EPiServer. By now you&#8217;ve probably forgotten the first three.
 
-  *  <a title="Part One: Overview and Requirements" href="/ 2010/09/29/developing-a-custom-workflow-in-episerver-part-one/" target="_blank">Part One &#8211; Overview and Requirements</a>
+  *  <a title="Part One: Overview and Requirements" href="/2010/09/29/developing-a-custom-workflow-in-episerver-part-one/" target="_blank">Part One &#8211; Overview and Requirements</a>
   * <a title="Part Two: Windows Workflow Foundation in EPiServer" href="/2010/09/30/developing-a-custom-workflow-in-episerver-part-two/" target="_blank">Part Two &#8211; Windows Workflow Foundation in EPiServer</a>
   * <a href="/2010/11/10/developing-a-custom-workflow-in-episerver-part-three/" target="_blank">Part Three &#8211; Designing the Workflow</a>
   * **Part Four &#8211; EPiServer tasks and working with the user interface**
@@ -21,12 +21,12 @@ An important part of our custom workflow is the decisions that are made by users
 
 EPiServer provides a framework to achieve this by tying together the concept of an EPiServer Task with the Workflow and an EventDrivenActivity within the workflow.
 
-**What is an EPiServer Task?**
+## What is an EPiServer Task?
 An <a title="EPiServer.Personalization.Task" href="http://sdk.episerver.com/library/cms6/html/T_EPiServer_Personalization_Task.htm" target="_blank">EPiServer.Personalization.Task</a> describes a task assignable to users in the system. Each task can be assigned to a single user, or a group of users, and can be assigned a due date. Notification of assigned tasks are emailed to each user and are also visible on the page tree tab (and also a Dashboard gadget in CMS 6).
 
 Tasks can be created <a title="Create EPiServer Tasks Programatically" href="http://krompaco.nu/episerver-task-by-code/" target="_blank">programatically</a>, though they are mainly used internally by EPiServer to provide a means of notifying editors of any actions that they are required to take in the CMS. Tasks can also be created programatically from the Workflow designer surface by dragging and dropping an [EPiServer.WorkflowFoundation.Activities.CreateTask](http://sdk.episerver.com/library/cms5/html/T_EPiServer_WorkflowFoundation_Activities_CreateTask.htm) activity which is included in the EPiServer workflow library. This Activity allows you to bind all of the Task properties using the designer interface. This allows your workflow to create Tasks, and so notify users of any necessary actions.
 
-**Using tasks to tie the workflow to the user interface**  
+### Using tasks to tie the workflow to the user interface
 The <a title="EPiServer.Personalization.Task" href="http://sdk.episerver.com/library/cms6/html/T_EPiServer_Personalization_Task.htm" target="_blank">EPiServer.Personalization.Task</a> type has a property called [AssociatedActivity](http://sdk.episerver.com/library/cms5/html/P_EPiServer_WorkflowFoundation_Activities_CreateTask_AssociatedActivity.htm) which allows you to associate a workflow Activity with a given Task. EPiServer then provides a way Activities themselves can be associated with UI elements (such as a standard ASP.NET User control) by decorating your custom Activity with an ActivityPlugin attribute.
 
 This is where the ability to define partial classes and have the c# compiler combine them into one comes in extremely handy. In part three we used the external wca.exe tool to generate four custom EventDriven activities based against the four events defined in our custom communication service (ITwoStageService). These were PageApproved, PageDeclined, PagePassedToApprover and PagePassedToPublisher.
@@ -90,7 +90,7 @@ public bool InvokeEvent(Guid workflowInstanceId, int taskId, string eventQualifi
 
   * **PageHasChanged** &#8211; this method will be called prior to **InvokeEvent** if the page viewed in the edit tab has changed since **ContextData** was invoked. Here you can handle what should happen in this scenario, for example whether you want the Workflow to act against the new page shown in the edit window.
 
-**Additional User Interface elements**
+### Additional User Interface elements
 
 EPiServer also allows you to associate a user control with the act of creating a workflow instance. This control should use the IWorkflowStartParameterHandler instance. This control will be seen in either Admin mode or the Action window. It allows you to specify start parameters for the workflow instance using the LoadStartParameters and SaveStartParameter methods. For example:
 

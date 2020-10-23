@@ -1,17 +1,13 @@
 ---
-id: 656
 title: A QueryString Visitor Group Criterion for EPiServer
 date: 2011-11-07T11:00:11+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/2011/11/28/query-string/
 permalink: /2011/11/07/a-querystring-visitor-group-criterion-for-episerver/
 dsq_thread_id:
   - "1078927898"
-  - "1078927898"
 categories:
   - Episerver
-format: standard
 ---
 A common usage for advanced website analytics systems (Omniture, Google etc) is to track the effectiveness of external digital marketing campaigns such as banner ads, pay-per-click, sponsored search results&#8230;&#8230;..
 
@@ -27,11 +23,9 @@ Creating a Visitor group criterion is <a title="Developing Custom Visitor Group 
 
 I&#8217;ve created a simple QueryString Criterion which will provide a match based on the following:
 
-  1. Whether the current request contains a user specified querystring key
-  2. and / or whether the current request contains a matching querystring key which also has the user specified value.
+1. Whether the current request contains a user specified querystring key
+2. and / or whether the current request contains a matching querystring key which also has the user specified value.
 
-<p style="text-align: center;">
-  <a href="http://markeverard.azurewebsites.net/wp-content/uploads/2011/11/querystringcriterion.png"><img class="aligncenter size-full wp-image-664" title="querystringcriterion" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/11/querystringcriterion.png" alt="" width="600" height="326" srcset="https://www.markeverard.com/wp-content/uploads/2011/11/querystringcriterion.png 800w, https://www.markeverard.com/wp-content/uploads/2011/11/querystringcriterion-300x163.png 300w, https://www.markeverard.com/wp-content/uploads/2011/11/querystringcriterion-768x418.png 768w, https://www.markeverard.com/wp-content/uploads/2011/11/querystringcriterion-720x392.png 720w, https://www.markeverard.com/wp-content/uploads/2011/11/querystringcriterion-580x315.png 580w, https://www.markeverard.com/wp-content/uploads/2011/11/querystringcriterion-320x174.png 320w" sizes="(max-width: 600px) 100vw, 600px" /></a>
-</p>
+![Querystring Criterion](/assets/uploads/2011/11/querystringcriterion.png)
 
 The source code is available as part of the <a title="Criteria Pack for EPiServer CMS on CodePlex" href="http://criteriapack.codeplex.com/" target="_blank">Criteria Pack on Codeplex</a> and of course there is a Nuget package on <a title="EPiServer Nuget feed" href="http://nuget.episerver.com/" target="_blank">Nuget.episerver.com</a> &#8211; (as soon as its been approved!)
