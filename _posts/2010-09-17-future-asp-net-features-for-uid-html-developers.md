@@ -3,7 +3,7 @@ title: Future ASP.NET features for UID / HTML developers
 date: 2010-09-17T00:11:20+00:00
 author: Mark Everard
 layout: post
-color: rgb(255,0,0)
+color: rgb(230,230,230)
 permalink: /2010/09/17/future-asp-net-features-for-uid-html-developers/
 dsq_thread_id:
   - "1108383034"
