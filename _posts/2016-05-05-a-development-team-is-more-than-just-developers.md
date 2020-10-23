@@ -5,15 +5,16 @@ date: 2016-05-05T09:47:21+00:00
 author: Mark Everard
 layout: post
 guid: http://www.markeverard.com/?p=4811
-permalink: '/2016/05/05/%e2%80%8ba-development-team-is-more-than-just-developers/'
+permalink: '/2016/05/05/a-development-team-is-more-than-just-developers/'
 dsq_thread_id:
   - "6420563665"
-image: /wp-content/uploads/2017/07/AAEAAQAAAAAAAAP8AAAAJDZiODBmMjA0LTk0ZjctNDBmYy05ODFjLTVjYTM5Njc4YjEzYg.jpg
+feature-image: /wp-content/uploads/2017/07/AAEAAQAAAAAAAAP8AAAAJDZiODBmMjA0LTk0ZjctNDBmYy05ODFjLTVjYTM5Njc4YjEzYg.jpg
 categories:
   - Opinion
   - Technology
 tags:
-  - homepage
+  - Opinion
+  - Technology
 ---
 A football team is made up of footballers. A cricket team is made up of cricketers. A rugby team is made up of rugby players.
 
@@ -27,10 +28,10 @@ So why do many organisations still think that a development team is made up only
 
 Software delivery requires specialist skills across the following areas:
 
-  - Analysis + Requirements
-  - Architecture | Design
-  - Implementation | Development | Coding | Configuration
-  - Validation | Testing
+  - Analysis & Requirements
+  - Architecture & Design
+  - Implementation & Development & Coding & Configuration
+  - Validation & Testing
 
 This is clearly more nuanced than &#8216;just development&#8217;. Any existing high-quality software will have had these skills applied during its life-cycle.
 
