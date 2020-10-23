@@ -3,6 +3,7 @@ title: EPiServer London Meetup Programme
 date: 2011-02-25T18:32:42+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2011/02/25/episerver-london-meetup-programme/
 dsq_thread_id:
   - "1078368389"

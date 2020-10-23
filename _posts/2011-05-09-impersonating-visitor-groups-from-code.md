@@ -3,6 +3,7 @@ title: Impersonating Visitor Groups from Code
 date: 2011-05-09T09:00:24+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2011/05/09/impersonating-visitor-groups-from-code/
 dsq_thread_id:
   - "1092010729"

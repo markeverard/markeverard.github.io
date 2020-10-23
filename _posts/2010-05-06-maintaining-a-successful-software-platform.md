@@ -1,5 +1,6 @@
 ﻿---
 title: Maintaining a successful software platform
+color: rgb(0,0,0)
 date: 2010-05-06T21:12:59+00:00
 author: Mark Everard
 layout: post

@@ -1,5 +1,6 @@
 ﻿---
 title: The Great EPiServer Informed Response
+color: rgb(0,0,0)
 date: 2010-04-20T14:30:26+00:00
 author: Mark Everard
 layout: post

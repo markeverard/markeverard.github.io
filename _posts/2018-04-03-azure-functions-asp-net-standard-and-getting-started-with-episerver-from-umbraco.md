@@ -2,6 +2,7 @@
 title: Azure Functions, ASP.NET Standard and Getting Started with Episerver from Umbraco
 date: 2018-04-03T10:17:22+00:00
 author: Mark Everard
+color: rgb(0,0,0)
 layout: post
 permalink: /2018/04/03/azure-functions-asp-net-standard-and-getting-started-with-episerver-from-umbraco/
 dsq_thread_id:

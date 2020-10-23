@@ -3,6 +3,7 @@ title: London Episerver Developer Meetup Spring 2018
 date: 2018-03-28T22:16:06+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2018/03/28/london-episerver-developer-meetup-spring-2018/
 dsq_thread_id:
   - "6582289653"

@@ -3,6 +3,7 @@ title: What’s going on in the World?
 date: 2018-04-18T14:43:01+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2018/04/18/whats-going-on-in-the-world/
 dsq_thread_id:
   - "6620655210"

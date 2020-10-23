@@ -3,6 +3,7 @@ title: Using NuGet for EPiServer third-party libraries
 date: 2010-11-04T13:37:17+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2010/11/04/using-nuget-for-episerver-third-party-libraries/
 dsq_thread_id:
   - "1073095627"

@@ -3,6 +3,7 @@ title: Editor access to EPiServer Admin functionality
 date: 2010-08-12T13:11:57+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2010/08/12/editor-access-to-episerver-admin-functionality/
 dsq_thread_id:
   - "1073095655"

@@ -2,6 +2,7 @@
 title: Removing the empty option from DynamicList properties
 date: 2010-08-02T16:44:58+00:00
 author: Mark Everard
+color: rgb(0,0,0)
 layout: post
 permalink: /2010/08/02/removing-the-empty-option-from-dynamiclist-properties/
 dsq_thread_id:

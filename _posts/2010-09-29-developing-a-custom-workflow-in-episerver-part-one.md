@@ -3,6 +3,7 @@ title: 'Developing a custom workflow in EPiServer : Part one'
 date: 2010-09-29T13:30:38+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2010/09/29/developing-a-custom-workflow-in-episerver-part-one/
 dsq_thread_id:
   - "1073785256"

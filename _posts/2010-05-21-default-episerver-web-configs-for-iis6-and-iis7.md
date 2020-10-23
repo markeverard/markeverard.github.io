@@ -2,6 +2,7 @@
 title: Default EPiServer Web.Configs for IIS6 and IIS7
 date: 2010-05-21T02:53:16+00:00
 author: Mark Everard
+color: rgb(0,0,0)
 layout: post
 permalink: /2010/05/21/default-episerver-web-configs-for-iis6-and-iis7/
 dsq_thread_id:

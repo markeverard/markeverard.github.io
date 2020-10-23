@@ -2,6 +2,7 @@
 title: Debugging Workflows and HttpContext
 date: 2010-06-01T15:48:37+00:00
 author: Mark Everard
+color: rgb(0,0,0)
 layout: post
 permalink: /2010/06/01/debugging-workflows-and-httpcontext/
 dsq_thread_id:

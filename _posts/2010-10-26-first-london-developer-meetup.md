@@ -3,6 +3,7 @@ title: First London Developer Meetup
 date: 2010-10-26T13:48:26+00:00
 author: Mark Everard
 layout: post
+color: rgb(0,0,0)
 permalink: /2010/10/26/first-london-developer-meetup/
 dsq_thread_id:
   - "1138514921"
