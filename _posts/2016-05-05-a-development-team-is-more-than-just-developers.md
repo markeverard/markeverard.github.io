@@ -27,7 +27,7 @@ So why do many organisations still think that a development team is made up only
 
 Software delivery requires specialist skills across the following areas:
 
-  - Analysis | Requirements
+  - Analysis + Requirements
   - Architecture | Design
   - Implementation | Development | Coding | Configuration
   - Validation | Testing
