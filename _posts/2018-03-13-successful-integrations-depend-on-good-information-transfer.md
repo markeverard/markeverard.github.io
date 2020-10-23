@@ -20,9 +20,9 @@ Getting the right information to support accurate and timely development against
 ### Functional review
 An important point but one that can often get overlooked before starting, especially in a creative environment. Are the API&#8217;s you are consuming fit for the purpose you are intending?
 
-* Can they support the functionality you are trying to offer? You&#8217;d be surprised at the number of times I&#8217;ve seen application wire-frames signed off that rely on non-existent API functionality
-* Is the API already in production or is it still in development? Working against a moving target could add effort unless a full specification is agreed / known upfront.
-* Does the API offer performance and an SLA that is appropriate for your usage. There&#8217;s no point building a super fast application that is dependent on a slow and fragile API. You are only as strong as your weakest link.
+* **Can they support the functionality you are trying to offer?** You&#8217;d be surprised at the number of times I&#8217;ve seen application wire-frames signed off that rely on non-existent API functionality
+* **Is the API already in production or is it still in development?** Working against a moving target could add effort unless a full specification is agreed / known upfront.
+* **Does the API offer performance and an SLA that is appropriate for your usage?** There&#8217;s no point building a super fast application that is dependent on a slow and fragile API. You are only as strong as your weakest link.
 
 ### Documentation
 Is the API &#8216;well-documented&#8217;, either online or in a document? Is it recent or is the information out-of-date?Â Well-documented is subjective but, in my view: in this context it meansÂ at least the following:
