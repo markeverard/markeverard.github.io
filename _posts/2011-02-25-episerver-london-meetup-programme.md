@@ -1,13 +1,10 @@
 ---
-id: 447
 title: EPiServer London Meetup Programme
 date: 2011-02-25T18:32:42+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=447
 permalink: /2011/02/25/episerver-london-meetup-programme/
 dsq_thread_id:
-  - "1078368389"
   - "1078368389"
 categories:
   - Episerver
