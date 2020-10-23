@@ -1,14 +1,12 @@
 ﻿---
-id: 6184
 title: What’s going on in the World?
 date: 2018-04-18T14:43:01+00:00
 author: Mark Everard
 layout: post
-guid: https://www.markeverard.com/?p=6184
 permalink: /2018/04/18/whats-going-on-in-the-world/
 dsq_thread_id:
   - "6620655210"
-image: /wp-content/uploads/2018/04/earth-space-1.jpg
+thumbnail: /wp-content/uploads/2018/04/earth-space-1.jpg
 categories:
   - Episerver
 ---

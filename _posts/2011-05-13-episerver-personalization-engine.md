@@ -8,7 +8,6 @@ guid: http://www.markeverard.com/blog/?p=474
 permalink: /2011/05/13/episerver-personalization-engine/
 dsq_thread_id:
   - "1073095686"
-  - "1073095686"
 categories:
   - Episerver
 ---
@@ -24,13 +23,12 @@ We discussed this at [Fortune Cookie](http://www.fortunecookie.co.uk "Fortune Co
 
 The open source FortuneCookie PersonalizationEngine for EPiServer is composed of :
 
-  * An API to return a list of &#8216;recommended content pages&#8217; that are personalized to the current user.
-  * An EPiServer UI Plugin to allow editors to manage the Personalization Engine rules and output.
-  * An extensible framework making it simple for developers to plugin additional Personalization Engine rules.
+* An API to return a list of &#8216;recommended content pages&#8217; that are personalized to the current user.
+* An EPiServer UI Plugin to allow editors to manage the Personalization Engine rules and output.
+* An extensible framework making it simple for developers to plugin additional Personalization Engine rules.
 
 The overriding idea is to match up a Visitor Group with a means of providing EPiServer content (PageData) that is relevant to that group. Editors can create Visitor Groups and then match them with pre-defined ContentProviders which are configured to provide content from a particular taxonomy. For example &#8211; you may match first-time visitors to your site to all pages which have a PageName property containing the term &#8220;Introduction&#8221; .
-
-[<img class="aligncenter size-full wp-image-477" title="PersonalizationEngineOverview" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/04/PersonalizationEngineOverview.png" alt="" width="650" height="279" srcset="https://www.markeverard.com/wp-content/uploads/2011/04/PersonalizationEngineOverview.png 650w, https://www.markeverard.com/wp-content/uploads/2011/04/PersonalizationEngineOverview-300x129.png 300w, https://www.markeverard.com/wp-content/uploads/2011/04/PersonalizationEngineOverview-580x249.png 580w, https://www.markeverard.com/wp-content/uploads/2011/04/PersonalizationEngineOverview-320x137.png 320w" sizes="(max-width: 650px) 100vw, 650px" />](http://markeverard.azurewebsites.net/wp-content/uploads/2011/04/PersonalizationEngineOverview.png)
+/assets/uploads/2011/04/PersonalizationEngineOverview.png)
 
 The Personalization engine will iterate through all of the Engine Rules that have been defined by an editor and for each rule
 

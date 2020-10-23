@@ -1,13 +1,10 @@
 ---
-id: 608
 title: What are you going to do about it?
 date: 2011-09-12T11:00:35+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/2011/08/10/what-are-you-going-to-do-about-it/
 permalink: /2011/09/12/what-are-you-going-to-do-about-it/
 dsq_thread_id:
-  - "1079929309"
   - "1079929309"
 categories:
   - Opinion
@@ -26,7 +23,7 @@ Things I took home with me from the course:
   * **How I react:** ability to recognise my own and my colleagues behavioural traits and adjust my response to suit
   * **Who I want to be:** a clearer idea of the characteristics I believe make a good leader and the willpower to make sure I follow the right path.<figure id="attachment_616" style="width: 350px" class="wp-caption aligncenter">
 
-[<img class="size-full wp-image-616 " title="lego-bricks" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/08/lego-bricks.jpg" alt="lego-bricks" width="350" height="263" srcset="https://www.markeverard.com/wp-content/uploads/2011/08/lego-bricks.jpg 500w, https://www.markeverard.com/wp-content/uploads/2011/08/lego-bricks-300x225.jpg 300w, https://www.markeverard.com/wp-content/uploads/2011/08/lego-bricks-320x240.jpg 320w" sizes="(max-width: 350px) 100vw, 350px" />](http://markeverard.azurewebsites.net/wp-content/uploads/2011/08/lego-bricks.jpg)<figcaption class="wp-caption-text">The plural of Lego is Lego, not Legos. The word Lego is a trademark and should be used as such. Here is a picture of some Lego bricks.</figcaption></figure> 
+![The plural of Lego is Lego, not Legos. The word Lego is a trademark and should be used as such. Here is a picture of some Lego bricks.](/assets/uploads/2011/08/lego-bricks.jpg)
 
 Roy is holding another <a title="Two Day Essential Skills Workshop for Software Team Leaders" href="http://5whys.com/courses" target="_blank">course in London this November (2011)</a> , so if you&#8217;re interested in learning how to lead and grow a software team, then you should do what you need to do to get yourself on his course.
 

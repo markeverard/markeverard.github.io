@@ -1,10 +1,8 @@
 ---
-id: 368
 title: Storing recently-viewed EPiServer page visits
 date: 2010-11-19T03:41:08+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=368
 permalink: /2010/11/19/storing-recently-viewed-episerver-page-visits/
 dsq_thread_id:
   - "1079377345"
@@ -19,7 +17,8 @@ The data we will need to store in the browser cookie is just a list of EPiServer
 
 I&#8217;ve wrapped this int value type in a more meaningful domain object (RecentPageHistory) and overridden the Equals method so we can accurately compare two RecentPageHistory objects (which we&#8217;ll need to do so we don&#8217;t get two instances of the same page in our page history list).
 
-<pre class="brush: csharp; title: ; notranslate" title="">public class RecentPageHistory
+~~~csharp
+public class RecentPageHistory
 {
 	public int PageReferenceId { get; set; }
 
@@ -37,11 +36,12 @@ I&#8217;ve wrapped this int value type in a more meaningful domain object (Recen
 		return false;
 	}
 }
-</pre>
+~~~
 
 Recording a single user visit is best abstracted down to a base class inherited by all .aspx pages that you wish to record user visits for.
 
-<pre class="brush: csharp; title: ; notranslate" title="">public class RecordUserVisitPageBase : TemplatePage
+~~~csharp
+public class RecordUserVisitPageBase : TemplatePage
 {
         protected override void OnLoad(EventArgs e)
         {
@@ -68,12 +68,12 @@ Recording a single user visit is best abstracted down to a base class inherited 
                    new HttpCookie(RecentPageHistoryHelper.CookieName);
         }
     }
-}
-</pre>
+}~~~
 
 Finally there is the service level class which is responsible for the CRUD operations against the data storage mechanism (in this case a cookie). Although most of the functionality is not EPiServer specific, there is one method (GetPagesFromHistoryList) that deals with the EPiServer API. This method will populate a List of PageData objects and will also explicitly remove any PageReferenceID&#8217;s from the cookie that refer to pages that can no longer be found in EPiServer. Note that this method passes the cookie as a reference parameter so any consuming user interface class (page/user control) should also ensure that this cookie is added to the response stream so that the missing EPiServer page&#8217;s are removed from the cookie cache.
 
-<pre class="brush: csharp; title: ; notranslate" title="">public class RecentPageHistoryService
+~~~csharp
+public class RecentPageHistoryService
 {
 	protected const int MaximumHistoryItems = 4;
 	protected HttpCookie AssetHistoryCookie { get; set; }
@@ -154,10 +154,10 @@ Finally there is the service level class which is responsible for the CRUD opera
 		return pagesInHistoryList;
 	}
 }
-</pre>
+~~~
 
 I&#8217;ve not shown the code for a few of the small helper methods I&#8217;ve used. All that&#8217;s left is to write a user interface element that displays the pages (and updates the cookie). I won&#8217;t show that here as its even more straight forward than the rest of this walk through!
 
 All the code needed to run this has been uploaded to the <a title="EPiServer World Code" href="http://world.episerver.com/Code/Mark-Everard/Storing-recently-viewed-EPiServer-page-visits/" target="_blank">EPiServer World Code section</a>, including the necessary User Interface elements to display the data on an EPiServer CMS6 Public Templates project home page, where (as long as you remember to add the RecordUserVisitPageBase to the set of page templates) you should end up with something like (in the bottom right)&#8230;&#8230;.
 
-[<img class="aligncenter size-full wp-image-375" title="recently-viewed" src="/assets/uploads/2010/11/recently-viewed.jpg" alt="" width="450" height="368" srcset="/assets/uploads/2010/11/recently-viewed.jpg 450w, /assets/uploads/2010/11/recently-viewed-300x245.jpg 300w, /assets/uploads/2010/11/recently-viewed-320x262.jpg 320w" sizes="(max-width: 450px) 100vw, 450px" />](/assets/uploads/2010/11/recently-viewed.jpg)
+![Recently Viewed](/assets/uploads/2010/11/recently-viewed.jpg)

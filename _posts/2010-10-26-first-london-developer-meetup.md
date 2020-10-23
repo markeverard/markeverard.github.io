@@ -1,26 +1,25 @@
 ---
-id: 316
 title: First London Developer Meetup
 date: 2010-10-26T13:48:26+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=316
 permalink: /2010/10/26/first-london-developer-meetup/
 dsq_thread_id:
-  - "1138514921"
   - "1138514921"
 categories:
   - Episerver
 ---
 We held the first London EPiServer Meetup last Thursday, and I&#8217;m delighted to report that I had a great time!
 
-Being serious though, I think I can safely say thatÂ everybody who turned up enjoyed themselves and thought the evening worthwhile. The majority (well all actually :)) of the feedback I&#8217;ve received has been positive, and we&#8217;ve definitely gathered enough momentum to make this a regular event on the calendar. Hopefully we&#8217;ll be able to squeeze another meet-up in &#8211; just before Christmas. If anybody is interested in presenting (or if there are any offers to host the next meetup &#8211; then please get in touch with me). I personally found itÂ genuinelyÂ inspiring to be in the company of developers who are so committed andÂ demonstrablyÂ passionate about their craft.
+Being serious though, I think I can safely say that everybody who turned up enjoyed themselves and thought the evening worthwhile. The majority (well all actually :)) of the feedback I&#8217;ve received has been positive, and we&#8217;ve definitely gathered enough momentum to make this a regular event on the calendar. Hopefully we&#8217;ll be able to squeeze another meet-up in &#8211; just before Christmas. If anybody is interested in presenting (or if there are any offers to host the next meetup &#8211; then please get in touch with me). I personally found itÂ genuinelyÂ inspiring to be in the company of developers who are so committed andÂ demonstrablyÂ passionate about their craft.
 
-The program for the first meetup included:[<img class="alignright size-medium wp-image-319" title="LondonDevMeetup" src="/assets/uploads/2010/10/x2_319baf7-300x200.jpg" alt="" width="300" height="200" srcset="/assets/uploads/2010/10/x2_319baf7-300x200.jpg 300w, /assets/uploads/2010/10/x2_319baf7-580x387.jpg 580w, /assets/uploads/2010/10/x2_319baf7-320x213.jpg 320w, /assets/uploads/2010/10/x2_319baf7.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />](/assets/uploads/2010/10/x2_319baf7.jpg)
+The program for the first meetup included:
 
-1) <a title="Lee Crowe" href="http://world.episerver.com/System/Users-and-profiles/Community-Profile-Card/?encryptedcurrentid=9zrJdbVFfxUPjoUcnFGOZGoQYHeF4ZWq0sPoh6WFuIo%3d" target="_blank">Lee Crowe</a> demonstrated his <a title="Global Search and Replace Plugin" href="http://world.episerver.com/Blogs/Lee-Crowe/Dates/2010/10/EPiServer-Search-and-Replace-Plug-in-Released/" target="_blank">Global Search and Replace plugin</a> which he&#8217;s now released on <a title="EPiServer Search And Replace " href="http://episerversap.codeplex.com/" target="_blank">CodePlex</a>
+![](/assets/uploads/2010/10/x2_319baf7.jpg)
 
-2) <a title="David Knipe" href="http://world.episerver.com/System/Users-and-profiles/Community-Profile-Card/?encryptedcurrentid=SSsFGYpTbFg3phrJfch8PdlP/mHtZtU6uPMU4yzNORE%3d" target="_blank">David Knipe</a> gave an overview of <a title="EPiServer MobileCenter" href="http://world.episerver.com/Articles/Items/EPiServer-MobileCenter---Our-First-iPhone-App-for-Web-Marketers-and-Editors/" target="_blank">EPiServer Mobile Center</a> and explained how easy it is to push your own Gadget functionality through onto iOS devices.
+1. <a title="Lee Crowe" href="http://world.episerver.com/System/Users-and-profiles/Community-Profile-Card/?encryptedcurrentid=9zrJdbVFfxUPjoUcnFGOZGoQYHeF4ZWq0sPoh6WFuIo%3d" target="_blank">Lee Crowe</a> demonstrated his <a title="Global Search and Replace Plugin" href="http://world.episerver.com/Blogs/Lee-Crowe/Dates/2010/10/EPiServer-Search-and-Replace-Plug-in-Released/" target="_blank">Global Search and Replace plugin</a> which he&#8217;s now released on <a title="EPiServer Search And Replace " href="http://episerversap.codeplex.com/" target="_blank">CodePlex</a>
+
+2. <a title="David Knipe" href="http://world.episerver.com/System/Users-and-profiles/Community-Profile-Card/?encryptedcurrentid=SSsFGYpTbFg3phrJfch8PdlP/mHtZtU6uPMU4yzNORE%3d" target="_blank">David Knipe</a> gave an overview of <a title="EPiServer MobileCenter" href="http://world.episerver.com/Articles/Items/EPiServer-MobileCenter---Our-First-iPhone-App-for-Web-Marketers-and-Editors/" target="_blank">EPiServer Mobile Center</a> and explained how easy it is to push your own Gadget functionality through onto iOS devices.
 
 and finally I hosted a informal chat entitled &#8216;Developing with EPiServer&#8217;, where everybody got involved, shared opinions and insights, and collectively we gathered some interesting feedback (which I&#8217;ll be passing onto EPiServer).
 

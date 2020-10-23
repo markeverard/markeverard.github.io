@@ -1,13 +1,10 @@
 ---
-id: 331
 title: Using NuGet for EPiServer third-party libraries
 date: 2010-11-04T13:37:17+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=331
 permalink: /2010/11/04/using-nuget-for-episerver-third-party-libraries/
 dsq_thread_id:
-  - "1073095627"
   - "1073095627"
 categories:
   - Episerver
@@ -16,14 +13,14 @@ categories:
 
 This can be a real time saver over installing a library manually where you&#8217;d have toÂ download the library, unzip it, copy it to your solution, add reference in Visual Studio, and then possibly update the configuration. NuGet offers a better way&#8230;.
 
-EPiServer developers already have a package manager of sorts viaÂ Â <a title="EPiServer Deployment Center" href="http://world.episerver.com/Documentation/Items/Tech-Notes/EPiServer-CMS-5/EPiServer-CMS-5-R2-SP1/EPiServer-CMS-Installation-and-Deployment-System-Overview/#EPiServerDeploymentCenter" target="_blank">EPiServer&#8217;s own Deployment Center</a> &#8211; which allows you to deploy pre-made .epimodule or .zip packages to existing sites. This is actually a similar concept to NuGet &#8211; but is implemented against IIS sites rather than integrated directly with Visual Studio, and to be honest not many developers go as far as to create deployment modules for their EPiServer contributions.
+EPiServer developers already have a package manager of sorts via <a title="EPiServer Deployment Center" href="http://world.episerver.com/Documentation/Items/Tech-Notes/EPiServer-CMS-5/EPiServer-CMS-5-R2-SP1/EPiServer-CMS-Installation-and-Deployment-System-Overview/#EPiServerDeploymentCenter" target="_blank">EPiServer&#8217;s own Deployment Center</a> &#8211; which allows you to deploy pre-made .epimodule or .zip packages to existing sites. This is actually a similar concept to NuGet &#8211; but is implemented against IIS sites rather than integrated directly with Visual Studio, and to be honest not many developers go as far as to create deployment modules for their EPiServer contributions.
 
-For me, the great advantage to NuGet is the ability to browse and search multiple package feeds for the latest modules, and then with a single click have them and their dependencies included in your solution.Â NuGet by default, points to a Microsoft feed (that anybody can contribute packages to), but it can also point to a private feed hosted on a network share or hosted through IIS (using an included Microsoft MVC web application).
+For me, the great advantage to NuGet is the ability to browse and search multiple package feeds for the latest modules, and then with a single click have them and their dependencies included in your solution. NuGet by default, points to a Microsoft feed (that anybody can contribute packages to), but it can also point to a private feed hosted on a network share or hosted through IIS (using an included Microsoft MVC web application).
 
 This means that along with the main Microsoft public feed you could have:
 
-  1. A company feed of approved packages to be used in standard company ASP.NET solutions.
-  2. A public feed of packages specific to a particular product Â (anybody see what I&#8217;m getting at here&#8230;..)
+1. A company feed of approved packages to be used in standard company ASP.NET solutions.
+2. A public feed of packages specific to a particular product Â (anybody see what I&#8217;m getting at here&#8230;..)
 
 So EPiServer, how about setting up your very own NuGet feed? ([It&#8217;s very simple](http://nuget.codeplex.com/wikipage?title=Hosting%20Your%20Own%20Local%20and%20Remote%20NuPack%20Feeds "Hosting your own NuGet feeds")). Along with the EPiServer code section, this would provide a central and consistent way of searching for and installing new EPiServer modules, rather than the increasing fragmented methods at the minute (within <a title="EPiServer World Blogs" href="http://world.episerver.com/blogs" target="_blank">blogs</a>, <a title="EPiCode" href="https://www.coderesort.com/p/epicode/wiki/WikiStart" target="_blank">EPiCode</a> and a growing number of <a title="EPiServer CodePlex projects" href="http://www.codeplex.com/site/search?query=episerver&ac=8" target="_blank">CodePlex projects</a>).
 

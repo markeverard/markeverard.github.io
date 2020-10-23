@@ -1,5 +1,4 @@
 ﻿---
-id: 6014
 title: Successful integrations depend on good information transfer
 date: 2018-03-13T08:56:48+00:00
 author: Mark Everard

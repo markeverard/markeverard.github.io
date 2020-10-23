@@ -19,7 +19,7 @@ The concept, execution and community was superb (see @stack72&#8217;s <a title="
 
 > _&#8220;For the first time in living memory, someone cried because the software we did was so good.&#8221;_
 
-**What better testimonial than this? How many times have you had this reaction whilst working in your day job 😉
+**What better testimonial than this? How many times have you had this reaction whilst working in your day job**
 
 ![GiveCamp UK 2011 - photo by Bert Craven](/assets/uploads/2011/10/6268685214_64dde3976a_z.jpg)
 

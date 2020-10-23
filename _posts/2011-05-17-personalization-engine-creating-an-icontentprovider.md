@@ -1,13 +1,10 @@
 ---
-id: 501
 title: 'Personalization Engine &#8211; Creating an IContentProvider'
 date: 2011-05-17T12:00:28+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=501
 permalink: /2011/05/17/personalization-engine-creating-an-icontentprovider/
 dsq_thread_id:
-  - "1078737652"
   - "1078737652"
 categories:
   - Episerver
@@ -18,7 +15,11 @@ Last week I blogged about the <a title="EPiServer Personalization Engine" href="
 
 This example content provider will provide a list of all child pages that live directly underneath the defined EPiServer start page (not a particularly useful personalized content provider &#8211; but a good example nontheless.)
 
-  1. Create your class and implement the IContentProvider members. The only method we have to provide an implementation for is the GetContent method which returns a collection of PageData objects. <pre class="brush: csharp; title: ; notranslate" title="">public class StartPageChildrenContentProvider : IContentProvider
+1. Create your class and implement the IContentProvider members. The only method we have to provide an implementation for is the GetContent method which returns a collection of PageData objects. 
+m
+
+~~~csharp
+public class StartPageChildrenContentProvider : IContentProvider
 {
     public IEnumerable GetContent(string languageBranch)
     {

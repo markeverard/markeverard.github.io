@@ -11,9 +11,9 @@ categories:
 ---
 This is the fourth post, in a series of five about developing a custom workflow in EPiServer. By now you&#8217;ve probably forgotten the first three.
 
-  *  <a title="Part One: Overview and Requirements" href="/2010/09/29/developing-a-custom-workflow-in-episerver-part-one/" target="_blank">Part One &#8211; Overview and Requirements</a>
-  * <a title="Part Two: Windows Workflow Foundation in EPiServer" href="/2010/09/30/developing-a-custom-workflow-in-episerver-part-two/" target="_blank">Part Two &#8211; Windows Workflow Foundation in EPiServer</a>
-  * <a href="/2010/11/10/developing-a-custom-workflow-in-episerver-part-three/" target="_blank">Part Three &#8211; Designing the Workflow</a>
+  *  <a title="Part One: Overview and Requirements" href="/2010/09/29/developing-a-custom-workflow-in-episerver-part-one/">Part One &#8211; Overview and Requirements</a>
+  * <a title="Part Two: Windows Workflow Foundation in EPiServer" href="/2010/09/30/developing-a-custom-workflow-in-episerver-part-two/">Part Two &#8211; Windows Workflow Foundation in EPiServer</a>
+  * <a href="/2010/11/10/developing-a-custom-workflow-in-episerver-part-three/">Part Three &#8211; Designing the Workflow</a>
   * **Part Four &#8211; EPiServer tasks and working with the user interface**
   * Part Five &#8211; Access control and finishing touches
 
@@ -52,7 +52,7 @@ If the AssociatedActivity is not set for a Task, the corresponding workflow inst
 
 Your custom User Control must adhere to the IWorkflowTaskControl interface which contains the following methods ContextData, InvokeEvent, PageHasChanged and the property InvokeButtonText.
 
-  * **ContextData** &#8211; is called when the user control is first loaded and as its name suggest, it is used to pass the &#8216;context&#8217; of the workflow to the control. This obviously depends on the exact functionality defined in your custom workflow and what data you wish to present to the user. An example is presented below, which loads the current task and binds the task subject, description and associated workflow pageLink to controls on the page.
+* **ContextData** &#8211; is called when the user control is first loaded and as its name suggest, it is used to pass the &#8216;context&#8217; of the workflow to the control. This obviously depends on the exact functionality defined in your custom workflow and what data you wish to present to the user. An example is presented below, which loads the current task and binds the task subject, description and associated workflow pageLink to controls on the page.
 
 ~~~csharp
 public void ContextData(Guid workflowInstanceId, int taskId, string eventQualifiedName, PageReference pageLink)
@@ -64,7 +64,7 @@ public void ContextData(Guid workflowInstanceId, int taskId, string eventQualifi
  }
 ~~~
 
-  * **InvokeEvent** &#8211; when your User Control is presented in the Action Window, EPiServer adds two buttons beneath your control. One is a cancel button and the other is a submit button which you can name by overriding the **InvokeButtonText** property. This button also fires an event which you must hook into using the InvokeEvent method. It is in this method that you can put code which can raise events in the workflow. In our case we want to raise one of our custom events that will be handled by an EventDrivenActivity in the workflow. This will kick the workflow into a new state and run any of the StateInitializationActivities that we bound using the designer surface.
+* **InvokeEvent** &#8211; when your User Control is presented in the Action Window, EPiServer adds two buttons beneath your control. One is a cancel button and the other is a submit button which you can name by overriding the **InvokeButtonText** property. This button also fires an event which you must hook into using the InvokeEvent method. It is in this method that you can put code which can raise events in the workflow. In our case we want to raise one of our custom events that will be handled by an EventDrivenActivity in the workflow. This will kick the workflow into a new state and run any of the StateInitializationActivities that we bound using the designer surface.
 
 ~~~csharp
 public bool InvokeEvent(Guid workflowInstanceId, int taskId, string eventQualifiedName)
@@ -88,7 +88,7 @@ public bool InvokeEvent(Guid workflowInstanceId, int taskId, string eventQualifi
 }
 ~~~
 
-  * **PageHasChanged** &#8211; this method will be called prior to **InvokeEvent** if the page viewed in the edit tab has changed since **ContextData** was invoked. Here you can handle what should happen in this scenario, for example whether you want the Workflow to act against the new page shown in the edit window.
+* **PageHasChanged** &#8211; this method will be called prior to **InvokeEvent** if the page viewed in the edit tab has changed since **ContextData** was invoked. Here you can handle what should happen in this scenario, for example whether you want the Workflow to act against the new page shown in the edit window.
 
 ### Additional User Interface elements
 
