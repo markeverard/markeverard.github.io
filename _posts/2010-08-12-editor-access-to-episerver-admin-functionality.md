@@ -86,7 +86,8 @@ namespace EPiServer.Plugins
 
   * Add new language elements &#8211; all quite straight forward so far, but there is one final hurdle to overcome. The categories.aspx page uses the EPiServer LanguageManager to provide the correct language translation for much of the copy on the page. The LanguageManager calculates the Xpath to the specified language element using the current page&#8217;s url (*only if the path is within the EPiServer Ui). As our path is virtual, these XPath&#8217;s don&#8217;t exist, so we must add them to the ~/lang xml files.
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
+~~~xml
+<&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
 &lt;languages&gt;
    &lt;language name="English" id="en"&gt;
       &lt;categoryadmin&gt;
@@ -97,7 +98,7 @@ namespace EPiServer.Plugins
       &lt;/categoryadmin&gt;
    &lt;/language&gt;
 &lt;/languages&gt;
-</pre>
+~~~
 
   * The proof! This is a relatively simple technique that allows you to add a small amount of flexibility into the EPiServer edit/admin interface.
 
