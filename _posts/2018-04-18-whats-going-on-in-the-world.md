@@ -6,7 +6,7 @@ layout: post
 permalink: /2018/04/18/whats-going-on-in-the-world/
 dsq_thread_id:
   - "6620655210"
-thumbnail: /wp-content/uploads/2018/04/earth-space-1.jpg
+featured-img: /assets/uploads/2018/04/earth-space-1.jpg
 categories:
   - Episerver
 ---
