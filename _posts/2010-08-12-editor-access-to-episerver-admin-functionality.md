@@ -101,4 +101,4 @@ namespace EPiServer.Plugins
 
   * The proof! This is a relatively simple technique that allows you to add a small amount of flexibility into the EPiServer edit/admin interface.
 
-[Categories in Edit mode](/assets/uploads/2010/08/categoryineditmode.gif)
+![Categories in Edit mode](/assets/uploads/2010/08/categoryineditmode.gif)
