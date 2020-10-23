@@ -4,23 +4,21 @@ title: Successful integrations depend on good information transfer
 date: 2018-03-13T08:56:48+00:00
 author: Mark Everard
 layout: post
-guid: https://www.markeverard.com/?p=6014
 permalink: /2018/03/13/successful-integrations-depend-on-good-information-transfer/
 dsq_thread_id:
   - "6586021529"
 categories:
   - Opinion
   - Technology
-tags:
-  - homepage
----
-System integration is often the most challenging aspect of any technical build, both from a development and cost perspective. Joining two systems together requires a solid interface that facilitatesÂ good information transfer, not just between your information systems but also between your technical teams.
 
-#### A SOLID INTERFACE FOR DEVELOPMENT
+---
+System integration is often the most challenging aspect of any technical build, both from a development and cost perspective. Joining two systems together requires a solid interface that facilitates good information transfer, not just between your information systems but also between your technical teams.
+
+## A SOLID INTERFACE FOR DEVELOPMENT
 
 Getting the right information to support accurate and timely development against an API can be difficult.Â I&#8217;ve listed information that I think is important below. You don&#8217;t necessarily need them all, but they will make development progress less troublesome.
 
-###### **Functional review**
+### Functional review
 
 An important point but one that can often get overlooked before starting, especially in a creative environment. Are the API&#8217;s you are consuming fit for the purpose you are intending?
 
@@ -40,7 +38,7 @@ An important point but one that can often get overlooked before starting, especi
 
 &nbsp;
 
-###### **Documentation**
+### Documentation
 
 Is the API &#8216;well-documented&#8217;, either online or in a document? Is it recent or is the information out-of-date?Â Well-documented is subjective but, in my view: in this context it meansÂ at least the following:
 
@@ -53,11 +51,11 @@ Is the API &#8216;well-documented&#8217;, either online or in a document? Is it 
 
 &nbsp;
 
-###### **Point of Contact**
+### Point of Contact
 
 Is there a point of contact for the API? Do you know where or who to turn to if you need any support whilst developing against or operating against an API? For mature platforms this could be a online documentation and a live &#8216;status&#8217; page. For line of business API&#8217;s this might be &#8216;the single tech guy in IT&#8217;.Â Either way you&#8217;ll need to make sure you know how to get help when you need it.
 
-###### Almost standard
+### Almost standard
 
 A lot of the above is now commonplace (thankfully), driven particularly by the standards set by the larger social platforms and the increasing usage of API management platforms (such as [Jitterbit](https://www.jitterbit.com/)) in the enterprise.
 

@@ -1,7 +1,6 @@
 ---
 layout: categories
-title: Category
+title: Categories
 permalink: /category/
-icon: "fa-tags"
 ---
 
