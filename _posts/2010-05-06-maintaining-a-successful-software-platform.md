@@ -1,14 +1,10 @@
 ﻿---
-id: 39
 title: Maintaining a successful software platform
 date: 2010-05-06T21:12:59+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com:/blog/?p=39
 permalink: /2010/05/06/maintaining-a-successful-software-platform/
 dsq_thread_id:
-  - "1122740976"
-  - "1122740976"
   - "1122740976"
 categories:
   - Opinion

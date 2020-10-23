@@ -1,14 +1,10 @@
 ﻿---
-id: 62
 title: Debugging Workflows and HttpContext
 date: 2010-06-01T15:48:37+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com:/blog/?p=62
 permalink: /2010/06/01/debugging-workflows-and-httpcontext/
 dsq_thread_id:
-  - "1078927595"
-  - "1078927595"
   - "1078927595"
 categories:
   - Episerver

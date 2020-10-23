@@ -1,21 +1,10 @@
 ﻿---
-id: 124
 title: Editor access to EPiServer Admin functionality
 date: 2010-08-12T13:11:57+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com:/blog/?p=124
 permalink: /2010/08/12/editor-access-to-episerver-admin-functionality/
-aktt_notify_twitter:
-  - 'yes'
-  - 'yes'
-  - 'yes'
-  - 'yes'
-  - 'yes'
-  - 'yes'
 dsq_thread_id:
-  - "1073095655"
-  - "1073095655"
   - "1073095655"
 categories:
   - Episerver
@@ -33,11 +22,13 @@ Whilst both of the above will allow us to meet our needs, neither are particular
 
 Ideally what we want is a way of using the existing EPiServer functionality and interface but providing access to a specific admin function to a user in a non-Admin role.
 
-### Enter the VirtualPathMappedProvider&#8230;&#8230;
+### Enter the VirtualPathMappedProvider...
 
 The solution below uses the VirtualPathMappedProvider to map an existing admin functionality (.aspx page) to a developer-defined virtual url, which is subjected to different location security configuration. This is made possible by the fact that the EPiServer admin pages (or the ones I&#8217;ve looked at) rely solely on the location path element for their security and do no further on-page access checking (which is as it should be really). Once you&#8217;ve bypassed the first security checkpoint &#8211; you&#8217;ve got a free run.
 
-I&#8217;m going to provide access to the Category administration interface to any user in a newly-created role that I&#8217;ll call CategoryAdmins.Â Category administration is often a function that in my opinion falls more under the remit of an Editor, though that does depend on your EPiServer implementation (as categories can be used for a lot more than just <a title="Category - more than labelling" href="http://labs.episerver.com/en/Blogs/Anders-Hattestad/Dates/2009/3/Category---more-than-labeling/" target="_blank">labelling</a>).
+I&#8217;m going to provide access to the Category administration interface to any user in a newly-created role that I&#8217;ll call CategoryAdmins. 
+
+Category administration is often a function that in my opinion falls more under the remit of an Editor, though that does depend on your EPiServer implementation (as categories can be used for a lot more than just <a title="Category - more than labelling" href="http://labs.episerver.com/en/Blogs/Anders-Hattestad/Dates/2009/3/Category---more-than-labeling/" target="_blank">labelling</a>).
 
   * Add Mapped links &#8211; create a virtual path mapping in episerver.config (or in web.config pre-CMS 6) which forwards the defined virtual url to the existing categories.aspx page. You will need to provide a mapping for every page that you want to allow access to. Category administration is handled by a single .aspx page.
 
@@ -110,4 +101,4 @@ namespace EPiServer.Plugins
 
   * The proof! This is a relatively simple technique that allows you to add a small amount of flexibility into the EPiServer edit/admin interface.
 
-[<img class="aligncenter size-full wp-image-135" title="Edit Categories in Edit Mode" src="/assets/uploads/2010/08/categoryineditmode.gif" alt="" width="700" height="289" />](/assets/uploads/2010/08/categoryineditmode.gif)
+[Categories in Edit mode](/assets/uploads/2010/08/categoryineditmode.gif)
