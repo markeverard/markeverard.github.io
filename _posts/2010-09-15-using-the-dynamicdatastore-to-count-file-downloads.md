@@ -1,6 +1,6 @@
 ---
 title: Using the DynamicDataStore to count file downloads
-color: rgb(80,140,22)
+color: rgb(0,0,0)
 date: 2010-09-15T20:06:47+00:00
 author: Mark Everard
 layout: post
