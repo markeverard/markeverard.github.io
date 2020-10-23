@@ -8,7 +8,7 @@ guid: http://www.markeverard.com/?p=4811
 permalink: '/2016/05/05/a-development-team-is-more-than-just-developers/'
 dsq_thread_id:
   - "6420563665"
-feature-image: /wp-content/uploads/2017/07/AAEAAQAAAAAAAAP8AAAAJDZiODBmMjA0LTk0ZjctNDBmYy05ODFjLTVjYTM5Njc4YjEzYg.jpg
+feature-img: /wp-content/uploads/2017/07/AAEAAQAAAAAAAAP8AAAAJDZiODBmMjA0LTk0ZjctNDBmYy05ODFjLTVjYTM5Njc4YjEzYg.jpg
 categories:
   - Opinion
   - Technology
