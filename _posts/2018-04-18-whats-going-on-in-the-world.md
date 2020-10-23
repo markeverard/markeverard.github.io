@@ -20,9 +20,7 @@ At the London Meetup last week I announced my attempt to help out and highlight 
 
 Regular curated Episerver news direct to you inbox. My take on whats interesting, valuable, and worth your time to read a little further. I hope you&#8217;ll sign up and find it useful.
 
-<h2 style="color: #c62641;">
-  Interested? Then sign up&#8230;
-</h2>
+##Interested? Then sign up&#8230;
 
 ##### [www.markeverard.com/subscribe](https://www.markeverard.com/subscribe)
 
