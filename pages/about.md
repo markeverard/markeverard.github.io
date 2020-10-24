@@ -13,6 +13,6 @@ I've worked agency and client side, helping colleagues and clients across a dive
 
 I'm an [Episerver Most Valued Professional](https://world.episerver.com/emvp/#emvps) and have a considerable level of product and implementation knowledge built throughout my career.
 
-This site is collection of thoughts and posts that I've written over my  time.
+This site is collection of thoughts and posts that I've written through my  career.
 
 I aspire to write more.
