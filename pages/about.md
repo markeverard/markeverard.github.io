@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-featured-img: "/assets/img/pexels/computer2.webp"
+feature-img: "/assets/img/pexels/computer2.webp"
 ---
 
 ### I'm a PhD physicist turned technologist. 

@@ -3,12 +3,6 @@
 {% if categories.size > 0 %}
 <footer>
   <div class="tag-list">
-    {% if categories.size == 1 %}
-      <div class="meta">Category</div>
-    {% else %}
-      <div class="meta">Categories</div>
-    {% endif %}
-
     {% for category in categories %}
     <a class="button" href="{{ "/category" | relative_url }}#{{ category | cgi_escape }}">
       <p><i class="fa fa-tag fa-fw"></i> {{ category }}</p>
