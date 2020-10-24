@@ -12,7 +12,7 @@ categories:
 ---
 I&#8217;ve released a new version of CHIEF2MORO.SyndicationFeeds. Along with upgrading to EPiServer 9, I&#8217;ve also taken the opportunity to add a few additional features based on some feedback and my own real usage.
 
-##Advanced Filtering
+## Advanced Filtering
 The library now contains the IFeedContentFilterer interface which provides an extension for any custom filtering you may want to achieve (for example &#8211; removing items with empty description&#8217;s). The default implementation filters via the EPiServer FilterForVisitor filters (Published status, Access rights, Has a template), though ignores the HasTemplate rule for blocks, so they can still be exposed. It also filters on EPiServer categories and ContentType, both of which are selectable by an editor on an instance of the Feed PageType.
 
 ## Changing each Item&#8217;s summary in the feed.
