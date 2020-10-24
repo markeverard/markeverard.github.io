@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+featured-img: /assets/img/pexels/computer2.webp
 color: rgb(0,0,0)
 ---
 

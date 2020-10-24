@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: Categories
-color: rgb(0,0,0)
+featured-img: /assets/img/pexels/computer.jpeg
 permalink: /category/
 ---
 
