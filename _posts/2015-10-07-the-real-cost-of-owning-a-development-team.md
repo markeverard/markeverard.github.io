@@ -7,7 +7,7 @@ layout: post
 permalink: /2015/10/07/the-real-cost-of-owning-a-development-team/
 dsq_thread_id:
   - "4200690313"
-featured-img: /assets/uploads/2015/10/dev-team.jpg
+feature-img: /assets/uploads/2015/10/dev-team.jpg
 categories:
   - Opinion
   - Technology
