@@ -1,10 +1,9 @@
 ---
-id: 4161
 title: Helping EPiServer editors Find unused content
 date: 2015-03-16T10:00:28+00:00
+color: rgb(0,0,0)
 author: Mark Everard
 layout: post
-guid: http://markeverardcom.azurewebsites.net/?p=4161
 permalink: /2015/03/16/helping-episerver-editors-find-unused-content/
 dsq_thread_id:
   - "3598119848"
@@ -27,30 +26,22 @@ This got me thinking. There must be a better and easier way than trawling throug
 
 ## Content reporting using a slice
 
-<img class=" wp-image-4562 size-full alignright" style="margin-left: 20px;" src="http://www.markeverard.com/wp-content/uploads/2015/03/usused-content-slice1.png" alt="" width="307" height="188" srcset="http://www.markeverard.com/wp-content/uploads/2015/03/usused-content-slice1-300x184.png 300w, http://www.markeverard.com/wp-content/uploads/2015/03/usused-content-slice1.png 307w" sizes="(max-width: 307px) 100vw, 307px" /> EPiServer recently reintroduced <a title="Re-introducing PowerSlice for EPiServer CMS" href="http://world.episerver.com/articles/items/re-introducing-powerslice-for-episerver-cms/" target="_blank">PowerSlice</a> as a &#8216;supported&#8217; add-on. PowerSlice uses <a title="EPiServer Find. Advanced Search Made Easy" href="http://find.episerver.com/" target="_blank">EPiServer Find</a> to give editors a view of content which goes beyond the traditional hierarchical structure. It allows developers to very easily &#8216;slice up&#8217; content in any number of ways.
+![Unused content](/assets/uploads/2015/03/usused-content-slice1.png)
 
-Whilst thinking about the best way to implement a feature for editors to report on unused content, it dawned on me that creating a slice for &#8216;unused content&#8217; would be incredibly easy<img src="http://www.markeverard.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> 
+EPiServer recently reintroduced <a title="Re-introducing PowerSlice for EPiServer CMS" href="http://world.episerver.com/articles/items/re-introducing-powerslice-for-episerver-cms/" target="_blank">PowerSlice</a> as a &#8216;supported&#8217; add-on. PowerSlice uses <a title="EPiServer Find. Advanced Search Made Easy" href="http://find.episerver.com/" target="_blank">EPiServer Find</a> to give editors a view of content which goes beyond the traditional hierarchical structure. It allows developers to very easily &#8216;slice up&#8217; content in any number of ways.
 
-  * PowerSlice already has a well-thought out <a title="PowerSlice demo video on YouTube" href="https://www.youtube.com/watch?v=vaGZGpQB394" target="_blank">user interface</a>
-  * PowerSlice allows editors to very quickly jump to managing content using the standard EPiServer interface / good for if you want to find and then delete content
+Whilst thinking about the best way to implement a feature for editors to report on unused content, it dawned on me that creating a slice for &#8216;unused content&#8217; would be incredibly easy
+
+* PowerSlice already has a well-thought out <a title="PowerSlice demo video on YouTube" href="https://www.youtube.com/watch?v=vaGZGpQB394" target="_blank">user interface</a>
+* PowerSlice allows editors to very quickly jump to managing content using the standard EPiServer interface / good for if you want to find and then delete content
 
 I&#8217;ve put together two slices, to help editors find unreferenced blocks and media, using standard methods from the EPiServer <a title="EPiServer IContentRepository SDK" href="http://world.episerver.com/documentation/Class-library/?documentId=cms/7/7df6647c-0343-7aee-b8a4-36ee761ae397" target="_blank">IContentRepository</a> interface.
 
-#### Unused Blocks Slice
+###Unused Blocks Slice
+View the code on <a href="https://gist.github.com/markeverard/84754f0c64e18d6bd238">Gist</a>.
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/markeverard/84754f0c64e18d6bd238">Gist</a>.
-  </noscript>
-</div>
-
-#### Unused Media Slice
-
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/markeverard/7605620426bbb9599a73">Gist</a>.
-  </noscript>
-</div>
+###Unused Media Slice
+View the code on <a href="https://gist.github.com/markeverard/7605620426bbb9599a73">Gist</a>.
 
 These slices and PowerSlice were such a good solution that I&#8217;d argue that PowerSlice should be bundled out of the box with a Find install. It could perhaps form the basis of a new and more flexible content reporting function? Reporting is something that is in need of a little love in EPiServer 7/8.
 

@@ -1,10 +1,9 @@
 ---
-id: 4221
 title: Confimed talks for the London Developer Meetup
 date: 2015-05-27T15:06:21+00:00
 author: Mark Everard
 layout: post
-guid: http://markeverardcom.azurewebsites.net/?p=4221
+color: rgb(0,0,0)
 permalink: /2015/05/27/confimed-talks-for-the-london-developer-meetup/
 dsq_thread_id:
   - "3798147113"
