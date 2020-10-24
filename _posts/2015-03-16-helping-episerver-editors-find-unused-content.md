@@ -37,10 +37,10 @@ Whilst thinking about the best way to implement a feature for editors to report 
 
 I&#8217;ve put together two slices, to help editors find unreferenced blocks and media, using standard methods from the EPiServer <a title="EPiServer IContentRepository SDK" href="http://world.episerver.com/documentation/Class-library/?documentId=cms/7/7df6647c-0343-7aee-b8a4-36ee761ae397" target="_blank">IContentRepository</a> interface.
 
-###Unused Blocks Slice
+### Unused Blocks Slice
 View the code on <a href="https://gist.github.com/markeverard/84754f0c64e18d6bd238">Gist</a>.
 
-###Unused Media Slice
+### Unused Media Slice
 View the code on <a href="https://gist.github.com/markeverard/7605620426bbb9599a73">Gist</a>.
 
 These slices and PowerSlice were such a good solution that I&#8217;d argue that PowerSlice should be bundled out of the box with a Find install. It could perhaps form the basis of a new and more flexible content reporting function? Reporting is something that is in need of a little love in EPiServer 7/8.
