@@ -25,4 +25,4 @@ You can sign-up to attend via our <a title="Meetup - London EPiServer Developer 
 ### Sponsor
 Thanks to our sponsor [OPUS recruitment](http://www.opusrecruitmentsolutions.com/) who have organised the space, and also the food and drinks.
 
-![Opus Recruitment](/assets/wp-content/uploads/2015/04/opus.jpg) 
+![Opus Recruitment](/assets/uploads/2015/04/opus.jpg) 
