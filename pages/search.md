@@ -3,6 +3,6 @@ layout: search
 title: Search
 permalink: /search/
 subtitle: "What are you looking for?"
-feature-img: "assets/img/pexels/search-map.jpeg"
+color: rgb(0,0,0)
 icon: "fa-search"
 ---

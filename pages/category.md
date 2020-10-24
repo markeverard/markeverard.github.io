@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: Categories
-color: #990000
+color: rgb(0,0,0)
 permalink: /category/
 ---
 
