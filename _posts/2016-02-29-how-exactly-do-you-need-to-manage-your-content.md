@@ -16,7 +16,6 @@ categories:
 Detailed content management requirements are often overlooked in the design and build of a content managed website. This can result in an implementation that lacks flexibility and incurs higher costs over its lifetime.
 
 ## Dual purpose
-
 Web Content Management (WCM/CMS) implementations deliver two key capabilities for an organisation:
 
 1. A website, perhaps with a new or updated design or brand.
@@ -27,7 +26,6 @@ To achieve the best implementation outcome, it is important start your project w
 Whether your CMS is effective is rarely immediately apparent, instead it will emerge over time through your content team&#8217;s ability to operate autonomously and a reduction in future development need and cost.
 
 ## A CMS is for life, not just for launch
-
 Even after a successful implementation, it is still easy to overlook your content management requirements. Marketing and campaign-led activity often have bespoke visual needs which can challenge your existing CMS design and content flexibility. They also often come with fixed deadlines and limited opportunity to fully assess the expected campaign content usage and lifespan.
 
 The default position may be to &#8216;content manage all the things&#8217;, but do you really need to?
@@ -35,7 +33,6 @@ The default position may be to &#8216;content manage all the things&#8217;, but 
 It is all to easy to build up technical debt within your implementation by designing bespoke types that are so specialised they offer little or no opportunity for reuse. This feature bloat not only increases the size of your code-base, making the landscape more complex for your technical teams. It also makes the system more complex for editorial teams as they have to navigate additional content types. If you have many content types in your CMS that are only used in a few places then you may already be suffering.
 
 ## Don&#8217;t waste time (or money)
-
 To keep on the right track, you should always have your content editing team as a key stakeholder in any website or CMS development. After all, they are the team that will be using any functionality and be responsible for publishing campaign content / functionality on your website through your CMS. It is only sensible that their feedback is taken onboard.
 
 The basics of content reuse requirements aren&#8217;t that difficult:

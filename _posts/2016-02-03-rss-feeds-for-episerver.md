@@ -24,7 +24,7 @@ The default FeedFilterer has also been modified so that a content item has to be
 ### Editor set cache
 Each feed page now includes a new property allowing an editor to cache the feed output for a given number of seconds. This is to help performance for those feed pages on sites with a large amount of content.
 
-### Validation
+## Validation
 I made some minor amends to help the feeds to validate, and made sure I correctly understood the [RSS](http://cyber.law.harvard.edu/rss/rss.html) / ATOM specification in respect of [LastUpdated and Publish dates](https://msdn.microsoft.com/en-us/library/system.servicemodel.syndication.syndicationitem.lastupdatedtime%28v=vs.110%29.aspx)
 
 ## It’s on Nuget
