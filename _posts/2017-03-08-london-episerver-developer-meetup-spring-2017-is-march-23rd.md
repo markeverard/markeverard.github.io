@@ -7,6 +7,7 @@ color: rgb(0,0,0)
 permalink: /2017/03/08/london-episerver-developer-meetup-spring-2017-is-march-23rd/
 dsq_thread_id:
   - "5613243782"
+hide-warning: true
 categories:
   - Episerver
 ---
