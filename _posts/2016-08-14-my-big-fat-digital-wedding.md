@@ -1,7 +1,7 @@
 ﻿---
 title: My big fat digital wedding
 date: 2016-08-14T09:52:36+00:00
-author: Mark Everard
+author: markeverard
 layout: post
 permalink: /2016/08/14/my-big-fat-digital-wedding/
 color: rgb(0,0,0)
