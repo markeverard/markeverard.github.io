@@ -44,6 +44,11 @@ layout: default
 <!-- To change color of links in the page -->
 <style>
 
+  {% if page.color %}
+  header#main { background-color: {{ page.color }} !important; }
+  {% endif %}
+
+
   header#main {
     background-repeat:no-repeat;
   {% if page.feature-img %} background-image: url('{{ page.feature-img | relative_url }}');
