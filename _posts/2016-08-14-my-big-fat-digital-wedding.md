@@ -30,7 +30,7 @@ We started by mapping a full communication journey for our guests from the initi
 
 By far the most useful aspect (as anybody that&#8217;s run a digital marketing campaign will tell you) is the subtle invasion of privacy that&#8217;s called tracking. We could see who had opened our emails, who had clicked through on which links and most importantly who hadn&#8217;t. Useful stuff, especially when you can see who responds quickest, who clicks on the link about cake the quickest and who only ever thought about the wedding gift the day before the wedding (come on, we&#8217;ve all been there), it&#8217;s just that I&#8217;ve now got proof.
 
-It was also incredibly useful to allow further segmentation and targeted follow-up to those that needed gentle reminders about dietary requirements! People do need follow ups! Doing this online throughÂ <a href="http://mailchimp.com/" target="_blank" rel="nofollow noopener noreferrer">MailChimp</a>Â made it extremely simple to send a reminder to those people who definitely hadn&#8217;t opened and seen our invite!
+It was also incredibly useful to allow further segmentation and targeted follow-up to those that needed gentle reminders about dietary requirements! People do need follow ups! Doing this online through <a href="http://mailchimp.com/" target="_blank" rel="nofollow noopener noreferrer">MailChimp</a> made it extremely simple to send a reminder to those people who definitely hadn&#8217;t opened and seen our invite!
 
 ## Stats a digital marketer could only dream of&#8230;
 Our open rates and click through stats for each mail were extremely high but then we did have a very engaged audience (I&#8217;d have been worried if it was the other way)
