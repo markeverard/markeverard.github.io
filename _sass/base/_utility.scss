@@ -94,3 +94,8 @@ a.button {
 .right {
   float: right;
 }
+
+.warning {
+  border-left: 2px solid darken($warning-color, 20%);
+  background-color: $warning-color;
+}
