@@ -30,7 +30,7 @@ I’ve been playing around with smart home devices (<a href="https://www.tado.co
 
 One of the channels IFTTT offer is called the <a href="https://ifttt.com/maker" target="_blank">Maker</a> channel. This is a user specific channel that will accept http triggers to an endpoint and can also make requests to a specified endpoint. It allows you pass up to 4 data points from a trigger or to an action.
 
-![Publish…… and there was light, and slippers](http://www.markeverard.com/wp-content/uploads/2016/03/publish-lights-on.gif)
+![Publish…… and there was light, and slippers](/assets/uploads/2016/03/publish-lights-on.gif)
   
 *Publish…… and there was light, and slippers*
 
