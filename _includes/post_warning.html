@@ -1,6 +1,7 @@
 {% assign year = include.date | date: '%Y' %}
 {% assign yeardiff = site.time | date: '%Y' | minus: year %}
 
+{{ include.hide-warning }}
 {% if yeardiff > 2 and include.categories contains "Episerver" %}
 <blockquote class="warning"><p>
 Warning. This technical article was first published over 2 years ago and may discuss features and approaches that are no longer relevant for the current version of the platform.</p>
