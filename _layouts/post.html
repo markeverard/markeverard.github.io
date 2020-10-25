@@ -17,6 +17,8 @@ layout: default
   {% if page.bootstrap %}
     <div class="bootstrap-iso">
     {% endif %}
+    
+      {% include post_warning.html date=page.date cateogories=page.categories % }
       {{ content }}
     {% if page.bootstrap %}
     </div>
