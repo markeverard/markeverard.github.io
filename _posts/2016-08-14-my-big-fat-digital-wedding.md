@@ -41,7 +41,7 @@ We treated everybody as individuals but personalised by couple, meaning that we 
 Communication isn&#8217;t one way. You need to capture data from your nearest and dearest about such things as RSVP&#8217;s, menu choices, accommodation etc. We did this all online too. <a href="https://www.google.co.uk/forms/about/" target="_blank" rel="nofollow noopener noreferrer">Google forms</a> allows you to set up very simple data capture web forms that drop their data into <a href="https://www.google.co.uk/sheets/about/" target="_blank" rel="nofollow noopener noreferrer">Google spreadsheet</a>. This allowed us to have a single place of truth about who was coming; with what offspring and what their dietary requirements were. We also could easily share the real-time information directly with our suppliers. Another real time-saver.
 
 ## Digital gifts
-We also went digital with our gift list and signed up for a <a href="http://www.honeyfund.com/" target="_blank" rel="nofollow noopener noreferrer">HoneyFund</a> account. This allowed us to list a number of gifts / adventures for our honeymoon and for people to buy them online and for the virtual gifts / money to be delivered direct to our <a href="https://www.paypal.com/gb/webapps/mpp/merchant" target="_blank" rel="nofollow noopener noreferrer">PayPal</a>account. PayPal do take a small percentage which did grate a little, but for the ease of collection it was just about worth it.
+We also went digital with our gift list and signed up for a <a href="http://www.honeyfund.com/" target="_blank" rel="nofollow noopener noreferrer">HoneyFund</a> account. This allowed us to list a number of gifts / adventures for our honeymoon and for people to buy them online and for the virtual gifts / money to be delivered direct to our <a href="https://www.paypal.com/gb/webapps/mpp/merchant" target="_blank" rel="nofollow noopener noreferrer">PayPal</a> account. PayPal do take a small percentage which did grate a little, but for the ease of collection it was just about worth it.
 
 ## Shared photos
 We sent out a <a href="https://www.dropbox.com/home" target="_blank" rel="nofollow noopener noreferrer">Dropbox</a> link which allowed people to share their digital photos directly with us after the ceremony.
@@ -58,4 +58,4 @@ Hey, you know maybe thats not a bad idea&#8230;...
 
 * * *
 
-> This post was first published on LinkedIn Pulse on 14th July 2016 â€“<a href="https://www.linkedin.com/pulse/my-big-fat-digital-wedding-mark-everard" target="_blank" rel="noopener noreferrer">My Big Fat Digital Wedding</a>
+> This post was first published on LinkedIn Pulse on 14th July 2016 <a href="https://www.linkedin.com/pulse/my-big-fat-digital-wedding-mark-everard" target="_blank" rel="noopener noreferrer">My Big Fat Digital Wedding</a>
