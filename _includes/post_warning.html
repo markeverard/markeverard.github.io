@@ -2,7 +2,6 @@
 {% assign yeardiff = site.time | date: '%Y' | minus: year %}
 
 {% assign hide = include.hide-warning | default: false %}
-{{ hide }}
 
 {% if yeardiff > 2 and hide == false and include.categories contains "Episerver" %}
 <blockquote class="warning"><p>

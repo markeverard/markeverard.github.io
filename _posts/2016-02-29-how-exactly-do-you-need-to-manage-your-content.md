@@ -7,6 +7,7 @@ layout: post
 permalink: /2016/02/29/how-exactly-do-you-need-to-manage-your-content/
 dsq_thread_id:
   - "4619975353"
+hide-warning: true
 categories:
   - Digital
   - Episerver
