@@ -1,6 +1,9 @@
 {% assign categories = include.categories %}
-{% assign date = include.date %}
+{% assign year = include.date | date: '%Y' %}
+
+
+{{ site.time | date: '%Y' | minus: year }}
 
 <blockquote class="warn">
-Warning. This technical article was first published over 2 years ago and may discuss features and approaches that are no longer relevant for the current version of the platform.
+<p>Warning. This technical article was first published over 2 years ago and may discuss features and approaches that are no longer relevant for the current version of the platform.</p>
 </blockquote>
