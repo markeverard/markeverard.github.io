@@ -7,12 +7,12 @@ feature-img: "/assets/img/pexels/computer2.webp"
 
 ### I'm a PhD physicist turned technologist. 
 
-Over the past 20 years, I've worked as a developer, architect, team lead and now technology director. I've led, managed and built both small focussed agile teams and large data and technical teams working across the full software delivery lifecycle, in-house and remote.
+Over the past 20 years, I've worked as a Developer, Architect, Team Lead and  Technology Director. I've led, managed and built both small focussed agile teams and large data and technical teams working across the full software delivery lifecycle, in-house and remote.
 
 I've worked agency and client side, helping colleagues and clients across a diverse range of industry sectors meet numerous digital challenges, specifically focusing on web technologies, digital marketing and content management.
 
-I'm an [Episerver Most Valued Professional](https://world.episerver.com/emvp/#emvps) and have a considerable level of product and implementation knowledge built throughout my career.
+I'm an [Episerver Most Valued Professional](https://world.episerver.com/emvp/#emvps) and have an expert level of product and implementation knowledge across the full MarTech stack, CMS, Commerce, Single Customer Views, Marketing Automation, Experimentation and Optimisation, Analytics and Reporting
 
-This site is collection of thoughts and posts that I've written through my  career.
+This site is collection of thoughts and posts that I've written throughout my career
 
 I aspire to write more.
