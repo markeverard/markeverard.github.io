@@ -33,7 +33,7 @@ The following shows the reported problem user journey, where there were concerns
 - User chooses to submit data about an opportunity
 - User is redirected to the next step of the submission form, served from a different page
 - User submits the 2nd page of data
-- etc etc <end of journey>
+- etc etc / end of journey 
 
 ## Can you guess what was happening?
 The POST in step 4. creates a record in the database and then redirects the user to the second step of the form using the newly created record identifier as a key. The output cache kicked in for the GET request when the form was written to the browser; resulting in a html form being written from the cache. This meant the form was always created as below with the first user&#8217;s unique database key rather than the one passed in the querystring.
