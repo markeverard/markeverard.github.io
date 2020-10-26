@@ -1,10 +1,9 @@
 ---
-id: 3692
 title: London EPiServer Developer Meetup Summer 2014
 date: 2014-05-19T08:38:26+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/?p=3692
+color: rgb(0,0,0)
 permalink: /2014/05/19/london-episerver-developer-meetup-summer-2014/
 dsq_thread_id:
   - "2696245805"
