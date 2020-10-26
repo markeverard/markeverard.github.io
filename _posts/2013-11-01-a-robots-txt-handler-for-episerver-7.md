@@ -1,13 +1,11 @@
 ---
-id: 2822
 title: A Robots.txt handler for EPiServer 7
 date: 2013-11-01T11:59:39+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/?p=2822
+color: rhb(0,0,0)
 permalink: /2013/11/01/a-robots-txt-handler-for-episerver-7/
 dsq_thread_id:
-  - "1926515558"
   - "1926515558"
 categories:
   - Episerver
@@ -18,6 +16,6 @@ I asked Dave about his plans for a version compatible with CMS 7 and there is ap
 
 I&#8217;ve upgraded the forked version to work against CMS 7. The main change was to remove an initialisation piece that added an explicit handler for the Robots.txt path through the EPiServer UrlRewriting API (which has been overhauled for CMS 7). The robots.txt content is now served from a standard MVC controller with a route being configured in an EPiServer initialization module. I&#8217;ve also rebuilt the Admin user interface using MVC and explicitly included the views as content within the NuGet package rather than <a title="EPiServer plugins served from a single .dll" href="http://labs.episerver.com/en/Blogs/Johano/Dates/2008/6/EPiServer-PlugIns-in-one-single-dll/" target="_blank">serving them from the .dll</a>. This is just my personal preference. Leveraging NuGet and the simplicity of the solution wins for me! It also means you can change the view look and feel if you so wish.
 
-The source code is available atÂ <https://github.com/markeverard/POSSIBLE.RobotsTxtHandler>
+The source code is available at <https://github.com/markeverard/POSSIBLE.RobotsTxtHandler>
 
-A package (now renamed from EPiRobots) will be available in the EPiServer Nuget Feed (as soon as its been approved) &#8211;Â [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10)Â &#8211; search for POSSIBLE.RobotsTxtHandler
+A package (now renamed from EPiRobots) will be available in the EPiServer Nuget Feed (as soon as its been approved) &#8211; [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10) &#8211; search for POSSIBLE.RobotsTxtHandler

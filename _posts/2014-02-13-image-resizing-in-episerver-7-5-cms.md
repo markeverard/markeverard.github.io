@@ -1,13 +1,11 @@
 ---
-id: 3502
 title: Image resizing in EPiServer 7.5 CMS
 date: 2014-02-13T10:00:34+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/?p=3502
+color: rgb(0,0,0)
 permalink: /2014/02/13/image-resizing-in-episerver-7-5-cms/
 dsq_thread_id:
-  - "2258467161"
   - "2258467161"
 categories:
   - Episerver
@@ -18,9 +16,7 @@ True dynamic scaling, and by that I mean that your http request for an image als
 
 The new media editing interface allows in-line preview of uploaded images via a scaled thumbnail representation of the image. These are created automatically by EPiServer for any ImageData content types that are created.Â This is achieved via a <a title="Image descriptor attribute" href="http://world.episerver.com/Documentation/Items/Developers-Guide/EPiServer-CMS/75/Content/Assets-and-media/Media-types-and-templates/#ImageDescriptor" target="_blank">ImageDescriptor attribute</a> which can be placed on any &#8216;routed&#8217; blob property (i.e those on ImageData content types).
 
-<p style="text-align: center;">
-  <img class="aligncenter  wp-image-3522" alt="Thumbnails in the media edit interface" src="http://www.markeverard.com/wp-content/uploads/2014/02/media-thumbnails.png" width="274" height="284" />
-</p>
+![Thumbnails in the media edit interface](/assets/uploads/2014/02/media-thumbnails.png) 
 
 The **ImageDescriptor** is pretty cool, but not so helpful when you start working with real images with differing aspect ratios.
 
@@ -28,15 +24,15 @@ A simple use case could be that for every uploaded image you want to create a ve
 
 The <a title="Chief2moro.ImageDataExtensions" href="http://nuget.episerver.com/en/OtherPages/Package/?packageId=Chief2moro.ImageDataExtensions" target="_blank">CHIEF2MORO.ImageDataExtensions</a> nuget package I <a title="Validating image dimensions in EPiServer 7.5 CMS" href="http://www.markeverard.com/2014/02/03/validating-image-dimensions-in-episerver-7-5-cms/" target="_blank">blogged</a> about previously also contains a couple of additional attributes to help overcome this limitation. Extend your ImageData content object (ImageFile in Alloy) with a few Blob properties for the different sizes and mark up with the attributes. The <a title="Blob routing in EPiServer 7.5 CMS" href="http://world.episerver.com/Documentation/Items/Developers-Guide/EPiServer-CMS/75/Routing/BLOB-routing/" target="_blank">blob routing</a> feature in EPiServer means that these scaled images are available publically (<imagename>.jpg/image250 and <imagename>.jpg/half). Behind the scenes both of these descriptors use the underlying ThumbnailManager class contained in the EPiServer API.
 
-<pre class="brush: csharp; title: ; notranslate" title="">[ScaffoldColumn(false)]
+~~~csharp
+   [ScaffoldColumn(false)]
    [ImageWidthDescriptor(Width = 250)]
    public virtual Blob image250 { get; set; }
 
    [ScaffoldColumn(false)]
    [ImageScaleDescriptor(Percent = 50)]
    public virtual Blob half { get; set; }
-
-</pre>
+~~~
 
 The **ImageWidthDescriptor** only requires you to specify the scaled width and will calculate the height at content publish time from the originally uploaded image dimensions to ensure that the aspect ratio is maintained (so you get no padding / whitespace)
 

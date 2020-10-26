@@ -20,13 +20,12 @@ The design of the pages and content area to be shared required that we shared on
 
 Also the new Media system in EPiServer 7.5 allows the content feeds to handle and output media items in a simpler way. Its all _IContent_ man!
 
-### Editor functionality
-
+## Editor functionality
 * Editors can create multiple feeds (a feed is a Page Type)
 * Feeds contain a date ordered (most recently published first) list of content items
-  * Editors can specify whether a feed is delivered in RSS or ATOM format
+* Editors can specify whether a feed is delivered in RSS or ATOM format
 * Editors can specify how many items appear in the feed.
-  * Editors have granular control over what content items are shared. They can include any of the following in a single feed. 
+* Editors have granular control over what content items are shared. They can include any of the following in a single feed. 
     1. Descendents of a specified page in the page tree
     2. Child blocks contained within a specified content folder
     3. Child media items within a specified media folder
@@ -36,7 +35,7 @@ Also the new Media system in EPiServer 7.5 allows the content feeds to handle an
 
 ![Rss feed example](/assets/uploads/2014/05/event-feed.jpg)
 
-### Extending and modifying
+## Extending and modifying
 
 There isn&#8217;t much to do as a developer beyond installing the package. Note. I&#8217;ve only tested this against an MVC Alloy solution. It should play nicely with WebForms but I&#8217;ve not tested!
 
@@ -46,16 +45,16 @@ There isn&#8217;t much to do as a developer beyond installing the package. Note.
 
 * You can override the description that is shown along with each item in the feed by providing a method for the SetItemDescription delegate. By default this is of the form &#8216;An src link to content with id = {content.ContentLink.ID} and name = {content.Name}&#8217;
 
-### Other integration considerations
+## Other integration considerations
 
 There is one item not included in the solution which you may need to consider . Whilst the feed presents absolute urls from the feed to pages, blocks and media. Any content within a page or block that contains editor set hyperlinks, such as an XHtml property will most likely contain relative urls. If these are consumed and presented on an external website you&#8217;ll get a serious case of the 404&#8217;s.
 
 You can get around this by rewriting any outbound urls in the content to be absolute. The solution I used was to set up a rule in my favourite tool IIS UrlRewrite. This intecepted all outbound html from a particular path and rewrites all links to be absolute. This isn&#8217;t the most flexible solution as it relies on outbound scanning on specific paths. It may be better to add something into this solution, but this isn&#8217;t something I&#8217;ve looked at yet.
 
-### It&#8217;s on Nuget
+## It&#8217;s on Nuget
 
 The source code is available at <a title="Chief2moro.SyndicationFeeds by markeverard on GitHub" href="https://github.com/markeverard/Chief2moro.SyndicationFeeds" target="_blank">https://github.com/markeverard/Chief2moro.SyndicationFeeds</a> &#8211; I&#8217;m happy to accept Pull requests
 
-A package (currently v1.0.0.1) is (soon to be &#8211; when its approved) available in the EPiServer Nuget Feed &#8211;Â [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10)Â &#8211; search for CHIEF2MORO.SyndicationFeeds
+A package (currently v1.0.0.1) is (soon to be &#8211; when its approved) available in the EPiServer Nuget Feed &#8211; [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10) &#8211; search for CHIEF2MORO.SyndicationFeeds
 
 Happy Feeding!

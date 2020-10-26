@@ -36,7 +36,6 @@ The following shows the reported problem user journey, where there were concerns
 - etc etc <end of journey>
 
 ## Can you guess what was happening?
-
 The POST in step 4. creates a record in the database and then redirects the user to the second step of the form using the newly created record identifier as a key. The output cache kicked in for the GET request when the form was written to the browser; resulting in a html form being written from the cache. This meant the form was always created as below with the first user&#8217;s unique database key rather than the one passed in the querystring.
 
 ~~~
@@ -54,11 +53,9 @@ The following options were available:
 I decided the latter was the most sensible course of action for us as we had a lot of parameters used across the site, and also we currently don&#8217;t need any output cache. In fact, with anything but a very high-load EPiServer site you rarely do. The EPiServer CMS caching framework (which is at a lower database level) ensures a good level of performance. Joel Abrahamsson has written a really useful summary of the <a title="The EPiServer CMS Output Cache Explained " href="http://joelabrahamsson.com/the-episerver-cms-output-cache-explained/" target="_blank">output cache within EPiServer</a> and also the more <a title="How EPiServer CMS caches PageData objects" href="http://joelabrahamsson.com/how-episerver-cms-caches-pagedata-objects/" target="_blank">general caching framework in EPiServer</a> .
 
 ## Top tips / Tip tops for avoiding output cache pain
-
 1. Be very sure that a high-level cache, such as the output cache is what you really need to improve performance.
 2. Record in your development documentation that you are using an output cache and importantly why you are using it, so that fellow developers understand the development constraints.
 3. Modify your test cases to specifically validate functionality that could be impacted by the output cache.
 
 ## TL;DR
-
 Unnecessary performance optimisation caused data integrity issues.

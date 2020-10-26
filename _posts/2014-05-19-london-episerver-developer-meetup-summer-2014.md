@@ -8,7 +8,7 @@ guid: http://www.markeverard.com/?p=3692
 permalink: /2014/05/19/london-episerver-developer-meetup-summer-2014/
 dsq_thread_id:
   - "2696245805"
-  - "2696245805"
+hide-warning: true
 categories:
   - Episerver
 ---
@@ -31,8 +31,8 @@ Intro to the new Visual Studio integration based on NuGet and installing EPiServ
 
 Those details for your diaries.
 
-  * Tues 10th June 2014, 18.00– 20.30ish
-  * Nansen – 109-111 Farringdon Road, London – (<a title="Nansen in London" href="http://www.nansen.se/en/contact-us/london/" target="_blank">directions</a>)
+* Tues 10th June 2014, 18.00– 20.30ish
+* Nansen – 109-111 Farringdon Road, London – (<a title="Nansen in London" href="http://www.nansen.se/en/contact-us/london/" target="_blank">directions</a>)
 
 Looking forward to seeing you there. Please RSVP on our Meetup page
 
