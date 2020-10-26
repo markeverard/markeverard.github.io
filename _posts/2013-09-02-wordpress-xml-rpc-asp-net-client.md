@@ -1,10 +1,9 @@
 ---
-id: 2712
 title: WordPress XML-RPC ASP.NET Client
 date: 2013-09-02T11:00:49+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/?p=2712
+color: rgb(0,0,0)
 permalink: /2013/09/02/wordpress-xml-rpc-asp-net-client/
 dsq_thread_id:
   - "1688439127"
@@ -22,11 +21,11 @@ So I&#8217;ve started putting one together and put the code on <a title="POSSIBL
 
 So far I&#8217;ve focused only on the read operations, as this suited my original goal of content export. Expanding to cover all of the available methods, including write and delete operations will be straightforward. I&#8217;m more than happy to take pull requests 🙂
 
-### Usage
+## Usage
+The WordPress XML-RPC feed by default lives in the root of your WordPress application (/xmlrpc.php), and so at a basic level all you need to provide to download content is a WordPress username / password and the domain that your WordPress instance lives on.
 
-The WordPress XML-RPC feed by default lives in the root of your WordPress application (<tt></tt>/xmlrpc.php), and so at a basic level all you need to provide to download content is a WordPress username / password and the domain that your WordPress instance lives on.
-
-<pre class="brush: csharp; title: ; notranslate" title="">const string baseUrl = "http://www.wordpress.com/";
+~~~csharp
+const string baseUrl = "http://www.wordpress.com/";
 const string username = "xxx";
 const string password = "xxx";
 
@@ -36,23 +35,22 @@ using (var client = new WordPressXmlRpcClient(baseUrl, username, password))
      var post = client.GetPost(postId);
      //etc
 }
+~~~
 
-</pre>
-
-### Current API coverage (as of Nuget package 0.5)
+## Current API coverage (as of Nuget package 0.5)
 
 The following <a title="XML-RPC WordPress API" href="http://codex.wordpress.org/XML-RPC_WordPress_API" target="_blank">methods</a> are supported.
 
-  * wp.getPost
-  * wp.getPosts
-  * wp.getMediaItem
-  * wp.getMediaLibrary
-  * wp.getTaxonomy
-  * wp.getTaxonomies
-  * wp.getTerm
-  * wp.getTerms
-  * wp.getUser
-  * wp.getUsers
-  * wp.getComment
-  * wp.getComments
-  * wp.getCommentCount
+* wp.getPost
+* wp.getPosts
+* wp.getMediaItem
+* wp.getMediaLibrary
+* wp.getTaxonomy
+* wp.getTaxonomies
+* wp.getTerm
+* wp.getTerms
+* wp.getUser
+* wp.getUsers
+* wp.getComment
+* wp.getComments
+* wp.getCommentCount

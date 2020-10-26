@@ -25,7 +25,7 @@ An important point but one that can often get overlooked before starting, especi
 * **Does the API offer performance and an SLA that is appropriate for your usage?** There&#8217;s no point building a super fast application that is dependent on a slow and fragile API. You are only as strong as your weakest link.
 
 ## Documentation
-Is the API &#8216;well-documented&#8217;, either online or in a document? Is it recent or is the information out-of-date?Â Well-documented is subjective but, in my view: in this context it meansÂ at least the following:
+Is the API &#8216;well-documented&#8217;, either online or in a document? Is it recent or is the information out-of-date? Well-documented is subjective but, in my view: in this context it means at least the following:
 
 * **Protocol / Language** &#8211; what is the protocol you should use to communicate with the API (HTTP etc) and what is the data format / language you should use to communicate ( SOAP, REST etc)?
 * **Endpoints** &#8211; where does the API live? Are there separate test and live systems? Are the use cases for each system explained? Are the data control policies for each environment explained &#8211; this is very important for API&#8217;s into communication systems. You don&#8217;t want your test system contacting real users. Make sure you know which system should perform the control.
