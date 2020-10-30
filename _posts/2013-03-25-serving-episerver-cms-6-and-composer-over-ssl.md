@@ -19,7 +19,7 @@ Things can get a lot more complicated with a load balanced physical server set-u
 ## Composer over SSL
 Lets talk through the following scenario. You have a single front end server, which has an SSL certificate installed directly onto it, and so it listens and responds to requests over port 80 and port 443. You want to force all editing and interaction with EPiServer interfaces to occur over a secure channel. Oh and your editors love creating flexible layouts so you also have Composer installed.
 
-![EPiServerSSL-single](/assets/uploads/2013/03/EPiServerSSL-songle.png)
+![EPiServerSSL-single](/assets/uploads/2013/03/EPiServerSSL-single.png)
 
 Composer adds complication due to the fact that it offers editors the ability to directly edit page content through the view url. For example &#8211; when using Composer edit on page mode &#8211; you&#8217;ll see a URL with the following format in your browser address bar.
 
