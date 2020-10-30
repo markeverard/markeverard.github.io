@@ -1,5 +1,4 @@
 ---
-id: 853
 title: Building a Hybrid MVC / WebForms site with EPiServer CMS6R2
 date: 2012-10-17T11:30:47+00:00
 author: Mark Everard
