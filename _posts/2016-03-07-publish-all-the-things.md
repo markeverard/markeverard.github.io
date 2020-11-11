@@ -41,7 +41,7 @@ The code to do this is straightforward. I've published it as a couple of GitHub 
 
 I’m using an Episerver initialisation module to hook a handler for the Content Published event. I’ve also built a simple helper method to call the Maker channel API. To use this you’d just have to add in your own API key that you get when you configure the Maker channel on IFTTT.
 
-- [MakerChannelHookInitialisation](https://gist.github.com/markeverard/7aca9f8d3569f7ccb296
+- [MakerChannelHookInitialisation](https://gist.github.com/markeverard/7aca9f8d3569f7ccb296)
 - [MakerChannelWebHookSender](https://gist.github.com/markeverard/64017b1c3d6e8a8c4488)
 
 
