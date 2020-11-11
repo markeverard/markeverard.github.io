@@ -36,4 +36,13 @@ One of the channels IFTTT offer is called the <a href="https://ifttt.com/maker" 
 
 As I’ve demonstrated <a href="http://www.markeverard.com/2015/11/11/using-webhooks-in-an-episerver-solution/" target="_blank">before</a>, adding webhooks to an existing ASP.NET app is straightforward. I decided I’d hook an Episerver solution up to an IFTTT maker channel, meaning when I clicked the publish button I could make all manner of amazing things happen, like turning my lights on.
 
-The code to do this is straightforward (see below). I’m using an Episerver initialisation module to hook a handler for the Content Published event. I’ve also built a simple helper method to call the Maker channel API. To use this you’d just have to add in your own API key that you get when you configure the Maker channel on IFTTT.
+### Gists
+The code to do this is straightforward. I've published it as a couple of GitHub Gists.
+
+I’m using an Episerver initialisation module to hook a handler for the Content Published event. I’ve also built a simple helper method to call the Maker channel API. To use this you’d just have to add in your own API key that you get when you configure the Maker channel on IFTTT.
+
+- [MakerChannelHookInitialisation](https://gist.github.com/markeverard/7aca9f8d3569f7ccb296
+- [MakerChannelWebHookSender](https://gist.github.com/markeverard/64017b1c3d6e8a8c4488)
+
+
+
