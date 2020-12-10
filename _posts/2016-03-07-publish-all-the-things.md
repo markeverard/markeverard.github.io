@@ -1,4 +1,4 @@
----
+﻿---
 title: Publish all the things!
 date: 2016-03-07T11:00:01+00:00
 author: Mark Everard

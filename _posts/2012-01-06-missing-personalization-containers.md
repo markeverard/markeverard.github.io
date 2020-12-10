@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 673
 title: Missing Personalization Containers
 date: 2012-01-06T19:00:36+00:00
@@ -21,7 +21,7 @@ This function allows an editor to create a Composer area that will display a uni
 After upgrading a few sites from CMS6 to CMS6R2, if you don&#8217;t check the option to import PageTypes during the upgrade process (which if you&#8217;re using PageTypeBuilder you might think you can skip) thenÂ the Personalization container isn&#8217;t created, and you&#8217;ll be missing this piece of functionality.
 
 <p style="text-align: center;">
-  <a href="http://markeverard.azurewebsites.net/wp-content/uploads/2012/01/personalizationcontainer11.png"><img class="aligncenter wp-image-681 size-full" title="personalization container" src="http://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11.png" alt="personalization container" width="650" height="388" srcset="https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11.png 650w, https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11-300x179.png 300w, https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11-580x346.png 580w, https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11-320x191.png 320w" sizes="(max-width: 650px) 100vw, 650px" /></a>
+  <a href="/assets/uploads/2012/01/personalizationcontainer11.png"><img class="aligncenter wp-image-681 size-full" title="personalization container" src="http://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11.png" alt="personalization container" width="650" height="388" srcset="https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11.png 650w, https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11-300x179.png 300w, https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11-580x346.png 580w, https://www.markeverard.com/wp-content/uploads/2012/01/personalizationcontainer11-320x191.png 320w" sizes="(max-width: 650px) 100vw, 650px" /></a>
 </p>
 
 The easiest way to re-create this function is to export the composer PageType information from a &#8216;fresh&#8217; install of the Composer / R2 Alloy Tech site, and then import this into your site.

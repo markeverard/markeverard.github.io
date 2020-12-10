@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 1092
 title: Using MiniProfiler with EPiServer CMS7
 date: 2013-03-14T12:01:18+00:00
@@ -35,7 +35,7 @@ I&#8217;ve released a Nuget package that contains 95% of the code you need to se
 }
 </pre>
 
-  * Container initialisation &#8211; the ProfiledContentRepositoryÂ instance is injected into the <a title="EPiServer 7 IoC setup" href="http://www.popkram.com/blog/2012/06/episerver-7-preview-container-support/" target="_blank">EPiServer IoC container via an Initialisation module</a> and then used as the default implementation for all content retrieval
+  * Container initialisation &#8211; the ProfiledContentRepository instance is injected into the <a title="EPiServer 7 IoC setup" href="http://www.popkram.com/blog/2012/06/episerver-7-preview-container-support/" target="_blank">EPiServer IoC container via an Initialisation module</a> and then used as the default implementation for all content retrieval
   * Global application event hooks &#8211; MiniProfiler is started and stopped on each Http Request by registering against global application begin and end requests events (performed via the init method of an HttpModule).
   * Overridable display logic &#8211; You can choose any arbitrary logic to decide how and whether to show the MiniProfiler output to a site visitor. Usually you&#8217;d do this via the incoming request IP address or by checking for the presence of a specific Http header. By default the Nuget package will show the output to any Http request from an authenticated user matching the WebAdmin / Administrator roles. This behaviour can be modified by amending theÂ DisplayProfilerHandler.ShouldShow and the DisplayProfileHandler.ShowToUser delegates which you&#8217;d likely do on application start up or in an initialisation module. As an example &#8211; the following will set the module to only display to me (username mark.everard) when I&#8217;m visiting from a specific IP address.
 

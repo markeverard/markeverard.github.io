@@ -1,4 +1,4 @@
----
+ï»¿---
 title: Validating image dimensions in EPiServer 7.5 CMS
 date: 2014-02-03T11:00:29+00:00
 author: Mark Everard
@@ -39,6 +39,6 @@ You can specify a height and or a width in pixels. Currently you can only apply 
 
 ![Image Validation](/assets/uploads/2014/01/imagevalidation.png)
 
-The source code is available atÂ <a title="Chief2moro ImageDataExtensions on GitHub" href="https://github.com/markeverard/Chief2moro.ImageDataExtensions" target="_blank">https://github.com/markeverard/Chief2moro.ImageDataExtensions</a>
+The source code is available at <a title="Chief2moro ImageDataExtensions on GitHub" href="https://github.com/markeverard/Chief2moro.ImageDataExtensions" target="_blank">https://github.com/markeverard/Chief2moro.ImageDataExtensions</a>
 
 A package containing this validation attribute, along with some other image related goodies that I&#8217;ll blog about soon, is available in the EPiServer Nuget Feed &#8211; [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10) &#8211; search for CHIEF2MORO.ImageDataExtensions

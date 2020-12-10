@@ -1,4 +1,4 @@
----
+ï»¿---
 title: POSSIBLE.RobotsTxtHandler for EPiServer 7.5
 date: 2014-01-30T21:17:34+00:00
 author: Mark Everard
@@ -17,4 +17,4 @@ My generous ex-colleague Marcin (<a title="wma83 on github" href="https://github
 
 Its on the Nuget feed already &#8211; [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10) &#8211; search for POSSIBLE.RobotsTxtHandler version 2.0.1
 
-The source code is available atÂ <https://github.com/markeverard/POSSIBLE.RobotsTxtHandler>
+The source code is available at <https://github.com/markeverard/POSSIBLE.RobotsTxtHandler>

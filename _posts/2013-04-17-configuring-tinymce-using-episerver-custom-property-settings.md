@@ -1,4 +1,4 @@
----
+﻿---
 title: Configuring TinyMCE using EPiServer custom property settings
 date: 2013-04-17T12:19:39+00:00
 author: Mark Everard

@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 581
 title: Creating a custom ModelBinder allowing validation of injected composite models
 date: 2011-07-18T10:00:47+00:00
@@ -21,7 +21,7 @@ One of the features needed when putting together the [Fortune Cookie Personaliza
 
 In the full Personalization Engine domain model, criteria properties belong to IContentModel objects which are used to specify the user interface displayed to an editor to allow them to enter the criteria. Below is an example of a TextBoxCriteriaModel which renders as a textbox in the Admin interface.
 
-[<img class="aligncenter size-full wp-image-586" title="criteriamodel-validation" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/07/criteriamodel-validation.jpg" alt="criteriamodel-validation-interface" width="571" height="294" srcset="https://www.markeverard.com/wp-content/uploads/2011/07/criteriamodel-validation.jpg 571w, https://www.markeverard.com/wp-content/uploads/2011/07/criteriamodel-validation-300x154.jpg 300w, https://www.markeverard.com/wp-content/uploads/2011/07/criteriamodel-validation-320x165.jpg 320w" sizes="(max-width: 571px) 100vw, 571px" />](http://markeverard.azurewebsites.net/wp-content/uploads/2011/07/criteriamodel-validation.jpg)
+[<img class="aligncenter size-full wp-image-586" title="criteriamodel-validation" src="/assets/uploads/2011/07/criteriamodel-validation.jpg" alt="criteriamodel-validation-interface" width="571" height="294" srcset="https://www.markeverard.com/wp-content/uploads/2011/07/criteriamodel-validation.jpg 571w, https://www.markeverard.com/wp-content/uploads/2011/07/criteriamodel-validation-300x154.jpg 300w, https://www.markeverard.com/wp-content/uploads/2011/07/criteriamodel-validation-320x165.jpg 320w" sizes="(max-width: 571px) 100vw, 571px" />](/assets/uploads/2011/07/criteriamodel-validation.jpg)
 
 The string value from this criteria input is posted to the controller action.Â However as the type of IContentModel depends on the value of the ContentProvider dropdown, validation attributes cannot be set directly on the model passed to/from this view as different concrete IContentModel types need to be able to specify different validation rules.
 

@@ -1,4 +1,4 @@
----
+ï»¿---
 title: 'Exception handling for developers &#8211; dealing with day-to-day issues in the workplace'
 date: 2016-05-11T09:49:03+00:00
 author: Mark Everard
@@ -31,7 +31,7 @@ The following are some common best practise programming rules for handling excep
 
 Just as when dealing with code; you can apply the same exception handling rules when dealing with people and teams. In fact, the very best team members I&#8217;ve ever worked with apply these rules without even realising.
 
-**Don't use exceptions as a control flow mechanismÂ** &#8211; rather than resolving issues when they arise, put in place a process to stop issues getting in the way and impacting your work routine.
+**Don't use exceptions as a control flow mechanism** &#8211; rather than resolving issues when they arise, put in place a process to stop issues getting in the way and impacting your work routine.
 
 _Example:_if your colleagues are continually interrupting you to ask the same questions over and over
 

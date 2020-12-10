@@ -1,4 +1,4 @@
----
+﻿---
 title: First London Developer Meetup
 date: 2010-10-26T13:48:26+00:00
 author: Mark Everard

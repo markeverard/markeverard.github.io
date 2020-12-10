@@ -1,4 +1,4 @@
----
+﻿---
 title: Adding GA tracking to Emails delivered using Adobe Campaign
 date: 2015-10-08T10:00:46+00:00
 author: Mark Everard

@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 518
 title: 'Personalization Engine &#8211; ContentProvider Criteria Models'
 date: 2011-06-06T08:00:59+00:00
@@ -16,7 +16,7 @@ This post explains how to build a custom user interface element for the <a title
 
 Each <a title="Creating an IContentProvider" href="http://www.markeverard.com/2011/05/17/personalization-engine-creating-an-icontentprovider/" target="_blank">ContentProvider</a> possesses a Criteria string property which is set by an editor via the PersonalizationEngine UI and can be used within the GetContent method to specify a search term or more granular content method of retrieval. For example, the PagesInCategoryContentProvider uses the Criteria property to specify a drop down list populated withÂ the full list of site categories. The selected value of this drop down list is then used as a criteria within the FindPagesWithCriteria method.
 
-[<img class="aligncenter size-full wp-image-520" title="CriteriaModel" alt="" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/CriteriaModel.jpg" width="464" height="189" srcset="https://www.markeverard.com/wp-content/uploads/2011/06/CriteriaModel.jpg 464w, https://www.markeverard.com/wp-content/uploads/2011/06/CriteriaModel-300x122.jpg 300w, https://www.markeverard.com/wp-content/uploads/2011/06/CriteriaModel-320x130.jpg 320w" sizes="(max-width: 464px) 100vw, 464px" />](http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/CriteriaModel.jpg)
+[<img class="aligncenter size-full wp-image-520" title="CriteriaModel" alt="" src="/assets/uploads/2011/06/CriteriaModel.jpg" width="464" height="189" srcset="https://www.markeverard.com/wp-content/uploads/2011/06/CriteriaModel.jpg 464w, https://www.markeverard.com/wp-content/uploads/2011/06/CriteriaModel-300x122.jpg 300w, https://www.markeverard.com/wp-content/uploads/2011/06/CriteriaModel-320x130.jpg 320w" sizes="(max-width: 464px) 100vw, 464px" />](/assets/uploads/2011/06/CriteriaModel.jpg)
 
 This partial view containing the CriteriaModel interface is loaded by an AJAX call made by the PersonalizationEngine Admin user interface when the ContentProvider dropdown is changed.
 

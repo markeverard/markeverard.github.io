@@ -1,4 +1,4 @@
----
+﻿---
 title: Setting up sitewide replacement languages for EPiServer
 date: 2012-05-22T19:58:00+00:00
 author: Mark Everard

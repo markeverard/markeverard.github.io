@@ -1,4 +1,4 @@
----
+﻿---
 title: Confimed talks for the London Developer Meetup
 date: 2015-05-27T15:06:21+00:00
 author: Mark Everard

@@ -1,4 +1,4 @@
----
+﻿---
 title: How exactly do you need to manage your content?
 color: rgb(0,0,0)
 date: 2016-02-29T11:00:29+00:00

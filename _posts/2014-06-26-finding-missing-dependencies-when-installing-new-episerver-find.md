@@ -1,4 +1,4 @@
----
+﻿---
 title: Find(ing) missing dependencies when installing New EPiServer Find
 date: 2014-06-26T09:54:36+00:00
 author: Mark Everard

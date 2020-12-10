@@ -1,4 +1,4 @@
----
+﻿---
 title: 'GiveCamp UK &#8211; a philanthropic software development microcosm'
 date: 2011-10-26T02:00:39+00:00
 author: Mark Everard

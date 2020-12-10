@@ -1,4 +1,4 @@
----
+﻿---
 title: Chief2moro.ImageDataExtensions now available for EPiServer 9
 date: 2015-10-27T09:00:44+00:00
 author: Mark Everard

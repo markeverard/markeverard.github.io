@@ -1,4 +1,4 @@
----
+﻿---
 title: Output cache, a Christmas cautionary tale
 date: 2013-12-30T17:00:45+00:00
 author: Mark Everard

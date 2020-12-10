@@ -1,4 +1,4 @@
----
+﻿---
 id: 567
 title: Summer 2011 London EPiServer Meetup programme
 date: 2011-07-02T14:37:49+00:00

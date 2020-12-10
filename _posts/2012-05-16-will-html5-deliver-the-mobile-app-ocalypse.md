@@ -1,4 +1,4 @@
----
+﻿---
 title: Will HTML5 deliver the mobile app-ocalypse?
 date: 2012-05-16T16:02:31+00:00
 author: Mark Everard

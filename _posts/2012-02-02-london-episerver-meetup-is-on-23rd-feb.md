@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 693
 title: London EPiServer Meetup is on 23rd Feb
 date: 2012-02-02T16:12:04+00:00
@@ -20,7 +20,7 @@ We&#8217;re back for 2012. We&#8217;ll be having our first 2012 <a title="EPiSer
   * <a title="Joel Abrahamsson" href="http://joelabrahamsson.com/" target="_blank">Joel Abrahamsson</a> &#8211; who should need little introduction. Joel has been instrumental in helping to improve the EPiServer development experience &#8211; through his open source projects such as <a title="Page Type Builder for EPiServer CMS" href="http://pagetypebuilder.codeplex.com/" target="_blank">PageTypeBuilder</a> and <a title="EPiAbstractions" href="http://epiabstractions.codeplex.com/" target="_blank">EPiAbstractions</a> (amongst others). Tonight though Joel will be wearing a different hat as he&#8217;ll be talking about his latest project. <a title="Truffler - an advanced search engine service" href="http://truffler.net/" target="_blank">Truffler.Net</a> &#8211; an advanced search engine and C# API
   * Plus &#8211; some other (to be confirmed) talks from our community members
 
-We will start **presentations promptly at 7pm** soÂ please aim to get there for **6:30pm**
+We will start **presentations promptly at 7pm** so please aim to get there for **6:30pm**
 
 There will be some food and drinks (kindly provided by <a title="EPiServer - software to build your online presence" href="http://www.episerver.com/" target="_blank">EPiServer</a> UK) and plenty of opportunity to network and talk tech.
 

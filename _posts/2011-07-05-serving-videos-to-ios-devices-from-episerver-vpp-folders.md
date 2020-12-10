@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 549
 title: Serving videos to iOS devices from EPiServer VPP folders
 date: 2011-07-05T10:00:39+00:00
@@ -20,9 +20,9 @@ _(Note: If you&#8217;re serving a large amount of media content, then you&#8217;
 
 Obviously the files were identical, so the only difference was in how IIS was serving them. Below are the Http responses (captured using FireBug) for the identical .m4v video files, one served from a VPP, and one from a native path.
 
-[<img class="aligncenter size-full wp-image-551" title="vppm4v" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/vppm4v.gif" alt="" width="374" height="150" />](http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/vppm4v.gif)
+[<img class="aligncenter size-full wp-image-551" title="vppm4v" src="/assets/uploads/2011/06/vppm4v.gif" alt="" width="374" height="150" />](/assets/uploads/2011/06/vppm4v.gif)
 
-[<img class="size-full wp-image-550 aligncenter" title="staticm4v" src="http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/staticm4v.gif" alt="" width="375" height="165" />](http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/staticm4v.gif)
+[<img class="size-full wp-image-550 aligncenter" title="staticm4v" src="/assets/uploads/2011/06/staticm4v.gif" alt="" width="375" height="165" />](/assets/uploads/2011/06/staticm4v.gif)
 
 The significant difference is theÂ **Accept-Ranges : bytes** header. Cool &#8211; so we can just add in this header to our response and we&#8217;re sorted right? **WRONG I&#8217;m afraid!**
 

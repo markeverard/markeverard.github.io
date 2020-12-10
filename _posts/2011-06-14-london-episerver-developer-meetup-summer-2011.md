@@ -1,4 +1,4 @@
----
+﻿---
 id: 541
 title: London EPiServer Developer Meetup Summer 2011
 date: 2011-06-14T00:46:22+00:00
@@ -17,7 +17,7 @@ Our third London EPiServer Developer Meetup will be held on 7th July 2011, and w
 ## Hang on &#8211; let me put that in my diary&#8230;.
 
 <a title="Rufus Leonard" href="http://www.rufusleonard.com/" target="_blank">Rufus Leonard</a> have kindly offered to be our hosts for the evening, they are based in Farringdon.[  
-](http://markeverard.azurewebsites.net/wp-content/uploads/2011/06/web-man.jpg) 
+](/assets/uploads/2011/06/web-man.jpg) 
 
   * **Thurs 7th July 2011, 18.30 –21.00**
   * **<a href="http://www.meetup.com/EPiServer-London/venue/1045334/?eventId=16504364&popup=true" target="blank">Rufus Leonard</a> – The Drill Hall, 57a Farringdon Road, London (<a title="Map and directions" href="http://www.rufusleonard.com/London/" target="_blank">directions here</a>)**

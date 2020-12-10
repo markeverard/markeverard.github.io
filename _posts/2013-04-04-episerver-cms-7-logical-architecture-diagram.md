@@ -1,4 +1,4 @@
----
+﻿---
 title: EPiServer CMS 7 logical architecture diagram
 date: 2013-04-04T10:30:12+00:00
 author: Mark Everard

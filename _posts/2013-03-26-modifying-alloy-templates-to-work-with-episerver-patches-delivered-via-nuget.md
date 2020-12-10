@@ -1,4 +1,4 @@
----
+ï»¿---
 id: 1782
 title: Modifying Alloy Templates to work with EPiServer patches delivered via Nuget.
 date: 2013-03-26T10:30:51+00:00
@@ -21,7 +21,7 @@ However to take maximum advantage of the new delivery model, you have to have yo
 
 The <a title="Alloy Templates for CMS7 " href="http://world.episerver.com/Articles/Items/Alloy-Templates-for-EPiServer-CMS-7/" target="_blank">Alloy templates have a method of chained configuration build tasks</a> to create a series of both generic and site specific configuration build transforms. This results in the configuration files in your site root being overwritten entirely on every build. Unfortunately this doesn&#8217;t work well with Nuget which will apply any package configuration transforms to config files in the site root &#8211; meaning you have to <a title=" Keeping configuration transforms after applying EPiServer 7 Patch " href="http://dhvik.blogspot.co.uk/2013/02/keeping-configuration-transforms-after.html" target="_blank">manually reapply any Nuget changes into the [Configuration]/Common/Web.Common.config file</a>. This doesn&#8217;t cut it for me, so I just removed the build tasks by deleting the Post-Build tasks in the .csproj. I&#8217;m sure there is a way to keep the chained transforms (if you like them) and have them built from the root config files but I&#8217;ll leave that for someone else.
 
-### 2) DeleteÂ [Libraries] folder from the installation
+### 2) Delete [Libraries] folder from the installation
 
 The Alloy solution is set up to reference the EPiServer libraries it needs directly from the [Libraries] folder within the solution. Instead we need to change this to so that the solution uses the EPiServer.CMS.Core and the EPiServer.Framework packages from EPiServer Nuget.
 

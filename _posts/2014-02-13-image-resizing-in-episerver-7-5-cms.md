@@ -1,4 +1,4 @@
----
+﻿---
 title: Image resizing in EPiServer 7.5 CMS
 date: 2014-02-13T10:00:34+00:00
 author: Mark Everard
