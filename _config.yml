@@ -4,12 +4,12 @@ url: "https://www.markeverard.com"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Mark Everard                                    # site's title
-description: "Technology, Opinion and a side of Episerver"      # used by search engines
+description: "Technology, Opinion and a side of Optimizely"      # used by search engines
 avatar: assets/img/me.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: "Technology, Opinion and a side of Episerver" # Change Blog header text
+header_text: "Technology, Opinion and a side of Optimizely" # Change Blog header text
 header_feature_image: assets/img/idea-bg.jpg
 footer_text: 
 
