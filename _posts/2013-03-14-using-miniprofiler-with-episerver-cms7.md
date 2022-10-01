@@ -8,7 +8,6 @@ guid: http://www.markeverard.com/?p=1092
 permalink: /2013/03/14/using-miniprofiler-with-episerver-cms7/
 dsq_thread_id:
   - "1136699406"
-  - "1136699406"
 categories:
   - Episerver
 ---
