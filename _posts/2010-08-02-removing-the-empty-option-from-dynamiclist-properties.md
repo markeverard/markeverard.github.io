@@ -1,14 +1,14 @@
-﻿---
+---
 title: Removing the empty option from DynamicList properties
 date: 2010-08-02T16:44:58+00:00
 author: Mark Everard
-color: rgb(0,0,0)
 layout: post
-permalink: /2010/08/02/removing-the-empty-option-from-dynamiclist-properties/
 dsq_thread_id:
   - "1073095645"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS]
 ---
 Today seems to be one of those days where you pick up really simple bits of information that you&#8217;re surprised you never knew before (see Erik&#8217;s <a title="Send mail in devlopment environments" href="http://antecknat.se/blog/2010/08/01/send-mail-in-development-environment/" target="_blank">post</a> about sending mail in a development environment for example)&#8230;&#8230;
 

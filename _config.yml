@@ -1,45 +1,36 @@
-# SITE CONFIGURATION
-baseurl: "/"
-url: "https://www.markeverard.com"
+title: Mark Everard - Founder @firstthreethings and Optimizely MVP
+description: Blog home of Mark Everard - Founder @firstthreethings and Optimizely MVP. The site is collection of my thoughts and posts from my 20 year martech career. I aspire to write more.
+permalink: ':year/:month/:day/:title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.markeverard.com" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# THEME-SPECIFIC CONFIGURATION
-title: Mark Everard                                    # site's title
-description: "Technology, Opinion and a side of Optimizely"      # used by search engines
-avatar: assets/img/me.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+# Author Settings
+author: Mark Everard # add your name
+author-img: mark-everard.jpg # add your photo
+about-author: Founder <a href="https://www.ftt.ai">@first3things</a>, CTO, Architect, <a href="https://world.optimizely.com/community/omvp/members/">Optimizely MVP</a>.<br>PhD Physicist turned hands on tech leader. Show me the code.
 
-# Header and footer text
-header_text: "Technology, Opinion and a side of Optimizely" # Change Blog header text
-header_feature_image: assets/img/idea-bg.jpg
-footer_text: 
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: markeverard # add your Github handle
+social-linkedin: everard
+social-email: # add your Email address
 
-# Blog
-excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
-post_navigation: true
-color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+# Disqus
+discus-identifier: markeverard # add your discus identifier
 
-# Features
-# More in the _data folder for social icons, share buttons, author and language
-# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: true                                             # Enable if using math markup
-mermaid: true                                           # Enable mermaid-js for sequence and diagrams
-google_analytics: "UA-15914266-1"                                     # Tracking ID, e.g. "UA-000000-01"
-cookie_consent: true                                   # To respect the usage of cookies
-disqus_shortname: markeverard                                   
+# Tracker
+analytics: # Google Analytics
 
-# PAGINATION
-paginate: 5
-paginate_path: "/page:num"
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  - jekyll-feed
 
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
+paginate: 8
+paginate_path: "/page/:num"
 
-# BUILD SETTINGS
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".idea", "vendor/*", "assets/node_modules"]
-
-# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
-remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

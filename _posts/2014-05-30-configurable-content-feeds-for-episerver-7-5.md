@@ -1,14 +1,14 @@
-﻿---
+---
 title: Configurable Content Feeds for EPiServer 7.5
 date: 2014-05-30T13:30:09+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2014/05/30/configurable-content-feeds-for-episerver-7-5/
 dsq_thread_id:
   - "2723836092"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Integration, Open-source]
 ---
 AKA &#8211; another (and better!) RSS/ATOM feed for EPiServer. Developing an RSS feed for an EPiServer CMS system is actually quite a simple task and there is already a good amount of <a title="RSS Feed in EPiServer 7" href="http://world.episerver.com/Forum/Developer-forum/EPiServer-7-CMS/Thread-Container/2013/7/RSS-Feed-in-Episerver-7/" target="_blank">information</a> and community options that you can <a title="OpenWaves.Templates.RssFeed for EPiServer" href="http://www.nuget.org/packages/OpenWaves.Templates.RssFeed/" target="_blank">download</a> and use.
 
@@ -33,13 +33,18 @@ Also the new Media system in EPiServer 7.5 allows the content feeds to handle an
 * Blocks included in a feed are externally routed so their HTML output can be consumed by external systems.
 * Feed pages have a partial renderer meaning they can be dragged into Content Areas to display an RSS feed logo and link.
 
+
 ![Rss feed example](/assets/uploads/2014/05/event-feed.jpg)
+
 
 ## Extending and modifying
 
 There isn&#8217;t much to do as a developer beyond installing the package. Note. I&#8217;ve only tested this against an MVC Alloy solution. It should play nicely with WebForms but I&#8217;ve not tested!
 
-* You may want to change the partial renderer view for a Feed Page. This can be found in /modules/Chief2moro.SyndicationFeeds/Views/Partial.cshtml
+* You may want to change the partial renderer view for a Feed Page. This can be found in 
+~~~
+/modules/Chief2moro.SyndicationFeeds/Views/Partial.cshtml
+~~~
 
 ![Partial exmaple](/assets/uploads/2014/05/event-feed-partial.jpg)
 

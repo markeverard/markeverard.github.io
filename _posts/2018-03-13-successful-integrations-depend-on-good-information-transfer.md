@@ -1,16 +1,15 @@
-﻿---
+---
 title: Successful integrations depend on good information transfer
 date: 2018-03-13T08:56:48+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2018/03/13/successful-integrations-depend-on-good-information-transfer/
+
 dsq_thread_id:
   - "6586021529"
 categories:
   - Opinion
   - Technology
-
+tags: [Opinion, Architecture]
 ---
 System integration is often the most challenging aspect of any technical build, both from a development and cost perspective. Joining two systems together requires a solid interface that facilitates good information transfer, not just between your information systems but also between your technical teams.
 

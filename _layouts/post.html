@@ -1,59 +1,40 @@
 ---
-layout: default
+layout: main
 ---
-<article {% if page.feature-img or page.color %}class="feature-image" {% endif %}>
-  <header id="main" style="">
-    <div class="title-padder">
-      {% if page.hide_title %}
-      <div class="feature-image-padding"></div>
-      {% else %}
-      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
-      {% include post_info.html author=page.author date=page.date %}
-      {% endif %}
-    </div>
-  </header>
-
-  <section class="post-content">
-  {% if page.bootstrap %}
-    <div class="bootstrap-iso">
+<article class="article-page">
+  <div class="page-content">
+    {% if page.img %}
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+        {% if page.fig-caption %}
+          <figcaption>{{page.fig-caption}}</figcaption>
+        {% endif %}
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    {% else %}
     {% endif %}
-    
-      {% include post_warning.html date=page.date categories=page.categories hide-warning=page.hide-warning %}
-      {{ content }}
-    {% if page.bootstrap %}
-    </div>
-  {% endif %}
-  </section>
-
-  <!-- Social media shares -->
-  {% include share_buttons.html %}
-
-   <!-- Tag list -->
-  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-  {% include tags_list.html tags=tag_list %}
-
-</article>
-
-<!-- Disqus -->
-{% if site.disqus_shortname or site.theme_settings.disqus_shortname %}
-{% include disqus.html %}{% endif %}
-
-<!-- Post navigation -->
-{% if site.post_navigation  or site.theme_settings.post_navigation %}
-  {% include post_nav.html %}
-{% endif %}
-
-<!-- To change color of links in the page -->
-<style>
-
-  {% if page.color %}
-  header#main { background-color: {{ page.color }} !important; }
-  {% endif %}
-
-
-  header#main {
-    background-repeat:no-repeat;
-  {% if page.feature-img %} background-image: url('{{ page.feature-img | relative_url }}');
-  {% elsif page.color %}background-image: url('{{ site.color_image | relative_url }}');  {% endif %}
-  }
-</style>
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">{{page.title}}</h1>
+        <div class="page-date"><span>{{page.date | date: '%d %b %Y'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+	   {% include post_warning.html date=page.date categories=page.categories hide-warning=page.hide-warning %}
+	  
+      {{content | markdownify}}
+      <div class="page-footer">
+        <!-- <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div> -->
+        <div class="page-tag">
+          {% for tag in page.tags %}
+            <a href="{{site.baseurl}}/category#{{tag}}" class="tag">&#35; {{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      {% include disqus.html %}
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->

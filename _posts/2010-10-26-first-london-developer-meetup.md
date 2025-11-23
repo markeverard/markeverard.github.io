@@ -1,18 +1,17 @@
-ï»¿---
+---
 title: First London Developer Meetup
 date: 2010-10-26T13:48:26+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2010/10/26/first-london-developer-meetup/
 dsq_thread_id:
   - "1138514921"
 categories:
   - Episerver
+tags: [Episerver-CMS, Community]
 ---
 We held the first London EPiServer Meetup last Thursday, and I&#8217;m delighted to report that I had a great time!
 
-Being serious though, I think I can safely say that everybody who turned up enjoyed themselves and thought the evening worthwhile. The majority (well all actually :)) of the feedback I&#8217;ve received has been positive, and we&#8217;ve definitely gathered enough momentum to make this a regular event on the calendar. Hopefully we&#8217;ll be able to squeeze another meet-up in &#8211; just before Christmas. If anybody is interested in presenting (or if there are any offers to host the next meetup &#8211; then please get in touch with me). I personally found itÂ genuinelyÂ inspiring to be in the company of developers who are so committed andÂ demonstrablyÂ passionate about their craft.
+Being serious though, I think I can safely say that everybody who turned up enjoyed themselves and thought the evening worthwhile. The majority (well all actually :)) of the feedback I&#8217;ve received has been positive, and we&#8217;ve definitely gathered enough momentum to make this a regular event on the calendar. Hopefully we&#8217;ll be able to squeeze another meet-up in &#8211; just before Christmas. If anybody is interested in presenting (or if there are any offers to host the next meetup &#8211; then please get in touch with me). I personally found it  genuinely  inspiring to be in the company of developers who are so committed and  demonstrably  passionate about their craft.
 
 The program for the first meetup included:
 
@@ -24,6 +23,6 @@ The program for the first meetup included:
 
 and finally I hosted a informal chat entitled &#8216;Developing with EPiServer&#8217;, where everybody got involved, shared opinions and insights, and collectively we gathered some interesting feedback (which I&#8217;ll be passing onto EPiServer).
 
-Also &#8211; a big thank youÂ to Fortune Cookie for kindly agreeing to host the event.
+Also &#8211; a big thank you  to Fortune Cookie for kindly agreeing to host the event.
 
 Roll on next time&#8230;..

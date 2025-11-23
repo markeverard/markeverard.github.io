@@ -1,12 +1,11 @@
-﻿---
+---
 title: London EPiServer Developer Meetup Summer 2015
 date: 2015-04-28T09:08:19+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2015/04/28/london-episerver-developer-meetup-summer-2015/
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 I can&#8217;t believe it&#8217;s been almost a year since our last get-together!
 
@@ -18,7 +17,6 @@ We&#8217;re still finalising talks so stay tuned. If you have something you wish
 * Shooting Star pub (basement) &#8211; near Liverpool Street &#8211; http://www.shootingstar-city.co.uk/
 
 ### **RSVP**
-
 
 You can sign-up to attend via our <a title="Meetup - London EPiServer Developer Meetup Summer 2015" href="http://www.meetup.com/EPiServer-London/events/222152680/" target="_blank">Meetup</a> group
 

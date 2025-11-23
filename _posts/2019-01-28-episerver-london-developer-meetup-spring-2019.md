@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Episerver London Developer Meetup &#8211; Spring 2019'
 date: 2019-01-28T00:00:40+00:00
 author: Mark Everard
@@ -9,6 +9,7 @@ dsq_thread_id:
   - null
 categories:
   - Episerver
+  - Community
 ---
 Hot on the heels of Sydney, we&#8217;ve also got a Meetup planned for London. This time, we&#8217;re hosted by Episerver themselves in their shiny new offices in Central London!
 

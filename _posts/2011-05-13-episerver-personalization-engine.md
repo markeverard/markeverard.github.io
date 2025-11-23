@@ -1,15 +1,15 @@
-﻿---
+---
 id: 474
 title: EPiServer Personalization Engine
 date: 2011-05-13T09:10:56+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=474
-permalink: /2011/05/13/episerver-personalization-engine/
 dsq_thread_id:
   - "1073095686"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Personalization, Open-source]
 ---
 By now you&#8217;ll have heard a lot about the new <a title="New features in EPiServer CMS 6 R2" href="http://world.episerver.com/Blogs/Allan-Thran/Dates/2010/11/EPiServer-CMS-6-Release-2/" target="_blank">Personalization / Visitor Group functionality in EPiServer CMS 6 R2</a>, and with good reason. Not only is there an extensible framework for developers to add their own Visitor Group matching criteria, there is a understandable user interface for editors and the whole concept definitely fits in with current expectations of &#8220;today&#8217;s web&#8221;.
 
@@ -37,14 +37,15 @@ The Personalization engine will iterate through all of the Engine Rules that hav
 
 The main public API to consume the output of the Personalization Engine is listed below. This method would be used by any Page / Control that wished to retrieve a list of &#8216;recommended content&#8217;.
 
-<pre class="brush: csharp; title: ; notranslate" title="">public class PersonalizationEngine
+~~~csharp
+public class PersonalizationEngine
 {
-     public IEnumerable&lt;PageData&gt; GetRecommendedContent(IPrincipal principal, string languageBranch, int pageCount)
+     public IEnumerable<PageData> GetRecommendedContent(IPrincipal principal, string languageBranch, int pageCount)
      {
           ....
      }
 }
-</pre>
+~~~
 
 ContentProviders allow fine-grained searching and granular content provision by allowing an editor (or through code) to specify a Critieria which is can be used within the GetContent method. For example &#8211; you could define multiple rules using a PageNameContentProvider which would return Pages with names, containing &#8220;Introduction&#8221;, and then one that would return Pages with names containing &#8220;Alloy&#8221;.
 

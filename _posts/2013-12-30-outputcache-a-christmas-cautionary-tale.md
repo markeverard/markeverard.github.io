@@ -1,15 +1,14 @@
-﻿---
+---
 title: Output cache, a Christmas cautionary tale
 date: 2013-12-30T17:00:45+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2013/12/30/outputcache-a-christmas-cautionary-tale/
 dsq_thread_id:
   - "2082079059"
 categories:
   - Episerver
   - Technology
+tags: [Episerver-CMS, MVC]
 ---
 
 The <a title="Improving Performance with Output Caching (C#)" href="http://www.asp.net/mvc/tutorials/older-versions/controllers-and-routing/improving-performance-with-output-caching-cs" target="_blank">output cache in ASP.NET</a> allows a developer to specify that the ASP.NET runtime cache the output of any dynamically generated page against a given policy (such as a time-based cache for 5 minutes). By default, ASP.NET will execute the code to generate a HTML page each time the page is requested. If you are serving a static brochure-ware type page; that can mean your server repeatedly generating identical output for many different visitors. This is obviously an inefficient use of server resource, and a great case for specifying an output cache.
@@ -20,13 +19,11 @@ Additionally you can provide values for the <a title="OutputCache attributes" hr
 
 The output cache can be set in a variety of ways, such as on a page level as a directive (WebForms) or as a controller attribute (MVC). The specific CMS platform we were using (EPiServer) allowed the output cache to be set on a global level through application configuration.
 
-The output cache is simple to use and can have some big performance benefits, however it can also have some very dire consequences and produce some difficult to diagnose bugs. The following is a cautionary tale of one I just came across 🙁
+The output cache is simple to use and can have some big performance benefits, however it can also have some very dire consequences and produce some difficult to diagnose bugs. The following is a cautionary tale of one I just came across ð
 
 ## The problem
 
 The following shows the reported problem user journey, where there were concerns along that submitted data was being &#8216;mixed up&#8217;.
-
-![OutputCache Journey](http://www.markeverard.com/wp-content/uploads/2013/12/OutputCache-Journey.png)
 
 - User searches for an opportunity
 - User views a details page about an opportunity

@@ -1,18 +1,18 @@
-﻿---
+---
 title: London Episerver Developer Meetup Spring 2016
-color: rgb(0,0,0)
 date: 2016-02-15T08:26:31+00:00
 author: Mark Everard
 layout: post
-permalink: /2016/02/15/london-episerver-developer-meetup-spring-2016/
 dsq_thread_id:
   - "4580499985"
 categories:
   - Episerver
----
-Spring is on its way (think daffodils and lambs) and so is Episerver’s next Developer Meetup.
+tags: [Episerver, Community]
 
-[Zone](https://www.zonedigital.com/uk/) have very kindly offered to host the meetup at their laid back offices in Kings Cross. And Episerver will be supplying the pizzas and beers – after all, it’s not a meetup without it.
+---
+Spring is on its way (think daffodils and lambs) and so is Episerver's next Developer Meetup.
+
+[Zone](https://www.zonedigital.com/uk/) have very kindly offered to host the meetup at their laid back offices in Kings Cross. And Episerver will be supplying the pizzas and beers - after all, it's not a meetup without it.
 
 We have a great line up, covering some exciting new features in Episerver and looking at what it coming too
 
@@ -22,8 +22,7 @@ In the Winter Release 2016, Episerver Forms were officially released! Finally, a
 
 ### Commerce Promotion engine
 
-New UK EMVP, [Jon Jones](http://jondjones.com), will take us through the new promotions engine in Commerce.**  
-** 
+New UK EMVP, [Jon Jones](http://jondjones.com), will take us through the new promotions engine in Commerce.
 
 ### ASP.NET Core 1
 

@@ -1,14 +1,14 @@
-﻿---
+---
 title: Serving EPiServer CMS 6 and Composer over SSL
 date: 2013-03-25T14:45:57+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2013/03/25/serving-episerver-cms-6-and-composer-over-ssl/
 dsq_thread_id:
   - "1160904521"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Composer, Security]
 ---
 It&#8217;s often a requirement for enterprise customers to maximise security on their public-facing websites and to request that access to the EPiServer interface is locked down.
 
@@ -35,7 +35,7 @@ So now we need to
 In this case &#8211; if you set the uiUrl and utilUrl to force a secure channel in configuration, then all will work as expected when editors navigate around the site using the EPiServer context menus and navigation. However, although editors will be pushed to edit over SSL, Composer on-page edit will still be available over http &#8211; but only if they manually change the URL, which most sane people would regard as a &#8216;tiny&#8217; security hole. The suggestion here is to physically <a title="EPiServer Composer configuration" href="http://world.episerver.com/Documentation/Items/Tech-Notes/EPiServer-Composer/EPiServer-Composer-40---Configuration-Settings/" target="_blank">separate your view and edit mode functions</a> into individual installations.
 
 ## Load-Balanced Composer over SSL
-Ok, so lets add another layer of complexity 🙂
+Ok, so lets add another layer of **complexity**.
 
 We now have multiple front end web-servers, sat behind a load-balancer. The SSL certificate is installed on the load-balancer which listens on port 80 and port 443. The load-balancer performs the encryption / decryption and forwards requests on to the front-end webservers over port 80, but with some additional information added to the internal request to let the web-servers know that this was originally a secure request. You want to force all editing and interaction with EPiServer interfaces to occur over a secure channel and yes, we still have Composer.
 
@@ -63,42 +63,42 @@ Our load-balancer offloads all requests and adds an additional http header into 
 The IIS rules we needed to set up Composer and CMS are listed below. <a title="URL Rewrite Module Configuration Reference " href="http://www.iis.net/learn/extensions/url-rewrite-module/url-rewrite-module-configuration-reference" target="_blank">More details on the Xml syntax for IIS Rewrite</a>.
 
 ~~~xml
-&lt;rewrite&gt;
-      &lt;rules&gt;
-        &lt;rule name="ComposerOnPage Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true"&gt;
-          &lt;match url="*" /&gt;
-          &lt;conditions&gt;
-                        &lt;add input="{HTTP_SSL}" pattern="true" negate="true" /&gt;
-                        &lt;add input="{QUERY_STRING}" pattern="*DE_VM=*" /&gt;
-                        &lt;add input="{QUERY_STRING}" pattern="*DE_LNK=*" /&gt;
-                        &lt;add input="{QUERY_STRING}" pattern="*DE_RND=*" /&gt;
-                        &lt;add input="{QUERY_STRING}" pattern="*idkeep=true*" /&gt;
-          &lt;/conditions&gt;
-          &lt;action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" /&gt;
-        &lt;/rule&gt;
-        &lt;rule name="Util Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true"&gt;
-          &lt;match url="util/*" /&gt;
-          &lt;conditions&gt;
-                        &lt;add input="{HTTP_SSL}" pattern="true" negate="true" /&gt;
-          &lt;/conditions&gt;
-          &lt;action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" /&gt;
-        &lt;/rule&gt;
-        &lt;rule name="Ui Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true"&gt;
-          &lt;match url="ui*" /&gt;
-          &lt;conditions&gt;
-                        &lt;add input="{HTTP_SSL}" pattern="true" negate="true" /&gt;
-          &lt;/conditions&gt;
-          &lt;action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" /&gt;
-        &lt;/rule&gt;
-        &lt;rule name="Composer Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true"&gt;
-          &lt;match url="Dropit/Plugin/Extension/UI/*" /&gt;
-          &lt;conditions&gt;
-                        &lt;add input="{HTTP_SSL}" pattern="true" negate="true" /&gt;
-          &lt;/conditions&gt;
-          &lt;action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" /&gt;
-        &lt;/rule&gt;
-      &lt;/rules&gt;
-    &lt;/rewrite&gt;
+<rewrite>
+  <rules>
+    <rule name="ComposerOnPage Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true">
+      <match url="*" />
+      <conditions>
+                    <add input="{HTTP_SSL}" pattern="true" negate="true" />
+                    <add input="{QUERY_STRING}" pattern="*DE_VM=*" />
+                    <add input="{QUERY_STRING}" pattern="*DE_LNK=*" />
+                    <add input="{QUERY_STRING}" pattern="*DE_RND=*" />
+                    <add input="{QUERY_STRING}" pattern="*idkeep=true*" />
+      </conditions>
+      <action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" />
+    </rule>
+    <rule name="Util Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true">
+      <match url="util/*" />
+      <conditions>
+                    <add input="{HTTP_SSL}" pattern="true" negate="true" />
+      </conditions>
+      <action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" />
+    </rule>
+    <rule name="Ui Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true">
+      <match url="ui*" />
+      <conditions>
+                    <add input="{HTTP_SSL}" pattern="true" negate="true" />
+      </conditions>
+      <action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" />
+    </rule>
+    <rule name="Composer Redirect to HTTPS" patternSyntax="Wildcard" stopProcessing="true">
+      <match url="Dropit/Plugin/Extension/UI/*" />
+      <conditions>
+                    <add input="{HTTP_SSL}" pattern="true" negate="true" />
+      </conditions>
+      <action type="Redirect" url="https://{HTTP_HOST}/{R:0}" redirectType="SeeOther" />
+    </rule>
+  </rules>
+</rewrite>
 ~~~
 
 ## Beware of mixed mode security

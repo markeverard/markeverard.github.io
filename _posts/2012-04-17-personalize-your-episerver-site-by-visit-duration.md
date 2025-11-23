@@ -1,14 +1,14 @@
-﻿---
+---
 title: Personalize your EPiServer site by visit duration
 date: 2012-04-17T10:00:46+00:00
 author: Mark Everard
-color: rgb(0,0,0)
 layout: post
-permalink: /2012/04/17/personalize-your-episerver-site-by-visit-duration/
 dsq_thread_id:
   - "1083585435"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Personalization]
 ---
 Want to show a personalized message of gratitude to those users who spend a long time on your site? Now you can with the TimeOnSiteCriterion for the EPiServer Personalization/Visitor Group framework.
 
@@ -61,7 +61,7 @@ namespace CriteriaPack.TimeOnSiteCriterion
                 return 0;
 
             //return first instance of TimeOnSite Criterion
-            var timeOnSiteCriteria = group.Criteria.FirstOrDefault(a =&gt; a.TypeName == VisitorGroupCriterionRepository.GetTypeName(typeof(TimeOnSiteCriterion)));
+            var timeOnSiteCriteria = group.Criteria.FirstOrDefault(a => a.TypeName == VisitorGroupCriterionRepository.GetTypeName(typeof(TimeOnSiteCriterion)));
             if (timeOnSiteCriteria == null)
                 return 0;
 
@@ -83,19 +83,19 @@ namespace CriteriaPack.TimeOnSiteCriterion
             return Convert.ToDateTime(httpContext.Session[TimeOnSiteCriterion.SessionStartTimeKey]);
         }
 
-        /// &lt;summary&gt;
+        /// <summary>
         /// Returns the number of seconds remaining until a match.
-        /// &lt;/summary&gt;
-        /// &lt;param name="httpContext"&gt;The HTTP context.&lt;/param&gt;
-        /// &lt;param name="visitorGroupId"&gt;The visitor group id.&lt;/param&gt;
-        /// &lt;returns&gt;&lt;/returns&gt;
+        /// </summary>
+        /// <param name="httpContext">The HTTP context.</param>
+        /// <param name="visitorGroupId">The visitor group id.</param>
+        /// <returns></returns>
         public double SecondsToMatch(HttpContextBase httpContext, Guid visitorGroupId)
         {
             var matchTime = SessionStart(httpContext);
             matchTime = matchTime.AddSeconds(CurrentValueInSeconds(visitorGroupId));
 
             double timeToMatch = (matchTime - DateTime.Now).TotalSeconds;
-            return timeToMatch &lt; 0
+            return timeToMatch < 0
                 ? 0
                 : timeToMatch;
         }
@@ -105,7 +105,7 @@ namespace CriteriaPack.TimeOnSiteCriterion
 
 The final part is to use this in a page:
 
----csharp
+~~~csharp
 protected void Page_Load(object sender, EventArgs e)
    {
       var service = new TimeOnSiteService();
@@ -118,25 +118,22 @@ protected void Page_Load(object sender, EventArgs e)
       //convert to milliseconds and write to the page
       TimeToLive.Text = (timeToLive *1000).ToString();
    }
-
-</pre>
-
+~~~
 and then write some javascript to handle this (also perhaps write it slightly better than below. Hey I&#8217;m no javascript developer &#8211; yet!)
 
-<pre class="brush: jscript; title: ; notranslate" title="">&lt;script type="text/javascript"&gt;
-
-        function setAlertTimeOut() {
-          var timeToLive = '&lt;asp:Literal id="TimeToLive" runat="server" /&gt;';
-          if (timeToLive &gt; 0) {
-              setTimeout('AlertMe()', timeToLive);
-          }
+~~~javascript
+<script type="text/javascript">
+    function setAlertTimeOut() {
+        var timeToLive = '<asp:Literal id="TimeToLive" runat="server" />';
+        if (timeToLive > 0) {
+            setTimeout('AlertMe()', timeToLive);
         }
+    }
 
-        function AlertMe() {
-            alert("Time is Up");
-        }
-
-    &lt;/script&gt;
+    function AlertMe() {
+        alert("Time is Up");
+    }
+</script>
 ~~~
 
 and also don&#8217;t forget to call the method setAlertTimeOut() when the browser loads your page. I&#8217;d also imagine that your front end will need to do something a little more fancy than pop up an alert&#8230;&#8230;&#8230;.

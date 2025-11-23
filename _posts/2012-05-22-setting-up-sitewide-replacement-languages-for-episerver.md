@@ -1,24 +1,24 @@
-ï»¿---
+---
 title: Setting up sitewide replacement languages for EPiServer
 date: 2012-05-22T19:58:00+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2012/05/22/setting-up-sitewide-replacement-languages-for-episerver/
 dsq_thread_id:
   - "1079319524"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS]
 ---
 Fallback languages allow editors to specify inheritance chains for content at the page property level, meaning that if content isn&#8217;t available in the user selected language, the fallback language is served. This can be useful when working with a large site that requires a translation effort &#8211; meaning that you can translate parts of pages at a time.
 
-I recently dealt with a requirement from a client who wanted to start over with their translation effort which had occurred at different rates across large areas of their site. They wanted just the English language version to be served. There are many possible solutions to this &#8211; such as putting in top-level redirects for all language variants through IISÂ &#8211; however the editors wanted to retain the control of when they could re-enable a language for a particular page.
+I recently dealt with a requirement from a client who wanted to start over with their translation effort which had occurred at different rates across large areas of their site. They wanted just the English language version to be served. There are many possible solutions to this &#8211; such as putting in top-level redirects for all language variants through IIS  &#8211; however the editors wanted to retain the control of when they could re-enable a language for a particular page.
 
 This meant removing all of their existing fallback and replacement languages settings for each and every page and then ensure that English was served as a replacement language for every page on every language variant.
 
 Obviously there are SEO impacts of serving <a title="How to handle multiple urls serving the same content" href="http://webmasters.stackexchange.com/questions/24922/multiple-urls-serving-same-content-how-to-handle-betterhttp://" target="_blank">identical contents on different urls,</a> our solution also included a technical piece that handled this &#8211; perhaps I&#8217;ll share that next time if anybody is interested.
 
-### Under the hood
+## Under the hood
 EPiServer stores language replacement and fallback in the sql server table **tblPageLanguageSetting**
 
 ![tblPagelanguageSetting](/assets/uploads/2012/05/tblPagelanguageSetting.gif)  

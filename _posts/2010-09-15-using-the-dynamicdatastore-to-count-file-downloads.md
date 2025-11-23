@@ -1,14 +1,14 @@
-﻿---
+---
 title: Using the DynamicDataStore to count file downloads
 date: 2010-09-15T20:06:47+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2010/09/15/using-the-dynamicdatastore-to-count-file-downloads/
 dsq_thread_id:
   - "1073095662"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS]
 ---
 Increasingly CMS builds are required to deal with more than just standard page-based data and deliver an additional level of content metadata, such as the number of page views or the number of times a file has been downloaded.
 
@@ -108,7 +108,7 @@ namespace DownloadCount.Persistence
          path = UrlDecodePath(path);
          using(var store = GetDynamicDataStore())
          {
-            var fileCount = store.Find&lt;FileDownloadCount&gt;("FilePath", path).FirstOrDefault()
+            var fileCount = store.Find<FileDownloadCount>("FilePath", path).FirstOrDefault()
                             ?? FileDownloadCountFactory.Create(path);
 
             fileCount.Count++;
@@ -126,7 +126,7 @@ namespace DownloadCount.Persistence
          path = UrlDecodePath(path);
          using (var store = GetDynamicDataStore())
          {
-           var fileCount = store.Find&lt;FileDownloadCount&gt;("FilePath", path).FirstOrDefault();
+           var fileCount = store.Find<FileDownloadCount>("FilePath", path).FirstOrDefault();
            return fileCount == null ? 0 : fileCount.Count;
          }
       }
@@ -137,17 +137,17 @@ namespace DownloadCount.Persistence
 Finally, to use this handler we need to register it in the web.config file. Here I&#8217;m going to record counts for just .pdf and .doc files that are stored in the Globals VPP folder. You need to add one instance of the handler for each type of file you want to track. Don&#8217;t forget to chain the handlers appropriately (ie the existing wildcard handler should always be defined last).
 
 ~~~xml
-&lt;location path="Global"&gt;
- &lt;system.webServer&gt;
-  &lt;handlers&gt;
-   &lt;add name="webresources" path="WebResource.axd" verb="GET" type="System.Web.Handlers.AssemblyResourceLoader"/&gt;
-   &lt;add name="countdocs" path="*.doc" verb="*" type="DownloadCount.DownloadCountHttpHandler, DownloadCount"/&gt;
-   &lt;add name="countpdfs" path="*.pdf" verb="*" type="DownloadCount.DownloadCountHttpHandler, DownloadCount"/&gt;
-   &lt;add name="wildcard" path="*" verb="*" type="EPiServer.Web.StaticFileHandler, EPiServer"/&gt;
-  &lt;/handlers&gt;
- &lt;/system.webServer&gt;
- &lt;staticFile expirationTime="-1.0:0:0"/&gt;
- &lt;/location&gt;
+<location path="Global">
+ <system.webServer>
+  <handlers>
+   <add name="webresources" path="WebResource.axd" verb="GET" type="System.Web.Handlers.AssemblyResourceLoader"/>
+   <add name="countdocs" path="*.doc" verb="*" type="DownloadCount.DownloadCountHttpHandler, DownloadCount"/>
+   <add name="countpdfs" path="*.pdf" verb="*" type="DownloadCount.DownloadCountHttpHandler, DownloadCount"/>
+   <add name="wildcard" path="*" verb="*" type="EPiServer.Web.StaticFileHandler, EPiServer"/>
+  </handlers>
+ </system.webServer>
+ <staticFile expirationTime="-1.0:0:0"/>
+ </location>
 ~~~
 
 Accessing the latest count on page is pretty simple, again using the MapRequestPathToPermanentLink method defined earlier.

@@ -1,15 +1,13 @@
-﻿---
+---
 title: Will HTML5 deliver the mobile app-ocalypse?
 date: 2012-05-16T16:02:31+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-featured-ing: /assets/uploads/2012/05/app-ocolypse.png
-permalink: /2012/05/16/will-html5-deliver-the-mobile-app-ocalypse/
 dsq_thread_id:
   - "1079536266"
 categories:
   - Opinion
+tags: [Opinion]
 ---
 Despite the continued success of Apples&#8217; App Store and similar online application stores, publishers are beginning to invest and deliver mobile applications using technologies that many believe may signal the demise of the traditional native app. Is it time to take shelter from an impending mobile app-ocalypse?
 
@@ -31,7 +29,7 @@ Which platforms should you launch your app on? How many versions built on differ
 ## Is HTML5 the answer?
 No, not in isolation. HTML5 is often misunderstood. It provides an open standards way of marking up data for display as user interfaces, content and rich media. So the real question is will web apps using HTML5 become the dominant way of delivering mobile functionality? The answer as always lies in the <a title="Tim Bray - Browsers vs Apps" href="http://www.tbray.org/ongoing/When/201x/2012/05/02/Web-Futurez" target="_blank" rel="noopener">context</a>. If you need to interact with the device hardware then a native app is still the best way to achieve this. If you need to present content, text, images and media then HTML5 and a web app allows you to do this in a cost effective and time-tested way.
 
-There is a third way. Many publishers are now pushing a hybrid approach and realising significant cost savings across mobile channels by building native apps which use HTML5 to deliver user interfaces that are imperceivably different to those offered by native code. Take for example, the <a title="You’ll never believe how LinkedIn built its new iPad app" href="http://venturebeat.com/2012/05/02/linkedin-ipad-app-engineering/" target="_blank" rel="noopener">latest LinkedIn IPad app</a> which to many commentator&#8217;s surprise delivers 95% of it&#8217;s views using HTML5 (and of course a hefty dose of JavaScript and server-side data services).
+There is a third way. Many publishers are now pushing a hybrid approach and realising significant cost savings across mobile channels by building native apps which use HTML5 to deliver user interfaces that are imperceivably different to those offered by native code. Take for example, the <a title="You ll never believe how LinkedIn built its new iPad app" href="http://venturebeat.com/2012/05/02/linkedin-ipad-app-engineering/" target="_blank" rel="noopener">latest LinkedIn IPad app</a> which to many commentator&#8217;s surprise delivers 95% of it&#8217;s views using HTML5 (and of course a hefty dose of JavaScript and server-side data services).
 
 ## Apps-on-demand
 Native apps won&#8217;t disappear but clearly there is convergence between the experiences native apps can deliver and those available via a browser.

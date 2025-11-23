@@ -1,14 +1,14 @@
-﻿---
+---
 title: 'Developing a custom workflow in EPiServer : Part one'
 date: 2010-09-29T13:30:38+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2010/09/29/developing-a-custom-workflow-in-episerver-part-one/
 dsq_thread_id:
   - "1073785256"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Workflows]
 ---
 This in a first of a series of posts about how to build a custom EPiServer workflow. There is a fair amount of information about EPiServer workflows (most of which are nicely summarised by Frederik Vig in his amazingly useful <a title="EPiServer Developer Resources" href="http://www.frederikvig.com/2010/05/episerver-developer-resources/#toc-workflows" target="_blank">EPiServer Developer Resources</a>). Hopeful these posts will be able to add to that and also provide further context. Comments are most welcome!
 
@@ -30,9 +30,9 @@ In these situations you&#8217;ll have to build your own custom workflow piece ut
 
 First up we must start with requirements gathering. This is often a difficult process with workflows as you have to map and consolidate real business processes into a sensible technical solution.
 
-Workflow requirements are always best distilled by a Visio flow diagram. Fact! So here&#8217;s ours _(click to enlarge)_.
+Workflow requirements are always best distilled by a Visio flow diagram. Fact! So here&#8217;s ours.
 
-![2 Stage Workflow Diagram](/assets/uploads/2010/09/2StageWorkflowDiagram-300x218.jpg)
+![2 Stage Workflow Diagram](/assets/uploads/2010/09/2StageWorkflowDiagram.jpg)
 
 Looking at the required process, you can see that it&#8217;s a 2-stage approval process, where a page is created, sent for approval, and then finally sent through a further approval step, where upon the page is approved one final time before being published.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using WebHooks in an EPiServer solution
 date: 2015-11-11T10:49:02+00:00
 author: Mark Everard
@@ -9,10 +9,12 @@ dsq_thread_id:
   - "4310705496"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Integration]
 ---
 <a href="https://en.wikipedia.org/wiki/Webhook" target="_blank">WebHooks</a> are a way of connecting internet / cloud services together. They allow websites to communicate with each other via HTTP callbacks. Services can subscribe (via HTTP) to receive notifications from publishers about a specific event. Publishers, manage these subscriptions and then on each event push notifcations via an HTTP Post to each receiver, at an endpoint defined during subscription.
 
-![Web-Hooks](/assets/uploads/2015/11/web-hooks-258x300.png)
+![Web-Hooks](/assets/uploads/2015/11/web-hooks.png)
 
 ## ASP.NET WebHooks
 Microsoft have recently released a [WebHook framework for ASP.NET](https://github.com/aspnet/WebHooks) that gives you a pattern for:
@@ -31,7 +33,7 @@ What would an EPiServer implementation / usage of WebHooks look like?
 * Publish Form data inputs to external systems
 * Publish / Subscribe to Catalog events and changes from integrated commerce systems (Stock control and pricing)
 * Subscribe to events from external systems (Payments)
-* Subscribe to external content events – Instagram / social
+* Subscribe to external content events   Instagram / social
 
 ## Ascend London
 I was invited to talk (along with fellow EMVP <a href="http://world.episerver.com/Blogs/K-Khan-/" target="_blank">Khurram Khan</a>) at the <a href="http://www.episerver.com/about-us/event-listing/london-ascend-2015/ascend-2015/ascend-london-technical-track-agenda-2015/" target="_blank">technical track</a> at <a href="http://www.episerver.com/about-us/event-listing/london-ascend-2015/ascend-2015/" target="_blank">EPiServer Ascend London 2015</a>. You can download the slides from <a href="http://www.slideshare.net/ev2000/publisher-subscriber-integrations-using-episerver" target="_blank">Slideshare</a>.
@@ -40,12 +42,12 @@ I was invited to talk (along with fellow EMVP <a href="http://world.episerver.co
 
 As part of a presentation I put together a simple solution demonstrating an EPiServer site with an <a href="http://blogs.msdn.com/b/webdev/archive/2015/09/21/integrating-with-instagram-using-asp-net-webhooks-preview.aspx" target="_blank">Instagram receiver</a> that provided a solution to the below user story.
 
-> “As a content editor, I want images that are uploaded on a social channel (Instagram) and tagged with ‘ascend15’ to be available in my content management system so I can use them on my awesome website”
+>  As a content editor, I want images that are uploaded on a social channel (Instagram) and tagged with 'ascend15' to be available in my content management system so I can use them on my awesome website 
 
 The solution contained the following elements:
 
-* A receiver accepting notifications from Instagram when a image with a tag of ‘ascend15’ was added (using the ASP.NET WebHook framework)
+* A receiver accepting notifications from Instagram when a image with a tag of  'ascend15' was added (using the ASP.NET WebHook framework)
 * A Dynamic Data Store implementation to store the number of notifications received
 * A scheduled job: to request, download and import images into EPiServer as MediaData / IContent items
 
-The solution and even the scenario was a little contrived, so I’m not going to show the code (though it you really want it just drop me a line). It did however work on the day, which when you’re trying a tech demo that relies on the cloud and external services and also your own code; is always nice
+The solution and even the scenario was a little contrived, so I'm not going to show the code (though it you really want it just drop me a line). It did however work on the day, which when you're trying a tech demo that relies on the cloud and external services and also your own code; is always nice

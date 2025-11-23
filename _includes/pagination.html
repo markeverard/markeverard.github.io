@@ -1,0 +1,22 @@
+<div class="container">
+  <nav class="pagination" role="pagination">
+
+      {% if paginator.total_pages > 1 %}
+      <p><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></p>
+     
+      <ul>
+        {% for i in (1..paginator.total_pages) %}
+        <li class="page-number">
+           {% if i == 1 %}
+            <a href="{{ site.baseurl }}/">{{i}}</a>
+          {% else %}
+            <a href="{{ site.baseurl }}/page/{{i}}/">{{i}}</a>
+          {% endif %}
+        </li>
+
+        {% endfor %}
+      </ul>
+       {% endif %}
+    
+  </nav>
+</div>

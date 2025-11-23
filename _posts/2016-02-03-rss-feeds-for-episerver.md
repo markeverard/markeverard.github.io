@@ -1,15 +1,14 @@
-﻿---
+---
 title: RSS feeds for Episerver
 date: 2016-02-03T10:00:38+00:00
 author: Mark Everard
-color: rgb(0,0,0)
 layout: post
-permalink: /2016/02/03/rss-feeds-for-episerver/
 dsq_thread_id:
   - "4543304441"
-hide-warning: true
 categories:
-  - Episerver
+  - Technical
+tags: [Episerver-CMS, Open-source, Integration]
+
 ---
 I&#8217;ve released a few further tweaks to my <a href="http://nuget.episerver.com/en/OtherPages/Package/?packageId=Chief2moro.SyndicationFeeds" target="_blank">RSS / ATOM add-on</a> for <a href="http://www.episerver.com" target="_blank">Episerver</a> &#8211; <a href="https://github.com/markeverard/Chief2moro.SyndicationFeeds" target="_blank">CHIEF2MORO.SyndicationFeeds</a>.
 
@@ -28,7 +27,7 @@ Each feed page now includes a new property allowing an editor to cache the feed 
 ## Validation
 I made some minor amends to help the feeds to validate, and made sure I correctly understood the [RSS](http://cyber.law.harvard.edu/rss/rss.html) / ATOM specification in respect of [LastUpdated and Publish dates](https://msdn.microsoft.com/en-us/library/system.servicemodel.syndication.syndicationitem.lastupdatedtime%28v=vs.110%29.aspx)
 
-## It’s on Nuget
+## It's on Nuget
 The source code is available at <a title="Chief2moro.SyndicationFeeds by markeverard on GitHub" href="https://github.com/markeverard/Chief2moro.SyndicationFeeds" target="_blank">https://github.com/markeverard/Chief2moro.SyndicationFeeds</a>.
 
-A package (currently v3.0.0.0) is available in the Episerver Nuget Feed – [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10) – search for CHIEF2MORO.SyndicationFeeds
+A package (currently v3.0.0.0) is available in the Episerver Nuget Feed [http://nuget.episerver.com/](http://nuget.episerver.com/en/?search=possible&sort=MostDownloads&page=1&pageSize=10) - search for CHIEF2MORO.SyndicationFeeds

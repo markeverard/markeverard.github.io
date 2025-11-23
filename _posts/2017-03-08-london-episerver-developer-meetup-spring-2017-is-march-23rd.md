@@ -1,15 +1,14 @@
-﻿---
+---
 title: London Episerver Developer Meetup Spring 2017 is March 23rd
 date: 2017-03-08T10:29:51+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2017/03/08/london-episerver-developer-meetup-spring-2017-is-march-23rd/
 dsq_thread_id:
   - "5613243782"
 hide-warning: true
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 Hopefully this won&#8217;t be news to anyone, as you should have received an email direct from the Episerver developer mailing list. Wait, what do you mean you haven&#8217;t signed up? [Do it now](https://world.episerver.com/System/Users-and-profiles/Register1/)!
 

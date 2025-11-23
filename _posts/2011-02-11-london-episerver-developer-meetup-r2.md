@@ -1,21 +1,20 @@
-﻿---
+---
 title: London EPiServer Developer Meetup R2
 date: 2011-02-11T13:16:18+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2011/02/11/london-episerver-developer-meetup-r2/
 dsq_thread_id:
   - "1268492835"
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 After the success of the first <a title="First London EPiServer Developer Meetup" href="http://www.markeverard.com/blog/2010/10/26/first-london-developer-meetup/" target="_blank">London developer Meetup</a>, I&#8217;m happy to announce that we&#8217;ve organised another! Diaries at the ready please&#8230;&#8230;
 
 ## When and Where
 <a title="LBi&quot;" href="http://www.lbi.co.uk/" target="_blank">LBi</a> have very kindly volunteered to host the event, and will have their legendary beer fridge stocked and ready to go.
 
-  * **Thurs 10th March 2011, 18.30 –21.00**
+  * **Thurs 10th March 2011, 18.30  21.00**
   * **<a href="http://www.meetup.com/EPiServer-London/venue/1045334/?eventId=16504364&popup=true" target="blank">LBi</a> &#8211; Atlantis Building, Truman Brewery London <a title="LBi London - Map" href="http://www.lbi.co.uk/contact/" target="_blank">(Map)</a>**
 
 The full set of talks are yet to be finalised, but I&#8217;m really hopeful of having a set of fantastic speakers for you all (in fact &#8211; if this all comes off I&#8217;m not sure how I&#8217;m going to top this!). The EPiServer UK team will also be there to talk about some of the great new features coming in CMS6 R2.

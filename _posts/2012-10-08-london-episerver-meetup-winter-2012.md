@@ -1,24 +1,23 @@
-﻿---
+---
 title: London EPiServer Meetup Winter 2012
 date: 2012-10-08T13:52:18+00:00
-color: rgb(0,0,0)
 author: Mark Everard
 layout: post
-permalink: /2012/10/08/london-episerver-meetup-winter-2012/
 dsq_thread_id:
   - "1078970199"
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 ![Nansen's London Office](/assets/uploads/2012/10/nansen-map.gif)
+
 Its been too long&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;..
 
 The winter EPiServer Developer MeetUp for 2012 will be on 8th November.
 
 This time we&#8217;ll be kindly hosted by long-term EPiServer partners but newcomers to the UK shores; <a title="Nansen - Digital Agency" href="http://www.nansen.se/en/" target="_blank">Nansen</a>.
 
-* **Thurs 8th November 2012, 18.30 –21.00 ish  
-** 
+* **Thurs 8th November 2012, 18.30 - 21.00 ish** 
 * **Nansen &#8211; 109-111 Farringdon Road, London &#8211; (<a title="Find Nansen's office in London" href="http://www.nansen.se/en/contact-us/london/" target="_blank">directions</a>)**
 
 I&#8217;ve yet to confirm the program, but our focus will be around the upcoming release of EPiServer 7, there is plenty to learn about the new customer features (Blocks, New Edit UI, Packaging to name a few) and as for us, alot to discuss around the much improved API and new developer features.

@@ -1,16 +1,14 @@
-﻿---
+---
 id: 693
 title: London EPiServer Meetup is on 23rd Feb
 date: 2012-02-02T16:12:04+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=693
-permalink: /2012/02/02/london-episerver-meetup-is-on-23rd-feb/
 dsq_thread_id:
-  - "1095549750"
   - "1095549750"
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 We&#8217;re back for 2012. We&#8217;ll be having our first 2012 <a title="EPiServer developers in London" href="http://www.meetup.com/EPiServer-London/" target="_blank">London EPiServer Developer Meetup</a>, hosted at <a title="Digital Agency London" href="http://www.fortunecookie.co.uk" target="_blank">Fortune Cookie</a> on **Thursday 23rd February.**
 
@@ -31,5 +29,3 @@ I hope you&#8217;ll agree that its a great program and also I think we&#8217;re 
 See you all on the 23rd.
 
 Mark
-
-&nbsp;

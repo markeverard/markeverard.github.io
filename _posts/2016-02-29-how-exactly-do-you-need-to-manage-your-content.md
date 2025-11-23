@@ -1,4 +1,4 @@
-﻿---
+---
 title: How exactly do you need to manage your content?
 color: rgb(0,0,0)
 date: 2016-02-29T11:00:29+00:00
@@ -13,6 +13,8 @@ categories:
   - Episerver
   - Opinion
   - Technology
+tags: [Episerver, Opinion]
+
 ---
 Detailed content management requirements are often overlooked in the design and build of a content managed website. This can result in an implementation that lacks flexibility and incurs higher costs over its lifetime.
 
@@ -41,7 +43,7 @@ The basics of content reuse requirements aren&#8217;t that difficult:
 1. I need to reuse this content and/or design in many places across the website
 2. I may reuse this content occasionally
 3. I am unlikely to reuse this content, but I need to be able to change it at short notice
-4. I shouldn’t need to change the content. If I do I am happy to rely on technical support
+4. I shouldn t need to change the content. If I do I am happy to rely on technical support
 
 The answers will drive very different technical solutions, ranging from fully reusable content managed features to a set of static pages to be thrown away after use. The middle ground here is also useful, which allows more technically minded CMS editors and admins to standup flat HTML pages through the CMS interface (an example for Episerver &#8211; <a href="http://tedgustaf.com/blog/2011/4/publishing-plain-html-pages-in-episerver/" target="_blank">http://tedgustaf.com/blog/2011/4/publishing-plain-html-pages-in-episerver/</a>).
 

@@ -1,20 +1,19 @@
-﻿---
+---
 id: 746
 title: FortuneCookie.PropertySecurity version 2.0
 date: 2012-04-10T12:00:03+00:00
 author: Mark Everard
 layout: post
-guid: http://www.markeverard.com/blog/?p=746
-permalink: /2012/04/10/fortunecookie-propertysecurity-version-2-0/
 dsq_thread_id:
-  - "1078314973"
   - "1078314973"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Security]
 ---
 The coding machine that is <a title="Lee Crowe on EPiServer World" href="http://world.episerver.com/System/Users-and-profiles/Community-Profile-Card/Croweman/" target="_blank">Lee Crowe</a> and myself have made a few additional changes to the <a title="Role and user based property security for EPiServer" href="http://www.markeverard.com/2012/02/13/role-and-user-based-property-security-for-episerver/" target="_blank">PropertySecurity attribute framework</a> I blogged about a few weeks ago.
 
-[<img class="wp-image-750 aligncenter" title="Security" alt="" src="/assets/uploads/2012/04/bpi75.jpg" width="360" height="240" srcset="https://www.markeverard.com/wp-content/uploads/2012/04/bpi75.jpg 600w, https://www.markeverard.com/wp-content/uploads/2012/04/bpi75-300x200.jpg 300w, https://www.markeverard.com/wp-content/uploads/2012/04/bpi75-580x387.jpg 580w, https://www.markeverard.com/wp-content/uploads/2012/04/bpi75-320x213.jpg 320w" sizes="(max-width: 360px) 100vw, 360px" />](/assets/uploads/2012/04/bpi75.jpg)
+[<img class="wp-image-750 aligncenter" title="Security" alt="" src="/assets/uploads/2012/04/bpi75.jpg" width="360" height="240" />](/assets/uploads/2012/04/bpi75.jpg)
 
 The changes in Version 2.0 are:
 
@@ -31,5 +30,5 @@ The following hierarchical rules apply to attributes:
   * A class level [Authorize] attribute on a tab will take preference only if the above aren&#8217;t matched
 
 <p title="EPiServer Nuget">
-  An updated Nuget package (FortuneCookie.PropertySecurity) built against .Net 4.0 / EPiServer 6R2 and PTB 2.0 is available <a title="EPiServer Nuget" href="http://nuget.episerver.com/" target="_blank">EPiServer Nuget feed</a>. The source code is available on <a title="FortuneCookie.PropertySecurity source code at GitHub" href="https://github.com/markeverard/FortuneCookie.PropertySecurity" target="_blank">GitHub – https://github.com/markeverard/FortuneCookie.PropertySecurity</a>
+  An updated Nuget package (FortuneCookie.PropertySecurity) built against .Net 4.0 / EPiServer 6R2 and PTB 2.0 is available <a title="EPiServer Nuget" href="http://nuget.episerver.com/" target="_blank">EPiServer Nuget feed</a>. The source code is available on <a title="FortuneCookie.PropertySecurity source code at GitHub" href="https://github.com/markeverard/FortuneCookie.PropertySecurity" target="_blank">GitHub - https://github.com/markeverard/FortuneCookie.PropertySecurity</a>
 </p>

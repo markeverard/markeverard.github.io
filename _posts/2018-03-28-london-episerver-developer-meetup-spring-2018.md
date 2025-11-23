@@ -1,14 +1,13 @@
-﻿---
+---
 title: London Episerver Developer Meetup Spring 2018
 date: 2018-03-28T22:16:06+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2018/03/28/london-episerver-developer-meetup-spring-2018/
 dsq_thread_id:
   - "6582289653"
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 The Episerver Ascend party may have just finished in Las Vegas but that doesn't mean the fun stops!
 
@@ -21,14 +20,14 @@ Our next Episerver Developer Meetup (London) will be on **Thursday 12th April**.
 We have a special guest for the evening. Episerver and Microsoft MVP Valdis Iljuconoks is completing another leg of his Episerver Developer Meetup World tour, and ticking the London box. Those of you on Episerver World will recognise Valdis from his frequent forum posts / answers and for his awesome contributions such as his DbLocalisation plugin.
 
 ### Agenda
-We&#8217;ll be starting at 1830, briefly stopping for when the pizza&#8217;s turn up, and finishing at 9pm (where we&#8217;ll move to a local pub for those that want to keep networking!)
+We'll be starting at 1830, briefly stopping for when the pizza'&#8217;'s turn up, and finishing at 9pm (where we'&#8217;'ll move to a local pub for those that want to keep networking!)
 
   * **Valdis Iljuconoks**, ([Geta](https://getadigital.com/people/valdis-iljuconoks/)) **_&#8211; bringing us not one but two topics&#8230;&#8230;.._** 
-      1. **DbLocalization provider** &#8211; Stories and lessons from the development of one of the best add-ons out there.Â Learn about .NET standard support, add-ons best practises and some developer stories
+      1. **DbLocalization provider** &#8211; Stories and lessons from the development of one of the best add-ons out there. Learn about .NET standard support, add-ons best practises and some developer stories
       2. **Episerver-less** &#8211; using Azure functions with Episerver
-  * **Jacob Polden** ([Valtech](https://www.valtech.co.uk/)) &#8211;Â **&#8220;An Umbraco developerâ€™s first Enterprise Episerver project&#8221;**Â &#8211; Jacob will be sharing his experiences of an enterprise project delivery using Episerver.
-  * **Mark Everard** ([DAM Digital](https://damdigital.com/)) &#8211; **&#8220;Whats going on in the World?&#8221;** &#8211; Cryptic title, but don&#8217;t worry I&#8217;m not going to be talking politics&#8230;.
+  * **Jacob Polden** ([Valtech](https://www.valtech.co.uk/)) - **&#8220;An Umbraco developer's first Enterprise Episerver project** Jacob will be sharing his experiences of an enterprise project delivery using Episerver.
+  * **Mark Everard** ([DAM Digital](https://damdigital.com/)) &#8211; **&#8220;Whats going on in the World?&#8221;** &#8211; Cryptic title, but don't worry I'm not going to be talking politics&#8230;.
 
 ### Let us know you&#8217;re coming
 
-[Please RSVP on our Meetup page.](https://www.meetup.com/EPiServer-London/events/248902435/)Â Looking forward to seeing you there.
+[Please RSVP on our Meetup page.](https://www.meetup.com/EPiServer-London/events/248902435/). Looking forward to seeing you there.

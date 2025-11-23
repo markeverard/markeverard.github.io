@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using NuGet for EPiServer third party libraries
 date: 2010-11-04T13:37:17+00:00
 author: Mark Everard
@@ -9,6 +9,8 @@ dsq_thread_id:
   - "1073095627"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Opinion]
 ---
 <a title="NuGet " href="http://nuget.codeplex.com/" target="_blank">NuGet</a> (formerly known as NuPack) is an third party library package management system, heavily integrated with Visual Studio 2010. Its received a lot of attention since Microsoft first announced it, and for good reason. It enables you to simply include third-party libraries into your solution, where NuGet will do all of the heavy lifting and set-up for you.
 

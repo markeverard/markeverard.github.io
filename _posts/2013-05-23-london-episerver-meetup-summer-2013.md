@@ -1,15 +1,13 @@
-﻿---
+---
 title: London EPiServer Meetup Summer 2013
 date: 2013-05-23T13:28:45+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2013/05/23/london-episerver-meetup-summer-2013/
 dsq_thread_id:
-  - "1310261487"
   - "1310261487"
 categories:
   - Episerver
+tags: [Episerver, Community]
 ---
 ![The Johnson Building](/assets/uploads/2013/05/the_johnson_building_01.jpg)
 
@@ -17,8 +15,8 @@ Well the weather might not reflect it, but it is soon to be summer and so time f
 
 [Syzygy](http://www.syzygy.co.uk/) have kindly put themselves forward to be our hostess with the mostess, and as usual they&#8217;ll be beer, pizza and some good tech-geekup opportunities.
 
-* **Thurs 13th June 2013, 18.30 –21.00 ish** 
-* **Syzygy –** The Johnson Building, 77 Hatton Garden, London EC1N 8JS &#8211; <a title="Syzygy - London" href="http://www.syzygy.co.uk/contact" target="_blank">(directions)</a>
+* **Thurs 13th June 2013, 18.30  21.00 ish** 
+* **Syzygy  ** The Johnson Building, 77 Hatton Garden, London EC1N 8JS &#8211; <a title="Syzygy - London" href="http://www.syzygy.co.uk/contact" target="_blank">(directions)</a>
 
 So far we&#8217;ve have the following confirmed speakers (your ideas or contributions are more than welcome), with the final talk confirmed soon.
 

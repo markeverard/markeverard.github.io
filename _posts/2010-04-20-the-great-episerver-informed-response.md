@@ -1,17 +1,18 @@
-﻿---
+---
 title: The Great EPiServer Informed Response
-color: rgb(0,0,0)
 date: 2010-04-20T14:30:26+00:00
 author: Mark Everard
 layout: post
-permalink: /2010/04/20/the-great-episerver-informed-response/
+description: In the two years I&#8217;ve been an EPiServer developer,  there has been a noticeable shift from EPiServer towards fostering a strong developer community. 
 dsq_thread_id:
   - "1073095635"
 categories:
   - Episerver
   - Opinion
+tags: [Episerver-CMS, Opinion]
+
 ---
-Some of you may have picked up on a blog post entitled the &#8216;[Great EPiServer Rant](http://ugh.cc/the-great-episerver-rant/ "The Great EPiServer Rant")&#8216; posted by Fredrik Holmström. I&#8217;d encourage you to read it for yourself and see what you think.
+Some of you may have picked up on a blog post entitled the &#8216;[Great EPiServer Rant](http://ugh.cc/the-great-episerver-rant/ "The Great EPiServer Rant")&#8216; posted by  Fredrik Holmstrom. I&#8217;d encourage you to read it for yourself and see what you think.
 
 If you find yourself agreeing with Fredrik, then please read on, as the EPiServer developer community have made great strides in the past year improving the same aspects that Fredrik finds annoying.
 
@@ -22,7 +23,7 @@ Any EPiServer developer will recognise and remember the frustrations that came f
 
 I just cannot imagine starting any new EPiServer project without using [PageTypeBuilder](http://pagetypebuilder.codeplex.com/ "PageTypeBuilder") (by [Joel Abrahamsson](http://joelabrahamsson.com/ "Joel Abrahamsson")), which decouples your code from the EPiServer database, and in one fell swoop does away with any need for workarounds and central &#8216;development databases&#8217;. This tool has been actively developed and blogged about since June 2009. Its an invaluable tool for any new EPiServer project. Look into it and if you choose to ignore it&#8230; well, good luck.
 
-## Everything isn’t a page
+## Everything isn't a page
 I couldn&#8217;t agree more, accurately distilling requirements down into a sensible domain model is a non-trivial problem during any software design phase. It brings to mind the following quote:
 
 > _Remember that all models are wrong; the practical question is how wrong do they have to be to not be useful_
@@ -39,7 +40,7 @@ Is it really fair to judge a piece of software by what it can&#8217;t do rather 
 
 The available EPiServer documentation has improved immeasurably over the past two years, but thats not to say it can&#8217;t improve further. Much of the improvement has come from the developer community who are invited to allow their content to be aggregated into the [EPiServer World](http://world.episerver.com/ "EPiServer World") site. If you follow this then you&#8217;d surely have seen many great posts by interested EPiServer developers and in particular you couldn&#8217;t have failed to notice [Frederik Vig&#8217;s](http://www.frederikvig.com/ "Frederik Vig") excellent series from December 2009 entitled &#8216;[Creating an EPiServer Site from Scratch](http://www.frederikvig.com/2009/12/introduction-create-an-episerver-site-from-scratch/ "Creating an EPiServer site from scratch")&#8216;, which should be considered the starting point for any developer new to the EPiServer platform.
 
-## Agile – is that a cactus or something?
+## Agile "is that a cactus or something"?
 
 TDD is an extremely valuable approach and certainly isn&#8217;t impossible to do with EPiServer. The [EPiAbstractions](http://epiabstractions.codeplex.com/ "EPiAbstractions") framework (credit [Joel Abrahamsson](http://joelabrahamsson.com/ "Joel Abrahamsson")) is a library of facades that wrap the core EPiServer classes and exposes virtual methods so you can mock, isolate and test to your heart&#8217;s content.
 
@@ -49,7 +50,7 @@ Again however there are viable solutions available. One such is the [WebForms MV
 
 ## Conclusions
 
-In the two years I&#8217;ve been an EPiServer developer, there has been a noticeable shift from EPiServer towards fostering a strong developer community. This has paid dividends, as the community has provided a great number of excellent blog posts/solutions that have truly improved the EPiServer development experience.
+In the two years I&#8217;ve been an EPiServer developer,  there has been a noticeable shift from EPiServer towards fostering a strong developer community. This has paid dividends, as the community has provided a great number of excellent blog posts/solutions that have truly improved the EPiServer development experience.
 
 The continued interest in EPiServer WCM products from potential customers demonstrates that a great many developers are successfully delivering high-quality WCM solutions using the EPiServer platform. With the continued input from the community, I&#8217;m sure this will continue.
 

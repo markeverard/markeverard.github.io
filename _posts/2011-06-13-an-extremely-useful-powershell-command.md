@@ -1,9 +1,8 @@
-﻿---
+---
 title: 'An extremely useful Powershell command&#8230;..'
 date: 2011-06-13T23:18:55+00:00
 author: Mark Everard
 layout: post
-permalink: /2011/06/13/an-extremely-useful-powershell-command/
 dsq_thread_id:
   - "1785457274"
 categories:

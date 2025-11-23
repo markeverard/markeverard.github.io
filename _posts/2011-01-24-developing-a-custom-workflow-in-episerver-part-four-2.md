@@ -1,14 +1,14 @@
-﻿---
+---
 title: 'Developing a custom workflow in EPiServer : Part four'
 date: 2011-01-24T09:30:07+00:00
 author: Mark Everard
-color: rgb(0,0,0)
 layout: post
-permalink: /2011/01/24/developing-a-custom-workflow-in-episerver-part-four-2/
 dsq_thread_id:
   - "1073095675"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Workflows]
 ---
 This is the fourth post, in a series of five about developing a custom workflow in EPiServer. By now you&#8217;ve probably forgotten the first three.
 
@@ -74,7 +74,7 @@ public bool InvokeEvent(Guid workflowInstanceId, int taskId, string eventQualifi
 	var task = Task.Load(taskId);
 
 	//get workflow communication service
-	TwoStageService service = WorkflowSystem.WorkflowManager.GetService&lt;TwoStageService&gt;();
+	TwoStageService service = WorkflowSystem.WorkflowManager.GetService<TwoStageService>();
 
        var entityName = GetApproverGroupOrUserName();
        var taskOwner = GetTaskOwner(entityName);
@@ -96,7 +96,7 @@ public bool InvokeEvent(Guid workflowInstanceId, int taskId, string eventQualifi
 EPiServer also allows you to associate a user control with the act of creating a workflow instance. This control should use the IWorkflowStartParameterHandler instance. This control will be seen in either Admin mode or the Action window. It allows you to specify start parameters for the workflow instance using the LoadStartParameters and SaveStartParameter methods. For example:
 
 ~~~csharp
-public void LoadStartParameters(Guid definitionId, PageReference pageLink, bool definitionMode, IDictionary&lt;string, object&gt; parameters)
+public void LoadStartParameters(Guid definitionId, PageReference pageLink, bool definitionMode, IDictionary<string, object> parameters)
 {
       //if workflow already contains state then set the current pagelink
       if (parameters.ContainsKey("WorkflowState") && parameters["WorkflowState"].GetType() == typeof(EmailWorkflowEventArgs))
@@ -109,9 +109,9 @@ public void LoadStartParameters(Guid definitionId, PageReference pageLink, bool 
       //perform any other necessary interface actions here...
   }
 
-public IDictionary&lt;string, object&gt; SaveStartParameters()
+public IDictionary<string, object> SaveStartParameters()
 {
-      var startParameters = new Dictionary&lt;string, object&gt;();
+      var startParameters = new Dictionary<string, object>();
 
       //custom class to represent task ownership
       var newTaskOwner = new GroupTaskOwner(ddlUsers.SelectedValue);

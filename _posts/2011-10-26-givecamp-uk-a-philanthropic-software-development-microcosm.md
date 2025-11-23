@@ -1,19 +1,19 @@
-﻿---
+---
 title: 'GiveCamp UK &#8211; a philanthropic software development microcosm'
 date: 2011-10-26T02:00:39+00:00
 author: Mark Everard
 layout: post
-permalink: /2011/10/26/givecamp-uk-a-philanthropic-software-development-microcosm/
 dsq_thread_id:
   - "1078475615"
 categories:
   - Opinion
+tags: [Opinion, Software-delivery]
 ---
 I was lucky enough to participate in the latest [UK GiveCamp](http://www.givecamp.org.uk/) over the course of the last weekend.
 
 **Wow, what an incredible experience!**
 
-**&#8220;Pair 120 developers with a collection of UK charities each with an IT need. Lock them in a room, feed with caffeine, cooked pig and sugar. Leave to bake over the course of a weekend, peel open (and off the floor) on Sunday afternoon. Stand back and view the results.&#8221;**
+> Pair 120 developers with a collection of UK charities each with an IT need. Lock them in a room, feed with caffeine, cooked pig and sugar. Leave to bake over the course of a weekend, peel open (and off the floor) on Sunday afternoon. Stand back and view the results.&#8221;
 
 The concept, execution and community was superb (see @stack72&#8217;s <a title="Thanks for GiveCampUK 2011" href="http://www.givecamp.org.uk/blog/thanks-givecampuk-2011" target="_blank">post</a> for a great list of thanks to those involved). A special thanks must also go to <a title="University College London" href="http://www.ucl.ac.uk/" target="_blank">UCL</a> for hosting the event and the generous <a title="GiveCamp UK Sponsors" href="http://www.givecamp.org.uk/sponsors" target="_blank">sponsors</a> for providing financial support and goodies! Come the Sunday afternoon &#8216;show and tell&#8217;, all of the project teams delivered some great work, much of which will make a tangible difference to each of the [UK charities](http://www.givecamp.org.uk/blog/introducing-our-givecamp-uk-2011-charity-projects "GiveCamp UK 2011 charities") that got involved.
 

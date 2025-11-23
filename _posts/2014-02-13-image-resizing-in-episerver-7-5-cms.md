@@ -1,20 +1,20 @@
-ï»¿---
+---
 title: Image resizing in EPiServer 7.5 CMS
 date: 2014-02-13T10:00:34+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2014/02/13/image-resizing-in-episerver-7-5-cms/
 dsq_thread_id:
   - "2258467161"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Open-source]
 ---
 Dynamic image scaling is an often sought after feature for interface designers and content editors. Whilst not natively supporting this feature; EPiServer 7.5 CMS contains a neat hidden feature (Thanks <a title="Allan Thraen (@athraen) on Twitter" href="https://twitter.com/athraen" target="_blank">@athraen</a> for the heads up) that allows a limited but useful ability to automatically scale your images.
 
 True dynamic scaling, and by that I mean that your http request for an image also contains your requested height, width and cropping options, is a complex operation to perform successfully, just check out the interesting blog posts at <a title="ImageResizer.net" href="http://imageresizing.net/" target="_blank">http://imageresizing.net/</a>. Note there is a community integration of <a title="Get ImageResizer to play along with EPiServer 7.5" href="http://world.episerver.com/Blogs/Andre-Hedberg/Dates/2013/12/Get-ImageResizer-to-play-along-with-EPiServer-75/" target="_blank">ImageResizer.Net with EPiServer 7.5</a>.
 
-The new media editing interface allows in-line preview of uploaded images via a scaled thumbnail representation of the image. These are created automatically by EPiServer for any ImageData content types that are created.Â This is achieved via a <a title="Image descriptor attribute" href="http://world.episerver.com/Documentation/Items/Developers-Guide/EPiServer-CMS/75/Content/Assets-and-media/Media-types-and-templates/#ImageDescriptor" target="_blank">ImageDescriptor attribute</a> which can be placed on any &#8216;routed&#8217; blob property (i.e those on ImageData content types).
+The new media editing interface allows in-line preview of uploaded images via a scaled thumbnail representation of the image. These are created automatically by EPiServer for any ImageData content types that are created.  This is achieved via a <a title="Image descriptor attribute" href="http://world.episerver.com/Documentation/Items/Developers-Guide/EPiServer-CMS/75/Content/Assets-and-media/Media-types-and-templates/#ImageDescriptor" target="_blank">ImageDescriptor attribute</a> which can be placed on any &#8216;routed&#8217; blob property (i.e those on ImageData content types).
 
 ![Thumbnails in the media edit interface](/assets/uploads/2014/02/media-thumbnails.png) 
 

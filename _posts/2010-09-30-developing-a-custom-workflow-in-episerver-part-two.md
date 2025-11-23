@@ -1,14 +1,14 @@
-﻿---
+---
 title: 'Developing a custom workflow in EPiServer : Part two'
 date: 2010-09-30T22:00:43+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2010/09/30/developing-a-custom-workflow-in-episerver-part-two/
 dsq_thread_id:
   - "1073080540"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Workflows]
 ---
 This is the second post, in a series of five about developing a custom workflow in EPiServer.
 
@@ -61,10 +61,10 @@ namespace TwoStage.Workflow.Communication
 	[ExternalDataExchange()]
 	public interface ITwoStageService
 	{
-		event EventHandler&lt;TwoStageEventArgs&gt; PageApproved;
-                event EventHandler&lt;TwoStageEventArgs&gt; PageDeclined;
-                event EventHandler&lt;TwoStageEventArgs&gt; PagePassedToApprover;
-                event EventHandler&lt;TwoStageEventArgs&gt; PagePassedToPublisher;
+		event EventHandler<TwoStageEventArgs> PageApproved;
+                event EventHandler<TwoStageEventArgs> PageDeclined;
+                event EventHandler<TwoStageEventArgs> PagePassedToApprover;
+                event EventHandler<TwoStageEventArgs> PagePassedToPublisher;
 	}
 }
 ~~~
@@ -78,7 +78,7 @@ For our two-stage workflow, we need to handle the following external events, whi
 
 Also you must define the event arguments that are passed when any of the external events are raised and then handled.
 
-~~~cshsrp
+~~~csharp
 using System;
 using System.Workflow.Activities;
 using EPiServer.Core;
@@ -94,7 +94,7 @@ public class TwoStageEventArgs : ExternalDataEventArgs
       PageLink = pageLink;
       IsAssignedTo = assignedTo;
       WasAssignedTo = wasAssignedTo;
-      Message = message.Replace(Environment.NewLine, "&lt;br /&gt;");
+      Message = message.Replace(Environment.NewLine, "<br />");
    }
 
    public PageReference PageLink { get; internal set; }
@@ -114,14 +114,14 @@ Any custom EventArgs must inbherit from ExternalDataEventArgs and must be marked
 If you look at the default EPiServer web.config file / EPiServer.config, you will see that there are three communication services defined for the out-of-the-box workflows. Any new service should also be registered here.
 
 ~~~xml
-&lt;externalServices&gt;
-   &lt;!-- externalService:      Custom services that is to be registered with workflow runtime--&gt;
-   &lt;externalService type= "EPiServer.WorkflowFoundation.Workflows.ApprovalService,EPiServer.WorkflowFoundation" /&gt;
-   &lt;externalService type= "EPiServer.WorkflowFoundation.Workflows.ReadyForTranslationService,EPiServer.WorkflowFoundation" /&gt;
-   &lt;externalService type= "EPiServer.WorkflowFoundation.Workflows.RequestForFeedbackService,EPiServer.WorkflowFoundation" /&gt;
-&lt;/externalServices&gt;
+<externalServices>
+   <!-- externalService:      Custom services that is to be registered with workflow runtime-->
+   <externalService type= "EPiServer.WorkflowFoundation.Workflows.ApprovalService,EPiServer.WorkflowFoundation" />
+   <externalService type= "EPiServer.WorkflowFoundation.Workflows.ReadyForTranslationService,EPiServer.WorkflowFoundation" />
+   <externalService type= "EPiServer.WorkflowFoundation.Workflows.RequestForFeedbackService,EPiServer.WorkflowFoundation" />
+</externalServices>
 ~~~
 
 Now we&#8217;ve defined the communication pathway between the workflow runtime and the EPiServer host application, we can design the workflow itself and create the activities that the workflow must perform.
 
-See you for part 3 
+**See you for part 3** 

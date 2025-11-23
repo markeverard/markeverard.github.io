@@ -1,35 +1,35 @@
-ï»¿---
+---
 title: Multivariate content testing using EPiServer Visitor Groups
 date: 2013-02-18T10:00:25+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2013/02/18/multivariate-content-testing-using-episerver-visitor-groups/
 dsq_thread_id:
   - "1089473788"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Experimentation, Digital-marketing, Open-source]
 ---
 I&#8217;ve been working closely with our performance marketing experts at <a title="POSSIBLE is a digital agency delivering world-class creative, with a focus on measurable business results." href="http://www.possible.com" target="_blank">POSSIBLE</a> recently. One of the key questions is the decision about which is the right technology to use to perform multivariate content tests. There are two technical approaches:
 
 1. **Client side** &#8211; from free tools such as <a title="Content Experiments in Google Analytics" href="https://support.google.com/analytics/bin/answer.py?hl=en&answer=1745147&topic=1745207&rd=1" target="_blank">Google Content Experiments</a> to paid-for services such as <a title="Optimizely AB testing" href="https://www.optimizely.com/" target="_blank">Optimizely</a>. These work by injecting javascript into your pages which alter the content seen by a user. This impacts browser performance and the effective site speed as seen by the user. In the case of Google Content Experiments users are redirected to page variants defined by editors as urls within the tool, where as Optimizely and the more advanced tools manipulate the DOM post page-load to set up the specifics of your test. The paid-for services offer a lot more flexibility for editors to set up their own tests through online interfaces, however from a content management perspective this means that your testing content lives outside of your CMS system, and so becomes more difficult to manage, maintain and govern.
 2. **Server side** &#8211; you can of course push the logic for AB testing back to your server. There are a number of open source .NET AB testing packages available, such as <a title="FairlyCertain is an A/B Testing library" href="http://www.fairtutor.com/fairlycertain/" target="_blank">FairlyCertain</a> which allow you to set up AB tests relatively simply as a developer, but offer no control over each test to site editors. More mature CMS platforms also offer these features.
 
-### Multivariate testing in EPiServer
+## Multivariate testing in EPiServer
 
 For EPiServer 7 (<a title=" 2nd Preview of the New EPiServer 7 CMS Editorial Interface " href="http://world.episerver.com/Articles/Items/2nd-Preview-of-the-New-EPiServer-7-CMS-Editorial-Interface/" target="_blank">Sparrowhawk UI</a>) &#8211; Multi-variant testing is now built into the core product. This is a great improvement and hooks into the &#8216;Block&#8217;s feature to allow editors to define different variations of blocks and then test and measure their performance.
 
 Previously EPiServer offered multivariate testing through its <a title="EPiServer Campaign Monitor and Optimization (CMO) makes your job easier by showing you how well your landing pages are performing and what you can do to improve your conversion rates." href="http://www.episerver.com/Products/EPiServer-CMO/" target="_blank">Campaign Monitor and Optimization product </a>which amongst other features allowed for basic A/B testing of content on a page by page basis only (i.e. you must test a whole page against a variant &#8211; these are actually set up as different versions of the same page in EPiServer).
 
-### An A/B testing Visitor Group
+## An A/B testing Visitor Group
 
 One of the limitations of CMO (beyond the ability to only run tests against full pages) is that all of your visitors are subjected to your test. Often (and certainly on high-traffic sites), there is already a clear segmentation and knowledge of visitor behaviour and you may only want to test particular user segments. I think the new Multi-variant testing features in EPiServer 7 should also overcome this limitation (but I haven&#8217;t played around enough yet).
 
-So I set myself a challenge to see whether you could use the existing Personalization framework in CMS6 R2 to allow AB tests to be set only for specific visitor segments.Â The answer is &#8211; _yes_ &#8211; _sort of_. Specifically I wanted to enable the following situation:
+So I set myself a challenge to see whether you could use the existing Personalization framework in CMS6 R2 to allow AB tests to be set only for specific visitor segments.  The answer is &#8211; _yes_ &#8211; _sort of_. Specifically I wanted to enable the following situation:
 
-* Display an A/B content test on a single page to only to a single EPiServer Visitor Group
+> Display an A/B content test on a single page to only to a single EPiServer Visitor Group
 
-The first piece of this was to <a title="Developing Custom Visitor Group Criteria" href="http://world.episerver.com/Documentation/Items/Tech-Notes/EPiServer-CMS-6/EPiServer-CMS-6-R2/Visitor-Groups-Creating-Custom-Criteria/" target="_blank">build a new Visitor Group criterion</a> which matched for an editor set percentage of the time. The idea being thatÂ should be used in conjunction with an existing Visitor Group.
+The first piece of this was to <a title="Developing Custom Visitor Group Criteria" href="http://world.episerver.com/Documentation/Items/Tech-Notes/EPiServer-CMS-6/EPiServer-CMS-6-R2/Visitor-Groups-Creating-Custom-Criteria/" target="_blank">build a new Visitor Group criterion</a> which matched for an editor set percentage of the time. The idea being that  should be used in conjunction with an existing Visitor Group.
 
 ![AB testing with Visitor Groups](/assets/uploads/2013/02/ab-testing-with-visitor-groups3.png)
 
@@ -45,9 +45,9 @@ The order the content is listed in is extremely important. The EPiServer logic t
 
 ![AB testing](/assets/uploads/2013/02/ab-testing-with-visitor-groups2.png)
 
-### Great &#8211; so we have a content test &#8211; how do we see the results?
+## Great &#8211; so we have a content test &#8211; how do we see the results?
 
-Measuring any conversion should be achieved in the same way as CMO &#8211; by setting up a separate conversion page and measuring the number of hits on that page &#8211; which is outside of this scope. Limited I know ðŸ™‚
+Measuring any conversion should be achieved in the same way as CMO &#8211; by setting up a separate conversion page and measuring the number of hits on that page &#8211; which is outside of this scope. Limited I know.
 
 You can use the Visitor Group statistics gadget &#8211; though all this will tell you is whether the test is set up correctly and whether the A/B testing criteria works!
 

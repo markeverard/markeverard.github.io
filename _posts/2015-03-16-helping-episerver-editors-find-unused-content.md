@@ -1,14 +1,13 @@
-﻿---
+---
 title: Helping EPiServer editors Find unused content
 date: 2015-03-16T10:00:28+00:00
-color: rgb(0,0,0)
 author: Mark Everard
 layout: post
-permalink: /2015/03/16/helping-episerver-editors-find-unused-content/
 dsq_thread_id:
   - "3598119848"
 categories:
   - Episerver
+tags: [Episerver-CMS, Find, Search]
 ---
 It might sound obvious, but content management is about more than just content creation and editing. It is also knowing when your content has reached the end of its useful lifespan. It means knowing when it&#8217;s time to &#8216;Move to Trash&#8217;, and when it&#8217;s time to &#8216;Move to Trash&#8217; permanently!
 

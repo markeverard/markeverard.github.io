@@ -1,14 +1,14 @@
-﻿---
+---
 title: Editor access to EPiServer Admin functionality
 date: 2010-08-12T13:11:57+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2010/08/12/editor-access-to-episerver-admin-functionality/
 dsq_thread_id:
   - "1073095655"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Security]
 ---
 EPiServer separates the functionality it offers website editors and site administrators by using two distinct user interfaces (edit and admin mode). Edit mode offer further granular control by allowing you to set access rights over content such as files, pages (and also page types in CMS6).
 
@@ -23,7 +23,7 @@ Whilst both of the above will allow us to meet our needs, neither are particular
 
 Ideally what we want is a way of using the existing EPiServer functionality and interface but providing access to a specific admin function to a user in a non-Admin role.
 
-### Enter the VirtualPathMappedProvider...
+## Enter the VirtualPathMappedProvider...
 
 The solution below uses the VirtualPathMappedProvider to map an existing admin functionality (.aspx page) to a developer-defined virtual url, which is subjected to different location security configuration. This is made possible by the fact that the EPiServer admin pages (or the ones I&#8217;ve looked at) rely solely on the location path element for their security and do no further on-page access checking (which is as it should be really). Once you&#8217;ve bypassed the first security checkpoint &#8211; you&#8217;ve got a free run.
 
@@ -34,26 +34,26 @@ Category administration is often a function that in my opinion falls more under 
   * Add Mapped links &#8211; create a virtual path mapping in episerver.config (or in web.config pre-CMS 6) which forwards the defined virtual url to the existing categories.aspx page. You will need to provide a mapping for every page that you want to allow access to. Category administration is handled by a single .aspx page.
 
 ~~~xml
-&lt;add name="AdminMappings" type="EPiServer.Web.Hosting.VirtualPathMappedProvider,EPiServer" /&gt;
+<add name="AdminMappings" type="EPiServer.Web.Hosting.VirtualPathMappedProvider,EPiServer" />
 ~~~
 
 ~~~xml
-&lt;virtualPathMappings&gt;
-   &lt;add url="~/ui/CMS/CategoryAdmin/Categories.aspx" mappedUrl="~/ui/CMS/Admin/Categories.aspx" /&gt;
-&lt;/virtualPathMappings&gt;
+<virtualPathMappings>
+   <add url="~/ui/CMS/CategoryAdmin/Categories.aspx" mappedUrl="~/ui/CMS/Admin/Categories.aspx" />
+</virtualPathMappings>
 ~~~
 
   * Add a new location element in web.config for our new virtual path. Here I&#8217;m allowing users in the CategoryAdmins and Administrators roles access whilst denying all other users.
 
 ~~~xml
-&lt;location path="ui/CMS/categoryadmin"&gt;
-   &lt;system.web&gt;
-      &lt;authorization&gt;
-         &lt;allow roles="CategoryAdmins, Administrators"&gt;
-         &lt;deny users="*"&gt;
-      &lt;/authorization&gt;
-   &lt;/system.web&gt;
-&lt;/location&gt;
+<location path="ui/CMS/categoryadmin">
+   <system.web>
+      <authorization>
+         <allow roles="CategoryAdmins, Administrators">
+         <deny users="*">
+      </authorization>
+   </system.web>
+</location>
 ~~~
 
   * Create Action Window plugin &#8211; now that we&#8217;ve opened up access to the category admin page, we need to define a position for a CategoryAdmin user to access this page from the EPiServer edit interface. I&#8217;ve chosen to create an Action window plugin, which is achieved by marking your page class with a GuiPlugin attribute. Don&#8217;t forget also to lock down access to this page with a location security configuration.
@@ -63,11 +63,11 @@ There is a small choice/compromise here to make about the user experience. You c
 If you can live with this you&#8217;ll get a more straight forward user experience. However I&#8217;ve decided that having the correct title is important, so I&#8217;ve just provided a simple anchor tag with the Plugin page&#8217;s markup which allows a click through to the Category page.
 
 ~~~xml
-&lt;%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CategoryAdminPlugin.ascx.cs" Inherits="EPiServer.CategoryAdminPlugin" %&gt;
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CategoryAdminPlugin.ascx.cs" Inherits="EPiServer.CategoryAdminPlugin" %>
 
-&lt;h2&gt;Category Admin&lt;/h2&gt;
-&lt;p&gt;Users in the CategoryAdmin role can access this page.&lt;/p&gt;
-&lt;asp:HyperLink runat="server" NavigateUrl="~/ui/CMS/CategoryAdmin/Categories.aspx" Text="Edit Categories" /&gt;
+<h2>Category Admin</h2>
+<p>Users in the CategoryAdmin role can access this page.</p>
+<asp:HyperLink runat="server" NavigateUrl="~/ui/CMS/CategoryAdmin/Categories.aspx" Text="Edit Categories" />
 ~~~
 
 ~~~csharp
@@ -93,17 +93,17 @@ namespace EPiServer.Plugins
   * Add new language elements &#8211; all quite straight forward so far, but there is one final hurdle to overcome. The categories.aspx page uses the EPiServer LanguageManager to provide the correct language translation for much of the copy on the page. The LanguageManager calculates the Xpath to the specified language element using the current page&#8217;s url (*only if the path is within the EPiServer Ui). As our path is virtual, these XPath&#8217;s don&#8217;t exist, so we must add them to the ~/lang xml files.
 
 ~~~xml
-<&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
-&lt;languages&gt;
-   &lt;language name="English" id="en"&gt;
-      &lt;categoryadmin&gt;
-         &lt;categories&gt;
-            &lt;heading&gt;Categories&lt;/heading&gt;
+<<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+   <language name="English" id="en">
+      <categoryadmin>
+         <categories>
+            <heading>Categories</heading>
             ... removed for brevity
-         &lt;/categories&gt;
-      &lt;/categoryadmin&gt;
-   &lt;/language&gt;
-&lt;/languages&gt;
+         </categories>
+      </categoryadmin>
+   </language>
+</languages>
 ~~~
 
   * The proof! This is a relatively simple technique that allows you to add a small amount of flexibility into the EPiServer edit/admin interface.

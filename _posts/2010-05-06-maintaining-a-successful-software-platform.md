@@ -1,16 +1,18 @@
-﻿---
+---
 title: Maintaining a successful software platform
 color: rgb(0,0,0)
 date: 2010-05-06T21:12:59+00:00
 author: Mark Everard
 layout: post
-permalink: /2010/05/06/maintaining-a-successful-software-platform/
 dsq_thread_id:
   - "1122740976"
 categories:
   - Opinion
+tags: [Opinion]
 ---
 There have been a few scenarios played out recently that have got me thinking about &#8216;the effort required to maintain and drive a successful software platform&#8217;. Its clearly a difficult balancing act as not only do you have to develop a product with the functionality that end users desire, you also have to create a ecosystem of developers who are able to leverage your platform to create cool products!
+
+## Getting a balance
 
 Apple&#8217;s very public spat with Adobe over Flash support clearly demonstrates the difficulties with maintaining the right balance between the end-user and developer. Apple&#8217;s heavy handed approach to setting their strategic technological vision for the &#8216;good&#8217; of iPhone / iPad user experience has ostracised a large section of experienced rich-interface developers, who were excited at the steps that Adobe had taken to enable their ideas on the Apple platform. Whether or not this was the correct call from Apple will only be borne out in time. If I were Adobe, I&#8217;d be throwing my weight behind Android and creating some great Flash development tools in the hope that Flash developers produce the killer apps to show that Flash on a mobile is a &#8216;workable&#8217; technology.
 
@@ -26,15 +28,17 @@ Instead the only choice left is to evolve and work extra-hard to improve the are
   Orlando A. Battista
 </p>
 
+## Where to focus?
+
 This then brings us back to the original conundrum. Where do you focus your development efforts? Who really is the most important user of your platform? Developer or end-user?
 
 Renowned CMS anti-hero <a href="http://www.twitter.com/mcboof" target="_blank">@McBoof</a> approached these issues with his challenge to CMS vendors to rate the following CMS &#8216;features&#8217; in order of priority:
 
-  * Editors – A user interface that is a editor or publisher’s wet dream
+  * Editors   A user interface that is a editor or publisher s wet dream
   * Performance &#8211; The fastest, most stable and scalable CMS in the world
-  * Features – The richest set of features any CMS could dream of offering
-  * Developers – An open, standard, extensible product that makes developers salivate
-  * Website – A product that can give you a kick-ass website, really really quickly
+  * Features   The richest set of features any CMS could dream of offering
+  * Developers   An open, standard, extensible product that makes developers salivate
+  * Website   A product that can give you a kick-ass website, really really quickly
 
 What the <a href="http://jonontech.com/2010/04/19/cms-vendor-navel-gazing/" target="_blank">results</a> of this semi-serious survey actually tell you is open to debate&#8230;.. but what is clear is that none of the CMS platforms mentioned excel across all areas. Simple rule of life: You can&#8217;t please all of the people all of the time!
 

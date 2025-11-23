@@ -1,15 +1,14 @@
-﻿---
+---
 title: EPiServer CMS 7 logical architecture diagram
 date: 2013-04-04T10:30:12+00:00
 author: Mark Everard
-color: rgb(0,0,0)
 layout: post
-permalink: /2013/04/04/episerver-cms-7-logical-architecture-diagram/
 dsq_thread_id:
   - "1171642749"
 categories:
-  - Architecture
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Architecture]
 ---
 I often have to describe the logical components of EPiServer CMS to clients and customers. It always feel like I end up recreating a logical architecture diagram on each occasion.
 

@@ -1,14 +1,14 @@
-﻿---
+---
 title: 'Developing a custom workflow in EPiServer : Part three'
 date: 2010-11-10T10:19:32+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2010/11/10/developing-a-custom-workflow-in-episerver-part-three/
 dsq_thread_id:
   - "1073095671"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Workflows]
 ---
 This is the third post, in a series of five about developing a custom workflow in EPiServer.
 
@@ -25,12 +25,13 @@ This is done using a Visual Studio design surface which auto-magically generates
 
 ![workflow designer](/assets/uploads/2010/11/workflow-design-surface.gif)
 
+
 Here you can see the Two-stage workflow laid out on the designer surface. Each box represents a unique State within this StateMachine workflow, with the arrows indicating the possible transitions between states. Initally the workflow process is created in the InitialState (which is set by right-clicking and selecting the relevant option from the dropdown).
 
-Each State contains a list of Activities, for example the PageApproverState contains four activities; three bespoke EventListener activites and a StateInitialization Activity. You&#8217;ll notice I&#8217;ve used an StateInitialization Activity as a common pattern across all of the States� (barring the FinalizedState &#8211; which has no additional work to do). This will initialise / modify any data within the workflow to be persisted (which in our case is the data encapsulated by our TwoStageEventArgs).
+Each State contains a list of Activities, for example the PageApproverState contains four activities; three bespoke EventListener activites and a StateInitialization Activity. You&#8217;ll notice I&#8217;ve used an StateInitialization Activity as a common pattern across all of the States  (barring the FinalizedState &#8211; which has no additional work to do). This will initialise / modify any data within the workflow to be persisted (which in our case is the data encapsulated by our TwoStageEventArgs).
 
 ### StateInitializationActivity
-StateInitialization Activities, available by dragging and dropping from the Visual Studio Toolbox 🙁 are performed by the workflow runtime as soon as the StateMachine workflow is moved into that particular state. They can contain any number of other Activities, so as to make up your exact Workflow requirements.
+StateInitialization Activities, available by dragging and dropping from the Visual Studio Toolbox ð are performed by the workflow runtime as soon as the StateMachine workflow is moved into that particular state. They can contain any number of other Activities, so as to make up your exact Workflow requirements.
 
 We&#8217;ll be using them to perform the following common tasks:
 
@@ -49,7 +50,9 @@ EventDriven activities are the most important part of a StateMachine workflow as
 
 The (wca.exe) tool lives in:
 
-&#8220;Program Files&#8221;&#8221;Microsoft SDKs&#8221;Windowsv6.0Abin
+~~~
+/Program Files/Microsoft SDKs/Windowsv6.0Abin
+~~~
 
 and when run it needs to be passed arguments informing it of the path of the assembly to scan and also the namespace and location in which to create the bespoke EventDriven activities. In our solution it will find the ITwoStageService and create EventDriven activities based against the four events defined in that service, PageApproved, PageDeclined, PagePassedToApprover and PagePassedToPublisher.
 

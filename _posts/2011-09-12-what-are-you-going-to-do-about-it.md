@@ -1,13 +1,13 @@
-﻿---
+---
 title: What are you going to do about it?
 date: 2011-09-12T11:00:35+00:00
 author: Mark Everard
 layout: post
-permalink: /2011/09/12/what-are-you-going-to-do-about-it/
 dsq_thread_id:
   - "1079929309"
 categories:
   - Opinion
+tags: [Opinion]
 ---
 As programmers, we&#8217;re very used to dealing with systems that are easy to understand and behave predictably (though I have worked with some codebases that are the exact opposite).
 

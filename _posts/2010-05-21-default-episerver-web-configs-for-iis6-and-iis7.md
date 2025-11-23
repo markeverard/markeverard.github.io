@@ -1,14 +1,13 @@
-﻿---
+---
 title: Default EPiServer Web.Configs for IIS6 and IIS7
 date: 2010-05-21T02:53:16+00:00
 author: Mark Everard
-color: rgb(0,0,0)
 layout: post
-permalink: /2010/05/21/default-episerver-web-configs-for-iis6-and-iis7/
 dsq_thread_id:
   - "1073095625"
 categories:
   - Episerver
+tags: [Episerver-CMS]
 ---
 I consider myself lucky to be running a local development environment using Windows 7 which means all of my development sites run off of IIS7 (unless of course, I running them through the built-in Visual Studio web server).
 
@@ -20,6 +19,12 @@ Whilst there are upgrade scripts and also a useful [technical note](http://world
 
 Often I&#8217;ve just wanted to start from scratch with a default EPiServer web.config file targeted at either IIS6 or IIS7. If you ever find yourself in this same configuration management hell then this little tidbit may come in handy.
 
-Default EPiServer web.config files for both IIS6 and IIS7 can be found in your %PROGRAMFILES%EPiServerCMS<version-number>Application directory. These are called Web.Config.6 and Web.Config.7 respectively.
+Default EPiServer web.config files for both IIS6 and IIS7 can be found in your 
+
+```
+%PROGRAMFILES%EPiServerCMS<version-number>Application directory.
+```
+
+These are called Web.Config.6 and Web.Config.7 respectively.
 
 Obviously don&#8217;t edit these files, as they are no doubt used by the EPiServer Deployment Center when creating new local sites, but as a fallback to a configuration file that works &#8211; then go for it.

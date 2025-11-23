@@ -1,4 +1,4 @@
-﻿---
+---
 title: PageStructureBuilder for EPiServer 7.5
 date: 2014-06-10T10:00:45+00:00
 author: Mark Everard
@@ -9,6 +9,8 @@ dsq_thread_id:
   - "2750949352"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS]
 ---
 If there was an award for the best EPiServer extension produced by a member of the World community; that didn&#8217;t gain the recognition it deserved. Of course, my own <a title="EPiServer Personalization Engine" href="http://www.markeverard.com/2011/05/13/episerver-personalization-engine/" target="_blank">Personalisation Engine</a> would win hands down.
 

@@ -1,15 +1,14 @@
-﻿---
+---
 title: POSSIBLE.RobotsTxtHandler for EPiServer 7.5
 date: 2014-01-30T21:17:34+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2014/01/30/possible-robotstxthandler-for-episerver-7-5/
 dsq_thread_id:
   - "2196927466"
-hide-warning: true
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Open-source]
 ---
 A few months back I put together a <a title="A Robots.txt handler for EPiServer 7" href="http://www.markeverard.com/2013/11/01/a-robots-txt-handler-for-episerver-7/" target="_blank">robots.txt handler for EPiServer CMS 7</a>. Technology moves quickly and since then <a title="EPiServer 7.5 CMS a Modern, intuitive, and powerful! " href="http://world.episerver.com/Articles/Items/EPiServer-75-CMS--starting-to-show-its-full-potential/" target="_blank">EPiServer have released CMS version 7.5</a>
 

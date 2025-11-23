@@ -1,15 +1,15 @@
-﻿---
+---
 id: 1782
 title: Modifying Alloy Templates to work with EPiServer patches delivered via Nuget.
 date: 2013-03-26T10:30:51+00:00
 author: Mark Everard
 layout: post
-color: rhb(0,0,0)
-permalink: /2013/03/26/modifying-alloy-templates-to-work-with-episerver-patches-delivered-via-nuget/
 dsq_thread_id:
   - "1160172593"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS]
 ---
 Along with their latest CMS release, EPiServer have also changed the model that they use to deliver hot-fixes to partner developers. Previously they were delivered as a singular hot-fix obtained from Developer Support or were rolled into more major service-pack releases. From now on, hot-fixes and maintenance releases will be delivered directly from the <a title="EPiServer Nuget Feed" href="http://nuget.episerver.com/" target="_blank">EPiServer Nuget feed</a>.
 
@@ -31,14 +31,14 @@ The Alloy solution is set up to reference the EPiServer libraries it needs direc
 * Then you should run the following commands in the <a title="Finding and Installing a NuGet Package Using the Package Manager Console" href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console" target="_blank">Nuget Package Manager Console</a> &#8211; (which is absolutely the best way to work with Nuget)
 
 Then you should run the following commands to install the packages you need &#8211; these commands install specific versions of each package.
-
-<pre class="brush: xml; title: ; notranslate" title="">Install-Package EPiServer.CMS.Core -Version 7.0.586.1
+~~~
+Install-Package EPiServer.CMS.Core -Version 7.0.586.1
 Install-Package EPiServer.Framework -Version 7.0.859.1
 Install-Package Castle.Core -Version 3.1.0
 Install-Package StructureMap -Version 2.6.1.0
 Install-Package Newtonsoft.Json -Version 4.5.7
 Install-Package log4net -Version 1.2.10
-</pre>
+~~~
 
 Rebuild the solution and you should be back where you started (a working Alloy demo site) and also now set up to use Nuget to update to the latest patch releases. Incidentally I&#8217;m not sure why the EPiServer Nuget packages don&#8217;t correctly list their <a title="Nuget - specifying dependent packages" href="http://docs.nuget.org/docs/reference/nuspec-reference#Specifying_Dependencies" target="_blank">dependencies</a>. To me, EPiServer.CMS.Core is dependent on all of the packages listed above. Having these dependencies stated in the nuspec file would simplify the initial installation step, and no doubt help dependency management going forward.
 
@@ -46,7 +46,8 @@ Rebuild the solution and you should be back where you started (a working Alloy d
 
 Now you&#8217;re in a position to see just how easy applying a update is. Open your solution, go to the Nuget package manager console and type:
 
-<pre class="brush: xml; title: ; notranslate" title="">Update-Package EPiServer.CMS.Core
-</pre>
+~~~
+Update-Package EPiServer.CMS.Core
+~~~
 
 Voila &#8211; all of the latest EPiServer hot-fixes delivered straight into your solution via one command and now ready for you to build / validate and distribute to your client!

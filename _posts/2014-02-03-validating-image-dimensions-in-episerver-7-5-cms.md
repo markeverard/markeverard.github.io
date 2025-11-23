@@ -1,14 +1,14 @@
-﻿---
+---
 title: Validating image dimensions in EPiServer 7.5 CMS
 date: 2014-02-03T11:00:29+00:00
 author: Mark Everard
 layout: post
-color: rgb(0,0,0)
-permalink: /2014/02/03/validating-image-dimensions-in-episerver-7-5-cms/
 dsq_thread_id:
   - "2197061743"
 categories:
   - Episerver
+  - Technical
+tags: [Episerver-CMS, Open-source]
 ---
 <a title="EPiServer 7.5 CMS, a Modern, intuitive, and powerful!" href="http://world.episerver.com/Articles/Items/EPiServer-75-CMS--starting-to-show-its-full-potential/" target="_blank">EPiServer 7.5</a> delivers a completely new digital media management system offering a host of editor enhancements, including integration into the new editing interface, multiple file drag and drop file upload, inline media preview, and drag and drop placement of media into ContentAreas and the Rich-Text-Editor.
 
