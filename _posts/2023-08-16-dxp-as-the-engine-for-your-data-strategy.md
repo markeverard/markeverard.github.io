@@ -4,7 +4,7 @@ date: 2023-08-16T14:30:26+00:00
 author: Mark Everard
 layout: post
 img: 2023-08-16-dxp-engine.jpeg
-description: Decision making in the world of technology rarely seems clear-cut or straightforward. Choosing the best technology is often fraught, leaving a genuine fear of taking a misstep.
+description: When viewed through a lens of data your DXP is more than a production and delivery platform for your content. It is the engine for your customer data strategy.
 categories:
   - Opinion
 tags: [CMS, Opinion, Architecture, Martech]

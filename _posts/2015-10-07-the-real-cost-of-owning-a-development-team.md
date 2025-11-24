@@ -3,6 +3,7 @@ title: The real cost of owning a development team
 date: 2015-10-07T10:00:39+00:00
 author: Mark Everard
 layout: post
+description: Development teams have a very specialised need for learning and growth. Owning a team comes with a heavy responsibility to get this right.
 dsq_thread_id:
   - "4200690313"
 img: 2015-09-18-real-cost.jpeg

@@ -7,7 +7,7 @@ img: 2024-10-11-microfrontends.jpg
 description: Optimizely products have now evolved so that the full Optimizely One suite can be used within cutting edge modern composable architectures to provide significant agility, scale and speed improvements to online experiences.
 categories:
   - Opinion
-tags: [Opinion, Optimizely, Architecture]
+tags: [Optimizely, Architecture]
 
 ---
 Optimizely products have now evolved so that the full **Optimizely One** suite can be used within cutting edge modern composable architectures to provide significant agility, scale and speed improvements to online experiences.

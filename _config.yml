@@ -8,7 +8,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Mark Everard # add your name
 author-img: mark-everard.jpg # add your photo
-about-author: Founder <a href="https://www.ftt.ai">@first3things</a>, CTO, Architect, <a href="https://world.optimizely.com/community/omvp/members/">Optimizely MVP</a>.<br>PhD Physicist turned hands on tech leader. Show me the code.
+about-author: Founder <a href="https://www.ftt.ai">@first3things</a>, CTO, Architect, <a href="https://world.optimizely.com/community/omvp/members/">Optimizely MVP</a>. PhD physicist turned hands on tech leader. Show me the code.
 
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle

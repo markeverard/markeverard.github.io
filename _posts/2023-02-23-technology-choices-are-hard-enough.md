@@ -4,7 +4,7 @@ date: 2023-02-23T14:30:26+00:00
 author: Mark Everard
 layout: post
 img: 2023-02-23-headless.jpeg
-description: Decision making in the world of technology rarely seems clear-cut or straightforward. Choosing the best technology is often fraught, leaving a genuine fear of taking a misstep.
+description: Decision making in the world of technology rarely seems clear-cut or straightforward. Choosing the best technology is often fraught. Here's my guide to help you navigate composable and the headless hype.
 categories:
   - Opinion
 tags: [CMS, Opinion, Architecture, Martech]
@@ -77,6 +77,7 @@ A decoupled front end system is advantageous for reasons relating to its simplic
 
 - **Performance** – the decoupled front end often only displays content and can range from a static website to a client-side JavaScript app, both offering best available in-browser performance 
 - **Security** – as the front end is simplified, there is less functionality that could be compromised. The attack vector is much reduced. A major benefit
+
 Headless CMS’s are the latest cycle of decoupled CMS’s with one major difference. 
 
 Headless systems only ever deal with raw content in the form of data. Previous decoupled systems perform some form of display logic before delivering templated content to the front-end. An example is illustrative. When content is changed in a decoupled CMS, the CMS creates html files by combining raw content with html templates, before transferring the resulting files to a server to act as a static website. If the content is changed further, the process is repeated. 

@@ -3,6 +3,7 @@ title: A development team is more than just developers
 date: 2016-05-05T09:47:21+00:00
 author: Mark Everard
 layout: post
+description: Software delivery requires specialist skills, so why do many organisations still think that a development team is made up only of developers?
 dsq_thread_id:
   - "6420563665"
 img: 2016-04-05-team-is-more-than.jpeg
